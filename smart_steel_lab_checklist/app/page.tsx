@@ -1,35 +1,89 @@
 "use client";
 
-import { useState } from "react";
-import { CHECKLISTS } from "../data/checklists";
-import { GRADES, APPLICATIONS } from "../data/meta";
-import { logUsage } from "../lib/supabaseClient";
-import { getSuggestedTests } from "../lib/suggestions";
+import { useState, useEffect } from "react";
+import { test_GradeStandards } from "../data/tests_grades";
+
 
 export default function Home() {
-    const [grade, setGrade] = useState<string>("G250");
-    const [application, setApplication] = useState<string>("general");
-    const [testType, setTestType] = useState<keyof typeof CHECKLISTS>("tensile");
+    const gradeList = Object.keys(test_GradeStandards.grades);
+    const [grade, setGrade] = useState(gradeList[0]);
+    const applicationList = Object.keys(
+        test_GradeStandards.grades[grade].applications
+    );
+    const [application, setApplication] = useState(applicationList[0]);
 
-    const checklist = CHECKLISTS[testType];
-    const suggestions = getSuggestedTests(grade, application);
+    const [testPlan, setTestPlan] = useState<any | null>(null);
+    const [loadingPlan, setLoadingPlan] = useState(false);
+
+    const [aiAnswer, setAiAnswer] = useState("");
+    const [loadingAI, setLoadingAI] = useState(false);
+
+    // Load test plan whenever grade or application changes
+    useEffect(() => {
+        async function loadPlan() {
+            setLoadingPlan(true);
+            setTestPlan(null);
+
+            const res = await fetch("/api/api-test-plan", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ grade: grade, application: application })
+            });
+
+            const data = await res.json();
+            setTestPlan(data);
+            setLoadingPlan(false);
+        }
+
+        loadPlan();
+    }, [grade, application]);
+
+
+    async function handleAIExplain() {
+        if (!testPlan) return;
+
+        setLoadingAI(true);
+        setAiAnswer("");
+
+        const res = await fetch("/api/api-ai-prompt", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                question: `Explain why these tests are required for ${grade} in ${application} application.`,
+                context: testPlan,
+            })
+        });
+
+        const data = await res.json();
+        setAiAnswer(data.answer);
+        setLoadingAI(false);
+    }
 
     return (
-        <main className="min-h-screen bg-slate-50 p-4 md:p-8">
-            <div className="max-w- 3xl mx-auto space-y-6">
-                <h1 className="text-2xl md:text-3xl font-semibold">Smart Steel Lab Checklist</h1>
+        <main className="min-h-screen bg-slate-50 p-6">
+            <div className="max-w-3xl mx-auto space-y-6">
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <h1 className="text-3xl font-semibold">Steel Lab</h1>
+
+                {/* Grade + Application */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label className="block text-sm font-medium mb-1">Steel grade</label>
                         <select
                             className="w-full border rounded px-2 py-1"
                             value={grade}
-                            onChange={e => {
-                                setGrade(e.target.value);
-                                logUsage(`grade:${e.target.value}`); }}
+                            onChange={(e) => {
+                                const newGrade = e.target.value;
+                                setGrade(newGrade);
+
+                                // Reset application when grade changes
+                                const newApps = Object.keys(
+                                    test_GradeStandards.grades[newGrade].applications
+                                );
+                                setApplication(newApps[0]);
+                            }}
                         >
-                            {GRADES.map(g => (
+                            {gradeList.map((g) => (
                                 <option key={g}>{g}</option>
                             ))}
                         </select>
@@ -40,57 +94,55 @@ export default function Home() {
                         <select
                             className="w-full border rounded px-2 py-1"
                             value={application}
-                            onChange={e => setApplication(e.target.value)}
+                            onChange={(e) => setApplication(e.target.value)}
                         >
-                            {APPLICATIONS.map(a => (
-                                <option key={a}>{a}</option>
+                            {applicationList.map((app) => (
+                                <option key={app} value={app}>
+                                    {app.replace(/_/g, " ")}
+                                </option>
                             ))}
                         </select>
                     </div>
-
-                    <div>
-                        <label className="block text-sm font-medium mb-1">Test type</label>
-                        <select
-                            className="w-full border rounded px-2 py-1"
-                            value={testType}
-                            onChange={e => setTestType(e.target.value as any)}
-                        >
-                            <option value="tensile">Tensile</option>
-                            <option value="hardness">Hardness</option>
-                            <option value="coating">Coating</option>
-                            <option value="microstructure">Microstructure</option>
-                        </select>
-                    </div>
                 </div>
 
-                <div className="bg-white rounded shadow p-4 space-y-3">
-                    <h2 className="font-semibold mb-1">Checklist</h2>
-                    <ul className="space-y-1">
-                        {checklist.map(item => (
-                            <li key={item} className="flex items-center gap-2">
-                                <input type="checkbox" className="h-4 w-4" />
-                                <span>{item}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                {/* Test Plan */}
+                <div className="bg-white rounded shadow p-4">
+                    <h2 className="font-semibold mb-2">Required Test Plan</h2>
 
-                <div className="bg-white rounded shadow p-4 space-y-2">
-                    <h2 className="font-semibold mb-1">Suggested tests (AI rules)</h2>
-                    {suggestions.length === 0 ? (
-                        <p className="text-sm text-slate-500">No additional suggestions for this combination.</p>
-                    ) : (
-                        <ul className="space-y-1 text-sm">
-                            {suggestions.map(s => (
-                                <li key={s.test}>
-                                    <span className="font-medium capitalize">{s.test}</span>: {s.reason}
-                                    {s.standardHint && <span className="block text-slate-500 text-xs">{s.standardHint}</span>}
+                    {loadingPlan && <p className="text-sm text-slate-500">Loading test plan…</p>}
+
+                    {!loadingPlan && testPlan && (
+                        <ul className="space-y-2 text-sm">
+                            {testPlan.tests.map((t: any) => (
+                                <li key={t.id} className="border-b pb-2">
+                                    <span className="font-medium">{t.name}</span>
+                                    <div className="text-xs text-slate-500">
+                                        Standard: {t.standard?.join(", ")}
+                                    </div>
                                 </li>
                             ))}
                         </ul>
                     )}
                 </div>
+
+                {/* AI Button */}
+                <button
+                    onClick={handleAIExplain}
+                    disabled={!testPlan || loadingAI}
+                    className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 disabled:bg-blue-300"
+                >
+                    {loadingAI ? "Asking AI…" : "Ask AI why these tests are required"}
+                </button>
+
+                {/* AI Answer */}
+                {aiAnswer && (
+                    <div className="bg-white rounded shadow p-4">
+                        <h2 className="font-semibold mb-2">AI Explanation</h2>
+                        <p className="text-sm whitespace-pre-line">{aiAnswer}</p>
+                    </div>
+                )}
             </div>
         </main>
     );
 }
+

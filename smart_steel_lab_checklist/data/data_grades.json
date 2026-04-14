@@ -1,0 +1,2345 @@
+{
+  "grades": {
+    "A36": {
+      "system": "ASTM",
+      "category": "Carbon structural steel",
+      "applications": {
+        "building_frames": {
+          "description": "Columns, beams, and bracing in low- to mid-rise buildings.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "industrial_structures": {
+          "description": "Platforms, pipe racks, equipment supports in industrial plants.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "bridges_low_demand": {
+          "description": "Short-span bridges or secondary members where toughness demands are moderate.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm" ]
+        },
+        "bridges_cold_regions": {
+          "description": "Bridge members in cold climates or where brittle fracture risk is higher.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm", "mt_astm" ]
+        },
+        "welded_frames": {
+          "description": "Welded building frames and trusses.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "weld_qualification_astm", "mt_astm" ]
+        },
+        "machinery_bases": {
+          "description": "Base plates, frames, and supports for machinery and equipment.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "plate_girders": {
+          "description": "Fabricated plate girders for buildings and bridges.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm", "mt_astm" ]
+        },
+        "stiffened_panels": {
+          "description": "Stiffened plate panels in industrial and structural applications.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "ut_astm" ]
+        },
+        "thick_plate_critical": {
+          "description": "Thick A36 plates in critical load paths where internal soundness is important.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "surface_critical_members": {
+          "description": "Members where surface condition and fatigue resistance are important.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm", "microstructure_astm" ]
+        },
+        "coated_structural": {
+          "description": "Galvanized or painted A36 members for corrosion protection.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "coating_thickness_astm", "mt_astm" ]
+        },
+        "temporary_works": {
+          "description": "Shoring, formwork frames, and temporary structural supports.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "non_building_structures": {
+          "description": "Towers, sign structures, small masts, and frames.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "low_temperature_non_critical": {
+          "description": "Non-critical members exposed to moderately low temperatures.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm" ]
+        },
+        "fabricated_brackets": {
+          "description": "Brackets, gussets, and connection plates.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "equipment_support_skids": {
+          "description": "Skids and frames for transportable equipment.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "low_pressure_supports": {
+          "description": "Supports for low-pressure tanks and vessels (non-code primary pressure parts).",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "agricultural_structures": {
+          "description": "Frames and supports in agricultural buildings and equipment.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "light_crane_runways": {
+          "description": "Runway beams for light-duty overhead cranes.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "miscellaneous_fabrications": {
+          "description": "Ladders, platforms, handrails, and miscellaneous steelwork.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        }
+      }
+    },
+
+    "A572 Grade 50": {
+      "system": "ASTM",
+      "category": "High-strength low-alloy structural steel",
+      "applications": {
+        "building_columns": {
+          "description": "High-strength columns in multi-storey buildings.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm", "mt_astm" ]
+        },
+        "bridge_girders": {
+          "description": "Main girders and stringers in highway and railway bridges.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm", "mt_astm" ]
+        },
+        "heavy_beams": {
+          "description": "Heavier beams where weight reduction is beneficial.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "offshore_structures": {
+          "description": "Structural members in offshore platforms (when allowed by design codes).",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "crane_runways": {
+          "description": "Runway beams for medium to heavy-duty cranes.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "impact_astm", "mt_astm" ]
+        },
+        "industrial_frames": {
+          "description": "Frames in industrial plants where higher strength is required.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "plate_girders_high_strength": {
+          "description": "High-strength plate girders for long spans.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm" ]
+        },
+        "seismic_frames": {
+          "description": "Frames in regions with seismic demands (subject to code requirements).",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm", "microstructure_astm" ]
+        },
+        "tower_structures": {
+          "description": "Telecom towers, transmission towers, and tall lattice structures.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "heavy_bracing": {
+          "description": "Bracing members in high-rise or heavily loaded structures.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "bridge_orthotropic_decks": {
+          "description": "Orthotropic deck plates and ribs in bridges.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm", "mt_astm" ]
+        },
+        "industrial_crane_supports": {
+          "description": "Supports and frames for heavy industrial cranes.",
+          "required_tests": [ "tensile_astm", "bend_astm", "hardness_astm", "chemical_astm", "impact_astm", "mt_astm" ]
+        },
+        "offshore_topsides": {
+          "description": "Topsides structures where higher strength is beneficial.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm" ]
+        },
+        "railway_structures": {
+          "description": "Railway bridge members and structural frames.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm" ]
+        },
+        "heavy_equipment_supports": {
+          "description": "Supports for heavy rotating or vibrating equipment.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "long_span_roofs": {
+          "description": "Long-span roof trusses and girders.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "portal_frames": {
+          "description": "Portal frames in industrial and warehouse buildings.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "pipe_racks_high_load": {
+          "description": "Pipe racks carrying heavy process lines.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "structural_diagonals": {
+          "description": "Diagonal bracing in high-strength frames.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        }
+      }
+    },
+
+    "A992": {
+      "system": "ASTM",
+      "category": "Structural steel for W-shapes",
+      "applications": {
+        "building_moment_frames": {
+          "description": "W-shapes in moment-resisting frames for buildings.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "gravity_frames": {
+          "description": "Gravity load-carrying beams and columns.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "composite_beams": {
+          "description": "Beams acting compositely with concrete slabs.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "seismic_special_moment_frames": {
+          "description": "Special moment frames in high seismic regions (subject to code requirements).",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm", "microstructure_astm" ]
+        },
+        "braced_frames": {
+          "description": "Beams and columns in braced frame systems.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "transfer_girders": {
+          "description": "Deep girders transferring loads between column lines.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm", "ut_astm" ]
+        },
+        "outrigger_trusses": {
+          "description": "Outrigger and belt truss members in tall buildings.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "impact_astm", "mt_astm" ]
+        },
+        "long_span_floor_beams": {
+          "description": "Long-span beams in offices, malls, and arenas.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "mega_members": {
+          "description": "Mega-columns and mega-girders in complex structures.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm" ]
+        },
+        "composite_columns": {
+          "description": "Steel sections encased in or filled with concrete.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "stadium_and_arena_frames": {
+          "description": "Primary frames in stadiums and arenas.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "high_rise_core_framing": {
+          "description": "Core framing around elevator and stair shafts.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "link_beams_in_ebraced_frames": {
+          "description": "Link beams in eccentrically braced frames.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "roof_trusses": {
+          "description": "W-shapes used as chords and webs in roof trusses.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm" ]
+        },
+        "transfer_beams_over_openings": {
+          "description": "Beams spanning over large openings or atria.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "ut_astm" ]
+        }
+      }
+    },
+
+    "A514": {
+      "system": "ASTM",
+      "category": "Quenched and tempered high-yield strength structural steel",
+      "applications": {
+        "crane_boom_elements": {
+          "description": "Booms and arms of mobile and crawler cranes.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "crane_turntables_and_frames": {
+          "description": "Frames and turntables for heavy lifting equipment.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "mining_truck_frames": {
+          "description": "Frames and load-bearing members in large mining trucks.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "excavator_and_shovel_structures": {
+          "description": "Structural members in large excavators and shovels.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "heavy_equipment_booms": {
+          "description": "Booms and arms in heavy construction equipment.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "bridge_orthotropic_and_box_girders": {
+          "description": "High-strength plates in orthotropic decks and box girders.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "lifting_beams_and_spreaders": {
+          "description": "High-strength lifting beams and spreader bars.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "offshore_crane_structures": {
+          "description": "Crane and handling structures on offshore platforms.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "heavy_transport_trailers": {
+          "description": "Low-bed and heavy-haul trailers requiring high strength and low weight.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "quarry_and_mining_structures": {
+          "description": "Structural members in quarry and mining processing plants.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "high_load_frames": {
+          "description": "Frames subjected to very high static and dynamic loads.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "low_temperature_high_strength": {
+          "description": "High-strength members in cold climates (subject to design code).",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm", "microstructure_astm" ]
+        },
+        "heavy_machine_beds": {
+          "description": "Machine beds and bases requiring high stiffness and strength.",
+          "required_tests": [ "tensile_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        },
+        "large_press_frames": {
+          "description": "Frames for large presses and forming equipment.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "ut_astm", "mt_astm" ]
+        },
+        "structural_members_in_lifting_devices": {
+          "description": "Structural members in lifting and handling devices where weight is critical.",
+          "required_tests": [ "tensile_astm", "impact_astm", "hardness_astm", "chemical_astm", "mt_astm" ]
+        }
+      }
+    },
+    "S235JR": {
+      "system": "EN",
+      "category": "Non-alloy structural steel",
+      "applications": {
+        "light_building_frames": {
+          "description": "Columns, beams, and bracing in light industrial and commercial buildings.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "secondary_beams_and_purlins": {
+          "description": "Secondary beams, purlins, and roof members with moderate loads.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "industrial_platforms_and_walkways": {
+          "description": "Platforms, walkways, and access structures in plants and warehouses.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "staircases_and_handrails": {
+          "description": "Structural members for staircases, handrails, and guardrails.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "non_critical_bridges": {
+          "description": "Short-span or low-demand bridge components such as railings and secondary members.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "agricultural_structures": {
+          "description": "Frames and supports in agricultural buildings and equipment sheds.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "storage_racks_and_shelving": {
+          "description": "Structural members in storage racks and shelving systems.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "light_crane_runways": {
+          "description": "Runway beams for light-duty overhead cranes and hoists.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "sign_support_structures": {
+          "description": "Poles and frames for signs and billboards.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "fencing_and_barriers": {
+          "description": "Posts and rails for fences, barriers, and guardrails.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "welded_frames_general": {
+          "description": "General welded frames and trusses for non-critical structures.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "weld_en", "mt_en" ]
+        },
+        "temporary_structures": {
+          "description": "Temporary supports, scaffolding frames, and shoring systems.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "equipment_support_skids": {
+          "description": "Skids and frames for light equipment and machinery.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "small_towers_and_masts": {
+          "description": "Small towers, masts, and antenna supports.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "coated_structural_members": {
+          "description": "Painted or galvanized S235JR members for outdoor use.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "coating_thickness_en" ]
+        },
+        "non_building_frames": {
+          "description": "Frames for containers, enclosures, and small shelters.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "light_bracing_members": {
+          "description": "Bracing members in light frames and trusses.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "low_temperature_non_critical": {
+          "description": "Non-critical members exposed to mildly low temperatures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "fabricated_brackets_and_gussets": {
+          "description": "Brackets, gusset plates, and connection plates.",
+          "required_tests": [ "tensile_en", "bend_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "miscellaneous_fabrications": {
+          "description": "Ladders, platforms, small frames, and miscellaneous steelwork.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        }
+      }
+    },
+
+    "S275JR": {
+      "system": "EN",
+      "category": "Non-alloy structural steel",
+      "applications": {
+        "building_frames_standard": {
+          "description": "Columns and beams in standard multi-storey buildings.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "industrial_structures": {
+          "description": "Frames and supports in industrial buildings and process plants.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "bridge_main_members": {
+          "description": "Main girders and cross-beams in moderate-span bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "welded_plate_girders": {
+          "description": "Fabricated plate girders for buildings and bridges.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "weld_en", "ut_en", "mt_en" ]
+        },
+        "crane_runways_medium": {
+          "description": "Runway beams for medium-duty overhead cranes.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "pipe_racks": {
+          "description": "Pipe racks and supports in industrial facilities.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "platforms_and_mezzanines": {
+          "description": "Platforms, mezzanines, and access structures.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "portal_frames": {
+          "description": "Portal frames in warehouses and industrial buildings.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "stiffened_panels": {
+          "description": "Stiffened plate panels in floors and walls.",
+          "required_tests": [ "tensile_en", "bend_en", "hardness_en", "chemical_en" ]
+        },
+        "coated_structural_members": {
+          "description": "Painted or galvanized S275JR members for outdoor or corrosive environments.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "coating_thickness_en" ]
+        },
+        "non_building_structures": {
+          "description": "Towers, frames, and non-building structures with moderate loads.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "light_bridge_decks": {
+          "description": "Deck plates and secondary members in light bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "equipment_supports": {
+          "description": "Supports for rotating and static equipment.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "bracing_members": {
+          "description": "Bracing members in frames and trusses.",
+          "required_tests": [ "tensile_en", "hardness_en" ]
+        },
+        "low_temperature_applications": {
+          "description": "Members exposed to moderately low temperatures where toughness is still required.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "fabricated_connections": {
+          "description": "Connection plates, stiffeners, and brackets.",
+          "required_tests": [ "tensile_en", "bend_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "industrial_crane_supports": {
+          "description": "Supports and frames for industrial cranes and hoists.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "storage_tanks_supports": {
+          "description": "Support structures for storage tanks (non-pressure shell).",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        },
+        "miscellaneous_structural": {
+          "description": "General structural members in buildings and plants.",
+          "required_tests": [ "tensile_en", "hardness_en", "chemical_en" ]
+        }
+      }
+    },
+
+    "S355JR": {
+      "system": "EN",
+      "category": "Non-alloy structural steel",
+      "applications": {
+        "heavy_building_frames": {
+          "description": "Heavier columns and beams in multi-storey and high-load buildings.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "bridge_girders": {
+          "description": "Main girders and cross-beams in highway and railway bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "crane_supports_heavy": {
+          "description": "Runway beams and supports for heavy-duty cranes.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "offshore_topsides": {
+          "description": "Structural members in offshore topsides where S355JR is permitted.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en", "microstructure_en" ]
+        },
+        "industrial_frames_heavy": {
+          "description": "Heavy frames and supports in industrial plants and mills.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "plate_girders_heavy": {
+          "description": "Heavy plate girders for long spans and high loads.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en" ]
+        },
+        "tower_structures": {
+          "description": "Telecommunication towers, transmission towers, and tall lattice structures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "seismic_frames_moderate": {
+          "description": "Frames in regions with moderate seismic demands.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "microstructure_en" ]
+        },
+        "bridge_orthotropic_decks": {
+          "description": "Orthotropic deck plates and ribs in bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "industrial_crane_girders": {
+          "description": "Girders and supports for industrial cranes and hoists.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "long_span_roofs": {
+          "description": "Long-span roof trusses and girders in arenas and halls.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "portal_frames_heavy": {
+          "description": "Heavy portal frames in warehouses and industrial buildings.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "pipe_racks_high_load": {
+          "description": "Pipe racks carrying heavy process lines and equipment.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "stiffened_panels_heavy": {
+          "description": "Stiffened plate panels in heavy floors and walls.",
+          "required_tests": [ "tensile_en", "bend_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "coated_structural_heavy": {
+          "description": "Painted or coated S355JR members in aggressive environments.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "coating_thickness_en" ]
+        },
+        "equipment_supports_heavy": {
+          "description": "Supports for heavy rotating and vibrating equipment.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "bridge_bearer_members": {
+          "description": "Bearer members and diaphragms in bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "non_building_heavy_structures": {
+          "description": "Heavy frames and structures in industrial and infrastructure projects.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "fabricated_welded_nodes": {
+          "description": "Complex welded nodes and connections in heavy structures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "weld_en", "ut_en", "mt_en", "microstructure_en" ]
+        }
+      }
+    },
+
+    "S355J2": {
+      "system": "EN",
+      "category": "Non-alloy structural steel with improved impact properties at low temperature",
+      "applications": {
+        "low_temperature_structures": {
+          "description": "Structures requiring guaranteed toughness at low temperatures (e.g., -20°C).",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "bridges_cold_regions": {
+          "description": "Bridge members in cold climates with risk of brittle fracture.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "offshore_and_marine_structures": {
+          "description": "Offshore platforms, jackets, and marine structures where low-temperature toughness is critical.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en", "microstructure_en" ]
+        },
+        "storage_tanks_cold_service": {
+          "description": "Support structures and non-pressure parts for tanks in cold service.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "crane_structures_cold_regions": {
+          "description": "Crane supports and booms used in cold climates.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "seismic_structures_high_demand": {
+          "description": "Structures in high seismic regions where ductility and toughness are required.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "microstructure_en" ]
+        },
+        "bridge_orthotropic_decks_cold": {
+          "description": "Orthotropic decks and ribs in bridges in cold regions.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "heavy_plate_girders_cold": {
+          "description": "Heavy plate girders in cold climate applications.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en" ]
+        },
+        "industrial_frames_cold": {
+          "description": "Industrial frames and supports exposed to low temperatures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "pipe_racks_cold_service": {
+          "description": "Pipe racks carrying lines in cold service.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "long_span_roofs_cold": {
+          "description": "Long-span roofs and trusses in cold climates.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "tower_structures_cold": {
+          "description": "Towers and masts in cold regions.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "welded_nodes_cold": {
+          "description": "Welded nodes and connections in low-temperature structures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "weld_en", "ut_en", "mt_en", "microstructure_en" ]
+        },
+        "bridge_bearers_cold": {
+          "description": "Bearer members and diaphragms in cold-region bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "offshore_topsides_cold": {
+          "description": "Topsides structures in cold offshore environments.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en", "microstructure_en" ]
+        },
+        "equipment_supports_cold": {
+          "description": "Supports for equipment operating in low-temperature environments.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "non_building_cold_structures": {
+          "description": "Non-building structures exposed to low temperatures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "coated_structural_cold": {
+          "description": "Coated S355J2 members in cold and corrosive environments.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "coating_thickness_en" ]
+        },
+        "stiffened_panels_cold": {
+          "description": "Stiffened panels in cold-region floors and walls.",
+          "required_tests": [ "tensile_en", "bend_en", "impact_en", "hardness_en", "chemical_en" ]
+        }
+      }
+    },
+
+    "S460": {
+      "system": "EN",
+      "category": "High-strength structural steel",
+      "applications": {
+        "high_rise_columns": {
+          "description": "Columns in high-rise buildings where high strength reduces section sizes.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "long_span_girders": {
+          "description": "Long-span girders in buildings and bridges requiring high strength.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en" ]
+        },
+        "heavy_crane_structures": {
+          "description": "Heavy crane supports, booms, and frames.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "offshore_structures_high_strength": {
+          "description": "High-strength members in offshore platforms and topsides.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en", "microstructure_en" ]
+        },
+        "bridge_main_members_high_strength": {
+          "description": "Main girders and box girders in long-span bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en" ]
+        },
+        "seismic_structures_high_strength": {
+          "description": "High-strength members in seismic-resistant frames.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "microstructure_en" ]
+        },
+        "tower_structures_high_strength": {
+          "description": "Tall towers and masts where weight reduction is critical.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "industrial_frames_high_strength": {
+          "description": "High-strength frames in heavy industrial plants.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "plate_girders_high_strength": {
+          "description": "High-strength plate girders for heavily loaded structures.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en", "mt_en" ]
+        },
+        "bridge_orthotropic_decks_high_strength": {
+          "description": "Orthotropic decks and ribs in high-demand bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        },
+        "equipment_supports_high_strength": {
+          "description": "Supports for very heavy or dynamic equipment.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "pipe_racks_high_strength": {
+          "description": "Pipe racks carrying heavy process lines and equipment.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "mt_en" ]
+        },
+        "long_span_roofs_high_strength": {
+          "description": "Long-span roofs and trusses where high strength reduces weight.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "portal_frames_high_strength": {
+          "description": "High-strength portal frames in industrial buildings.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "stiffened_panels_high_strength": {
+          "description": "Stiffened panels in high-load floors and walls.",
+          "required_tests": [ "tensile_en", "bend_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "coated_structural_high_strength": {
+          "description": "Coated S460 members in aggressive environments.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "coating_thickness_en" ]
+        },
+        "welded_nodes_high_strength": {
+          "description": "Complex welded nodes in high-strength frames and bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "weld_en", "ut_en", "mt_en", "microstructure_en" ]
+        },
+        "non_building_high_strength_structures": {
+          "description": "High-strength non-building structures such as gantries and large frames.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en" ]
+        },
+        "bridge_bearers_high_strength": {
+          "description": "Bearer members and diaphragms in high-strength bridges.",
+          "required_tests": [ "tensile_en", "impact_en", "hardness_en", "chemical_en", "ut_en" ]
+        }
+      }
+    },
+    "SS400": {
+      "system": "JIS",
+      "standard": "JIS G 3101",
+      "category": "Hot-rolled steel for general structural use",
+      "applications": {
+        "building_frames_general": {
+          "description": "Columns, beams, and bracing in low- to medium-rise buildings and general structures.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "secondary_beams_and_purlins": {
+          "description": "Secondary beams, purlins, and roof members with moderate loads.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "industrial_platforms_and_walkways": {
+          "description": "Platforms, walkways, and access structures in plants and warehouses.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "staircases_and_handrails": {
+          "description": "Structural members for staircases, handrails, and guardrails.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "light_bridges_secondary_members": {
+          "description": "Secondary members, railings, and non-critical parts in small bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "agricultural_structures": {
+          "description": "Frames and supports in agricultural buildings and equipment sheds.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "storage_racks_and_shelving": {
+          "description": "Structural members in storage racks and shelving systems.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "light_crane_runways": {
+          "description": "Runway beams for light-duty overhead cranes and hoists.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "sign_support_structures": {
+          "description": "Poles and frames for signs and billboards.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "fencing_and_barriers": {
+          "description": "Posts and rails for fences, barriers, and guardrails.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "welded_frames_general": {
+          "description": "General welded frames and trusses for non-critical structures.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis", "weld_jis", "mt_jis" ]
+        },
+        "temporary_structures": {
+          "description": "Temporary supports, scaffolding frames, and shoring systems.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "equipment_support_skids": {
+          "description": "Skids and frames for light equipment and machinery.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "small_towers_and_masts": {
+          "description": "Small towers, masts, and antenna supports.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "coated_structural_members": {
+          "description": "Painted or galvanized SS400 members for outdoor use.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis", "coating_thickness_jis" ]
+        },
+        "non_building_frames": {
+          "description": "Frames for containers, enclosures, and small shelters.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "light_bracing_members": {
+          "description": "Bracing members in light frames and trusses.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "fabricated_brackets_and_gussets": {
+          "description": "Brackets, gusset plates, and connection plates.",
+          "required_tests": [ "tensile_jis", "bend_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "miscellaneous_fabrications": {
+          "description": "Ladders, platforms, small frames, and miscellaneous steelwork.",
+          "required_tests": [ "tensile_jis", "hardness_jis" ]
+        },
+        "general_machinery_frames": {
+          "description": "Frames and bases for general machinery and equipment.",
+          "required_tests": [ "tensile_jis", "hardness_jis", "chemical_jis" ]
+        }
+      }
+    },
+
+    "SM490": {
+      "system": "JIS",
+      "standard": "JIS G 3106",
+      "category": "Rolled steels for welded structure (medium strength)",
+      "applications": {
+        "building_frames_medium_heavy": {
+          "description": "Columns and beams in medium- to heavy-duty buildings and industrial structures.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "bridge_main_members": {
+          "description": "Main girders and cross-beams in highway and railway bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis" ]
+        },
+        "welded_plate_girders": {
+          "description": "Fabricated plate girders for buildings and bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "weld_jis", "ut_jis", "mt_jis" ]
+        },
+        "crane_runways_medium_heavy": {
+          "description": "Runway beams for medium- to heavy-duty overhead cranes.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "pipe_racks_industrial": {
+          "description": "Pipe racks and supports in refineries, petrochemical, and power plants.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "platforms_and_mezzanines_heavy": {
+          "description": "Platforms, mezzanines, and access structures with higher loads.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis" ]
+        },
+        "portal_frames_industrial": {
+          "description": "Portal frames in warehouses and industrial buildings with higher spans and loads.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "stiffened_panels_floors": {
+          "description": "Stiffened plate panels in floors and walls of industrial structures.",
+          "required_tests": [ "tensile_jis", "bend_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "offshore_topsides_general": {
+          "description": "Structural members in offshore topsides where SM490 is permitted.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis", "mt_jis", "microstructure_jis" ]
+        },
+        "tower_structures": {
+          "description": "Telecommunication towers, transmission towers, and tall lattice structures.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "seismic_frames_moderate_high": {
+          "description": "Frames in regions with moderate to high seismic demands.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "microstructure_jis" ]
+        },
+        "bridge_orthotropic_decks": {
+          "description": "Orthotropic deck plates and ribs in bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis" ]
+        },
+        "industrial_crane_girders": {
+          "description": "Girders and supports for industrial cranes and hoists.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "long_span_roofs": {
+          "description": "Long-span roof trusses and girders in arenas and halls.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "equipment_supports_heavy": {
+          "description": "Supports for heavy rotating and vibrating equipment.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "coated_structural_members": {
+          "description": "Painted or coated SM490 members in outdoor or corrosive environments.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "coating_thickness_jis" ]
+        },
+        "bridge_bearer_members": {
+          "description": "Bearer members and diaphragms in bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis" ]
+        },
+        "non_building_heavy_structures": {
+          "description": "Heavy frames and structures in industrial and infrastructure projects.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "fabricated_welded_nodes": {
+          "description": "Complex welded nodes and connections in heavy structures.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "weld_jis", "ut_jis", "mt_jis", "microstructure_jis" ]
+        }
+      }
+    },
+
+    "SM570": {
+      "system": "JIS",
+      "standard": "JIS G 3106",
+      "category": "Rolled steels for welded structure (high strength)",
+      "applications": {
+        "high_rise_columns": {
+          "description": "Columns in high-rise buildings where high strength reduces section sizes.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis" ]
+        },
+        "long_span_girders_high_strength": {
+          "description": "Long-span girders in buildings and bridges requiring high strength and reduced weight.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis", "mt_jis" ]
+        },
+        "heavy_crane_structures": {
+          "description": "Heavy crane supports, booms, and frames with high stress levels.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "offshore_structures_high_strength": {
+          "description": "High-strength members in offshore platforms and topsides.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis", "mt_jis", "microstructure_jis" ]
+        },
+        "bridge_main_members_high_strength": {
+          "description": "Main girders and box girders in long-span bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis", "mt_jis" ]
+        },
+        "seismic_structures_high_demand": {
+          "description": "High-strength members in seismic-resistant frames with high ductility demand.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "microstructure_jis" ]
+        },
+        "tower_structures_high_strength": {
+          "description": "Tall towers and masts where weight reduction is critical.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "industrial_frames_high_strength": {
+          "description": "High-strength frames in heavy industrial plants and mills.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "plate_girders_high_strength": {
+          "description": "High-strength plate girders for heavily loaded structures.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis", "mt_jis" ]
+        },
+        "bridge_orthotropic_decks_high_strength": {
+          "description": "Orthotropic decks and ribs in high-demand bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "ut_jis" ]
+        },
+        "equipment_supports_very_heavy": {
+          "description": "Supports for very heavy or dynamic equipment and machinery.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "pipe_racks_high_strength": {
+          "description": "Pipe racks carrying heavy process lines and equipment with high load demands.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis" ]
+        },
+        "long_span_roofs_high_strength": {
+          "description": "Long-span roofs and trusses where high strength reduces weight and deflection.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "portal_frames_high_strength": {
+          "description": "High-strength portal frames in industrial buildings and warehouses.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "stiffened_panels_high_load": {
+          "description": "Stiffened panels in high-load floors, decks, and walls.",
+          "required_tests": [ "tensile_jis", "bend_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "coated_structural_high_strength": {
+          "description": "Coated SM570 members in aggressive or marine environments.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "coating_thickness_jis" ]
+        },
+        "welded_nodes_high_strength": {
+          "description": "Complex welded nodes in high-strength frames and bridges.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "weld_jis", "ut_jis", "mt_jis", "microstructure_jis" ]
+        },
+        "non_building_high_strength_structures": {
+          "description": "High-strength non-building structures such as gantries, large frames, and mobile equipment booms.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis" ]
+        },
+        "mobile_equipment_structures": {
+          "description": "Booms, chassis, and structural parts of cranes and mobile equipment.",
+          "required_tests": [ "tensile_jis", "impact_jis", "hardness_jis", "chemical_jis", "mt_jis", "microstructure_jis" ]
+        }
+      }
+    },
+    "Q235B": {
+      "system": "GB",
+      "standard": "GB/T 700",
+      "category": "Carbon structural steel",
+      "applications": {
+        "building_frames_light": {
+          "description": "Columns and beams in low-rise buildings and light structures.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "secondary_beams_purlins": {
+          "description": "Secondary beams, purlins, and roof members.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "industrial_platforms_walkways": {
+          "description": "Platforms and walkways in plants and warehouses.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "staircases_handrails": {
+          "description": "Stair stringers, handrails, and guardrails.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "small_bridges_secondary": {
+          "description": "Secondary members and railings in small bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "agricultural_structures": {
+          "description": "Frames and sheds for agricultural use.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "storage_racks_shelving": {
+          "description": "Racking and shelving systems.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "light_crane_runways": {
+          "description": "Runway beams for light-duty cranes.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "sign_supports": {
+          "description": "Poles and frames for signs and billboards.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "fencing_barriers": {
+          "description": "Posts and rails for fences and barriers.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "general_welded_frames": {
+          "description": "General welded frames and trusses.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb", "weld_gb", "mt_gb" ]
+        },
+        "temporary_structures": {
+          "description": "Temporary supports and scaffolding frames.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "equipment_support_skids": {
+          "description": "Skids and frames for light equipment.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "small_towers_masts": {
+          "description": "Small towers and antenna masts.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "coated_structural_members": {
+          "description": "Painted or galvanized Q235B members for outdoor use.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb", "coating_thickness_gb" ]
+        },
+        "container_frames": {
+          "description": "Frames for containers and enclosures.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "light_bracing_members": {
+          "description": "Bracing in light frames and trusses.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "fabricated_brackets_gussets": {
+          "description": "Brackets and gusset plates.",
+          "required_tests": [ "tensile_gb", "bend_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "miscellaneous_fabrications": {
+          "description": "Ladders, platforms, and small fabrications.",
+          "required_tests": [ "tensile_gb", "hardness_gb" ]
+        },
+        "general_machinery_bases": {
+          "description": "Bases and frames for general machinery.",
+          "required_tests": [ "tensile_gb", "hardness_gb", "chemical_gb" ]
+        }
+      }
+    },
+
+    "Q345B": {
+      "system": "GB",
+      "standard": "GB/T 1591",
+      "category": "Low alloy high strength structural steel",
+      "applications": {
+        "building_frames_medium_heavy": {
+          "description": "Columns and beams in medium- to high-load buildings.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "bridge_main_members": {
+          "description": "Main girders and cross-beams in highway and railway bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb" ]
+        },
+        "welded_plate_girders": {
+          "description": "Fabricated plate girders for buildings and bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "weld_gb", "ut_gb", "mt_gb" ]
+        },
+        "crane_runways_medium_heavy": {
+          "description": "Runway beams for medium- to heavy-duty cranes.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "pipe_racks_industrial": {
+          "description": "Pipe racks in refineries and petrochemical plants.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "platforms_mezzanines_heavy": {
+          "description": "Platforms and mezzanines with higher loads.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb" ]
+        },
+        "portal_frames_industrial": {
+          "description": "Portal frames in industrial buildings.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "stiffened_panels_floors": {
+          "description": "Stiffened plates in floors and walls.",
+          "required_tests": [ "tensile_gb", "bend_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "offshore_topsides_general": {
+          "description": "Structural members in offshore topsides where Q345B is permitted.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb", "mt_gb", "microstructure_gb" ]
+        },
+        "tower_structures": {
+          "description": "Transmission and telecommunication towers.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "seismic_frames_moderate_high": {
+          "description": "Frames in moderate to high seismic regions.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "microstructure_gb" ]
+        },
+        "bridge_orthotropic_decks": {
+          "description": "Orthotropic deck plates and ribs.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb" ]
+        },
+        "industrial_crane_girders": {
+          "description": "Girders and supports for industrial cranes.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "long_span_roofs": {
+          "description": "Long-span roof trusses and girders.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "equipment_supports_heavy": {
+          "description": "Supports for heavy rotating equipment.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "coated_structural_members": {
+          "description": "Coated Q345B members in outdoor or corrosive environments.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "coating_thickness_gb" ]
+        },
+        "bridge_bearer_members": {
+          "description": "Bearers and diaphragms in bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb" ]
+        },
+        "non_building_heavy_structures": {
+          "description": "Heavy frames in industrial and infrastructure projects.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "fabricated_welded_nodes": {
+          "description": "Complex welded nodes in heavy structures.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "weld_gb", "ut_gb", "mt_gb", "microstructure_gb" ]
+        }
+      }
+    },
+
+    "Q460": {
+      "system": "GB",
+      "standard": "GB/T 1591",
+      "category": "High strength structural steel",
+      "applications": {
+        "high_rise_columns": {
+          "description": "Columns in high-rise buildings to reduce section sizes.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb" ]
+        },
+        "long_span_girders_high_strength": {
+          "description": "Long-span girders in buildings and bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb", "mt_gb" ]
+        },
+        "heavy_crane_structures": {
+          "description": "Heavy crane supports and booms.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "offshore_structures_high_strength": {
+          "description": "High-strength members in offshore platforms.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb", "mt_gb", "microstructure_gb" ]
+        },
+        "bridge_main_members_high_strength": {
+          "description": "Main girders and box girders in long-span bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb", "mt_gb" ]
+        },
+        "seismic_structures_high_demand": {
+          "description": "High-strength members in seismic-resistant frames.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "microstructure_gb" ]
+        },
+        "tower_structures_high_strength": {
+          "description": "Tall towers and masts with weight constraints.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "industrial_frames_high_strength": {
+          "description": "High-strength frames in heavy industrial plants.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "plate_girders_high_strength": {
+          "description": "High-strength plate girders for heavily loaded structures.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb", "mt_gb" ]
+        },
+        "bridge_orthotropic_decks_high_strength": {
+          "description": "Orthotropic decks and ribs in high-demand bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "ut_gb" ]
+        },
+        "equipment_supports_very_heavy": {
+          "description": "Supports for very heavy or dynamic equipment.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "pipe_racks_high_strength": {
+          "description": "Pipe racks with high load demands.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb" ]
+        },
+        "long_span_roofs_high_strength": {
+          "description": "Long-span roofs and trusses with weight reduction.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "portal_frames_high_strength": {
+          "description": "High-strength portal frames in industrial buildings.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "stiffened_panels_high_load": {
+          "description": "Stiffened panels in high-load floors and decks.",
+          "required_tests": [ "tensile_gb", "bend_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "coated_structural_high_strength": {
+          "description": "Coated Q460 members in aggressive environments.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "coating_thickness_gb" ]
+        },
+        "welded_nodes_high_strength": {
+          "description": "Complex welded nodes in high-strength frames and bridges.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "weld_gb", "ut_gb", "mt_gb", "microstructure_gb" ]
+        },
+        "non_building_high_strength_structures": {
+          "description": "High-strength non-building structures such as gantries and large frames.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb" ]
+        },
+        "mobile_equipment_structures": {
+          "description": "Booms and chassis of mobile equipment and cranes.",
+          "required_tests": [ "tensile_gb", "impact_gb", "hardness_gb", "chemical_gb", "mt_gb", "microstructure_gb" ]
+        }
+      }
+    },
+
+    "St3sp": {
+      "system": "GOST",
+      "standard": "GOST 380",
+      "category": "Ordinary quality carbon structural steel (killed, calm steel)",
+      "applications": {
+        "building_frames_general": {
+          "description": "Columns and beams in low- to medium-rise buildings.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "secondary_beams_purlins": {
+          "description": "Secondary beams and purlins.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "industrial_platforms_walkways": {
+          "description": "Platforms and walkways in industrial facilities.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "staircases_handrails": {
+          "description": "Stair and handrail members.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "small_bridges_secondary": {
+          "description": "Secondary members in small bridges.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "agricultural_structures": {
+          "description": "Frames and sheds for agricultural use.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "storage_racks_shelving": {
+          "description": "Racking and shelving.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "light_crane_runways": {
+          "description": "Runway beams for light cranes.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost", "mt_gost" ]
+        },
+        "sign_supports": {
+          "description": "Poles and frames for signs.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "fencing_barriers": {
+          "description": "Fence posts and barriers.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "general_welded_frames": {
+          "description": "General welded frames and trusses.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost", "weld_gost", "mt_gost" ]
+        },
+        "temporary_structures": {
+          "description": "Temporary supports and scaffolding.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "equipment_support_skids": {
+          "description": "Skids and frames for light equipment.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "small_towers_masts": {
+          "description": "Small towers and masts.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "coated_structural_members": {
+          "description": "Coated St3sp members for outdoor use.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost", "coating_thickness_gost" ]
+        },
+        "container_frames": {
+          "description": "Frames for containers and enclosures.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "light_bracing_members": {
+          "description": "Bracing in light frames.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "fabricated_brackets_gussets": {
+          "description": "Brackets and gusset plates.",
+          "required_tests": [ "tensile_gost", "bend_gost", "hardness_gost", "chemical_gost", "mt_gost" ]
+        },
+        "miscellaneous_fabrications": {
+          "description": "Ladders, platforms, and small fabrications.",
+          "required_tests": [ "tensile_gost", "hardness_gost" ]
+        },
+        "general_machinery_bases": {
+          "description": "Bases and frames for general machinery.",
+          "required_tests": [ "tensile_gost", "hardness_gost", "chemical_gost" ]
+        }
+      }
+    },
+
+    "09G2S": {
+      "system": "GOST",
+      "standard": "GOST 19281",
+      "category": "Low alloy high strength structural steel",
+      "applications": {
+        "building_frames_medium_heavy": {
+          "description": "Frames in medium- to heavy-duty buildings.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "bridge_main_members": {
+          "description": "Main girders and cross-beams in bridges.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "ut_gost" ]
+        },
+        "welded_plate_girders": {
+          "description": "Fabricated plate girders.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "weld_gost", "ut_gost", "mt_gost" ]
+        },
+        "crane_runways_medium_heavy": {
+          "description": "Runway beams for medium- to heavy-duty cranes.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "mt_gost" ]
+        },
+        "pipe_racks_industrial": {
+          "description": "Pipe racks in industrial plants.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "platforms_mezzanines_heavy": {
+          "description": "Heavy platforms and mezzanines.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost" ]
+        },
+        "portal_frames_industrial": {
+          "description": "Portal frames in industrial buildings.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "stiffened_panels_floors": {
+          "description": "Stiffened plates in floors and walls.",
+          "required_tests": [ "tensile_gost", "bend_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "offshore_topsides_general": {
+          "description": "Structural members in offshore topsides where 09G2S is used.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "ut_gost", "mt_gost", "microstructure_gost" ]
+        },
+        "tower_structures": {
+          "description": "Transmission and telecommunication towers.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "mt_gost" ]
+        },
+        "seismic_frames_moderate_high": {
+          "description": "Frames in seismic regions.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "microstructure_gost" ]
+        },
+        "bridge_orthotropic_decks": {
+          "description": "Orthotropic deck plates and ribs.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "ut_gost" ]
+        },
+        "industrial_crane_girders": {
+          "description": "Girders and supports for industrial cranes.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "mt_gost" ]
+        },
+        "long_span_roofs": {
+          "description": "Long-span roof trusses and girders.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "equipment_supports_heavy": {
+          "description": "Supports for heavy rotating equipment.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "mt_gost" ]
+        },
+        "coated_structural_members": {
+          "description": "Coated 09G2S members in outdoor or corrosive environments.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "coating_thickness_gost" ]
+        },
+        "bridge_bearer_members": {
+          "description": "Bearers and diaphragms in bridges.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "ut_gost" ]
+        },
+        "non_building_heavy_structures": {
+          "description": "Heavy frames in industrial and infrastructure projects.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost" ]
+        },
+        "fabricated_welded_nodes": {
+          "description": "Complex welded nodes in heavy structures.",
+          "required_tests": [ "tensile_gost", "impact_gost", "hardness_gost", "chemical_gost", "weld_gost", "ut_gost", "mt_gost", "microstructure_gost" ]
+        }
+      }
+    },
+    "250": {
+      "system": "AS/NZS",
+      "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
+      "category": "Hot-rolled structural steel",
+      "applications": {
+        "building_frames_light": {
+          "description": "Columns and beams in low-rise buildings and light structures.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "secondary_beams_purlins": {
+          "description": "Secondary beams, purlins and roof members.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "industrial_platforms_walkways": {
+          "description": "Platforms and walkways in plants and warehouses.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "staircases_handrails": {
+          "description": "Stair stringers, handrails and guardrails.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "small_bridges_secondary": {
+          "description": "Secondary members and railings in small bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "agricultural_structures": {
+          "description": "Frames and sheds for agricultural use.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "storage_racks_shelving": {
+          "description": "Racking and shelving systems.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "light_crane_runways": {
+          "description": "Runway beams for light-duty cranes.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "sign_supports": {
+          "description": "Poles and frames for signs and billboards.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "fencing_barriers": {
+          "description": "Fence posts and barriers.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "general_welded_frames": {
+          "description": "General welded frames and trusses.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "temporary_structures": {
+          "description": "Temporary supports and scaffolding.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "equipment_support_skids": {
+          "description": "Skids and frames for light equipment.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "small_towers_masts": {
+          "description": "Small towers and masts.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "coated_structural_members": {
+          "description": "Coated 250-grade members for outdoor use.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "coating_thickness_asnz" ]
+        },
+        "container_frames": {
+          "description": "Frames for containers and enclosures.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "light_bracing_members": {
+          "description": "Bracing in light frames.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "fabricated_brackets_gussets": {
+          "description": "Brackets and gusset plates.",
+          "required_tests": [ "tensile_asnz", "bend_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "miscellaneous_fabrications": {
+          "description": "Ladders, platforms and small fabrications.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "general_machinery_bases": {
+          "description": "Bases and frames for general machinery.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        }
+      }
+    },
+
+    "300": {
+      "system": "AS/NZS",
+      "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
+      "category": "Hot-rolled structural steel",
+      "applications": {
+        "building_frames_medium": {
+          "description": "Columns and beams in medium-rise buildings.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "bridge_secondary_members": {
+          "description": "Secondary members in road and rail bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "chemical_asnz" ]
+        },
+        "industrial_frames": {
+          "description": "Frames in industrial buildings and warehouses.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "crane_supports_medium": {
+          "description": "Supports for medium-duty overhead cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "mt_asnz" ]
+        },
+        "pipe_racks": {
+          "description": "Pipe racks in process plants.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "platforms_mezzanines": {
+          "description": "Platforms and mezzanines with moderate loads.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "portal_frames": {
+          "description": "Portal frames for warehouses and sheds.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "stiffened_panels": {
+          "description": "Stiffened plates in floors and walls.",
+          "required_tests": [ "tensile_asnz", "bend_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "coated_structural_members": {
+          "description": "Coated 300-grade members in outdoor environments.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "coating_thickness_asnz" ]
+        },
+        "tower_structures": {
+          "description": "Towers and masts with moderate loads.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "equipment_supports": {
+          "description": "Supports for rotating equipment and machinery.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "bridge_bearers": {
+          "description": "Bearers and cross-girders in bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "industrial_crane_girders": {
+          "description": "Girders for industrial cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "mt_asnz" ]
+        },
+        "long_span_roofs": {
+          "description": "Long-span roof trusses and girders.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "fabricated_nodes": {
+          "description": "Fabricated nodes in structural frames.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "weld_asnz" ]
+        },
+        "seismic_frames": {
+          "description": "Frames in moderate seismic regions.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "industrial_supports": {
+          "description": "Supports in industrial plants and mills.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "fabricated_brackets": {
+          "description": "Brackets and stiffeners for structural connections.",
+          "required_tests": [ "tensile_asnz", "bend_asnz", "hardness_asnz" ]
+        },
+        "general_structural": {
+          "description": "General structural members for buildings and infrastructure.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "fatigue_sensitive_members": {
+          "description": "Members in locations with moderate fatigue demand.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        }
+      }
+    },
+
+    "350": {
+      "system": "AS/NZS",
+      "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
+      "category": "Hot-rolled structural steel",
+      "applications": {
+        "building_frames_heavy": {
+          "description": "Heavy columns and beams in multi-storey buildings.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "bridge_main_girders": {
+          "description": "Main girders in road and rail bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "chemical_asnz" ]
+        },
+        "crane_supports_heavy": {
+          "description": "Supports for heavy-duty overhead cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "mt_asnz" ]
+        },
+        "industrial_frames_heavy": {
+          "description": "Heavy frames in industrial plants and mills.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "plate_girders_heavy": {
+          "description": "Fabricated plate girders for high loads.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "tower_structures_heavy": {
+          "description": "Tall towers and communication masts.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "seismic_frames_high": {
+          "description": "Frames in high seismic regions.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "bend_asnz" ]
+        },
+        "offshore_structures": {
+          "description": "Offshore topside structures and modules.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "mt_asnz", "microstructure_asnz", "chemical_asnz" ]
+        },
+        "bridge_orthotropic_decks": {
+          "description": "Orthotropic deck plates in bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "industrial_crane_girders": {
+          "description": "Girders for industrial cranes and gantries.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "mt_asnz" ]
+        },
+        "long_span_roofs_heavy": {
+          "description": "Long-span roof trusses and girders with high loads.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "pipe_racks_heavy": {
+          "description": "Pipe racks with high loads and dynamic effects.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "equipment_supports_heavy": {
+          "description": "Supports for heavy rotating equipment.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "mt_asnz" ]
+        },
+        "coated_structural_members": {
+          "description": "Coated 350-grade members for corrosive environments.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "coating_thickness_asnz" ]
+        },
+        "fabricated_nodes_heavy": {
+          "description": "Complex welded nodes in heavy structures.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "weld_asnz", "ut_asnz", "mt_asnz", "microstructure_asnz" ]
+        },
+        "bridge_bearers": {
+          "description": "Bearers and cross-girders in bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "industrial_supports_heavy": {
+          "description": "Heavy supports and frames in process plants.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "fabricated_brackets_heavy": {
+          "description": "Heavy brackets, stiffeners and gusset plates.",
+          "required_tests": [ "tensile_asnz", "bend_asnz", "hardness_asnz", "mt_asnz" ]
+        },
+        "general_structural_heavy": {
+          "description": "General heavy structural members for buildings and infrastructure.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "fatigue_critical_members": {
+          "description": "Members in fatigue-critical locations such as crane runways and bridge details.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "mt_asnz", "microstructure_asnz" ]
+        }
+      }
+    },
+
+    "400": {
+      "system": "AS/NZS",
+      "standard": [ "AS/NZS 3678" ],
+      "category": "Hot-rolled structural steel (higher strength)",
+      "applications": {
+        "long_span_bridge_girders": {
+          "description": "Main girders in long-span bridges where weight reduction is critical.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "chemical_asnz" ]
+        },
+        "heavy_crane_runways": {
+          "description": "Runway beams for heavy-duty cranes with high fatigue demand.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "mt_asnz", "microstructure_asnz" ]
+        },
+        "offshore_jackets": {
+          "description": "Jacket and substructure elements in offshore platforms.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz", "chemical_asnz" ]
+        },
+        "high_rise_columns": {
+          "description": "Columns in high-rise buildings to reduce section sizes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "heavy_plate_girders": {
+          "description": "Heavy plate girders in bridges and industrial structures.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "seismic_moment_frames": {
+          "description": "Moment-resisting frames in high seismic regions.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "bend_asnz", "weld_asnz" ]
+        },
+        "industrial_mill_structures": {
+          "description": "Structures in steel mills and heavy industrial plants.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "bridge_cross_girders": {
+          "description": "Cross-girders and diaphragms in major bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "heavy_towers_masts": {
+          "description": "Tall towers and masts with high wind loads.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "large_crane_structures": {
+          "description": "Main structures of large gantry and container cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "mt_asnz" ]
+        },
+        "shiploader_unloader_structures": {
+          "description": "Structural frames for shiploaders and unloaders.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "heavy_pipe_racks": {
+          "description": "Pipe racks carrying large diameter or high-temperature lines.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "bridge_orthotropic_decks_heavy": {
+          "description": "Orthotropic decks in heavily trafficked bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "fatigue_detail_members": {
+          "description": "Members at fatigue-critical details in bridges and cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        },
+        "coated_heavy_members": {
+          "description": "Coated 400-grade members in marine or industrial atmospheres.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "coating_thickness_asnz" ]
+        },
+        "heavy_bracing_members": {
+          "description": "Bracing members in large frames and towers.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "fabricated_heavy_nodes": {
+          "description": "Complex nodes in heavy trusses and space frames.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "weld_asnz", "ut_asnz", "mt_asnz" ]
+        },
+        "industrial_supports_critical": {
+          "description": "Supports for critical equipment in process plants.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "heavy_machinery_bases": {
+          "description": "Bases for heavy rotating or vibrating machinery.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "ut_asnz" ]
+        }
+      }
+    },
+
+    "450": {
+      "system": "AS/NZS",
+      "standard": [ "AS/NZS 3678" ],
+      "category": "Hot-rolled structural steel (high strength)",
+      "applications": {
+        "weight_critical_bridges": {
+          "description": "Bridges where weight reduction is essential for span or transport limits.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "chemical_asnz" ]
+        },
+        "mobile_crane_structures": {
+          "description": "Booms and structures of mobile cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        },
+        "offshore_high_strength_members": {
+          "description": "High-strength members in offshore platforms.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz", "chemical_asnz" ]
+        },
+        "high_rise_core_walls": {
+          "description": "Steel plate core walls in high-rise buildings.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "heavy_plate_girders_optimized": {
+          "description": "Optimised plate girders with reduced self-weight.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "seismic_links_and_fuses": {
+          "description": "Energy-dissipating links and fuses in seismic systems.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "bend_asnz", "microstructure_asnz" ]
+        },
+        "industrial_crane_beams_high": {
+          "description": "Beams for high-capacity industrial cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "mt_asnz" ]
+        },
+        "bridge_arch_ribs": {
+          "description": "Arch ribs in steel arch bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "large_tower_spines": {
+          "description": "Main spines in tall communication or observation towers.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "shiploader_booms": {
+          "description": "Booms and arms of shiploaders and unloaders.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "fatigue_critical_bridge_members": {
+          "description": "Members in fatigue-critical bridge details.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        },
+        "coated_high_strength_members": {
+          "description": "Coated 450-grade members in aggressive environments.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "coating_thickness_asnz" ]
+        },
+        "heavy_bracing_high_strength": {
+          "description": "High-strength bracing in large frames.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "fabricated_nodes_high_strength": {
+          "description": "Nodes in high-strength trusses and space frames.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "weld_asnz", "ut_asnz", "mt_asnz" ]
+        },
+        "industrial_supports_high_strength": {
+          "description": "Supports where deflection control and strength are critical.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz" ]
+        },
+        "crane_outrigger_frames": {
+          "description": "Frames for crane outriggers and stabilisers.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "heavy_vehicle_chassis": {
+          "description": "Chassis components for heavy vehicles and trailers.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "lifting_beams_spreaders": {
+          "description": "High-strength lifting beams and spreader bars.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "machinery_support_frames": {
+          "description": "Support frames for large machinery with dynamic loads.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "ut_asnz" ]
+        }
+      }
+    },
+
+    "500": {
+      "system": "AS/NZS",
+      "standard": [ "AS/NZS 3678" ],
+      "category": "Hot-rolled structural steel (very high strength)",
+      "applications": {
+        "ultra_weight_critical_structures": {
+          "description": "Structures where minimum self-weight is essential, such as long-span movable bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz", "chemical_asnz" ]
+        },
+        "large_mobile_crane_booms": {
+          "description": "Booms of very large mobile cranes.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        },
+        "offshore_high_strength_critical": {
+          "description": "Critical high-strength members in offshore structures.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz", "chemical_asnz" ]
+        },
+        "bridge_cable_anchor_boxes": {
+          "description": "Anchor boxes and high-stress details in cable-supported bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "seismic_link_beams": {
+          "description": "Link beams in eccentrically braced frames.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "bend_asnz", "microstructure_asnz" ]
+        },
+        "heavy_lifting_frames": {
+          "description": "Frames for heavy lifting systems and jacking towers.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "shiploader_critical_members": {
+          "description": "Critical high-stress members in shiploaders and unloaders.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "fatigue_critical_crane_members": {
+          "description": "Members in fatigue-critical crane details.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        },
+        "coated_500_members": {
+          "description": "Coated 500-grade members in severe marine or industrial environments.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "chemical_asnz", "coating_thickness_asnz" ]
+        },
+        "high_strength_bracing": {
+          "description": "High-strength bracing in tall or heavily loaded structures.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz" ]
+        },
+        "fabricated_critical_nodes": {
+          "description": "Critical nodes in high-strength trusses and space frames.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "weld_asnz", "ut_asnz", "mt_asnz", "microstructure_asnz" ]
+        },
+        "industrial_supports_extreme": {
+          "description": "Supports for extremely heavy or dynamic equipment.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "ut_asnz", "chemical_asnz" ]
+        },
+        "bridge_hanger_brackets": {
+          "description": "Brackets for hangers and stay cables in bridges.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "heavy_vehicle_suspension_members": {
+          "description": "High-strength suspension and frame members in heavy vehicles.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz" ]
+        },
+        "lifting_lugs_critical": {
+          "description": "Critical lifting lugs and attachments.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "weld_asnz" ]
+        },
+        "jack_up_leg_chords": {
+          "description": "Chord members in jack-up rig legs.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "ut_asnz", "microstructure_asnz" ]
+        },
+        "seismic_braces_high_strength": {
+          "description": "High-strength braces in seismic systems.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "bend_asnz" ]
+        },
+        "machinery_supports_extreme": {
+          "description": "Supports for machinery with extreme dynamic loads.",
+          "required_tests": [ "tensile_asnz", "hardness_asnz", "ut_asnz" ]
+        },
+        "special_structural_components": {
+          "description": "Special components where very high strength is required with controlled toughness.",
+          "required_tests": [ "tensile_asnz", "impact_asnz", "hardness_asnz", "microstructure_asnz", "chemical_asnz" ]
+        }
+      }
+    },
+    "G250": {
+      "system": "AS 1397",
+      "standard": [ "AS 1397" ],
+      "category": "Cold-formed metallic-coated structural sheet steel",
+      "applications": {
+        "roofing_sheets_light": {
+          "description": "Light-gauge roofing sheets for residential and light commercial buildings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397" ]
+        },
+        "wall_cladding_light": {
+          "description": "Wall cladding panels in non-cyclonic regions.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "garage_doors_panels": {
+          "description": "Panels for residential garage doors.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "light_purlins_channels": {
+          "description": "Cold-formed purlins and channels for light roofs.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "fencing_panels": {
+          "description": "Metallic-coated fencing panels and infill sheets.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "gutter_downpipe_components": {
+          "description": "Gutters, downpipes and accessories.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "light_structural_bracing": {
+          "description": "Sheet bracing in light timber or steel frames.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "ceiling_battens": {
+          "description": "Cold-formed battens for ceilings and linings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "formwork_sheeting": {
+          "description": "Permanent metal formwork for concrete slabs.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "light_equipment_enclosures": {
+          "description": "Enclosures and cabinets for light equipment.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "partition_wall_studs": {
+          "description": "Cold-formed studs for non-loadbearing partitions.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "soffit_and_fascia_panels": {
+          "description": "Soffit and fascia cladding elements.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "agricultural_sheds_cladding": {
+          "description": "Cladding for agricultural sheds in mild environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "garage_shed_doors": {
+          "description": "Sheet doors for garages and small sheds.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "light_duty_trailer_panels": {
+          "description": "Panels for light-duty trailers and boxes.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "ducting_and_ventilation": {
+          "description": "Sheet metal ducting and ventilation components.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "interior_linings_metal": {
+          "description": "Interior metal linings and decorative panels.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "perforated_metal_panels": {
+          "description": "Perforated panels for acoustic or architectural use.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "light_cold_formed_frames": {
+          "description": "Light-gauge cold-formed framing members for non-critical structures.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "coated_structural_panels": {
+          "description": "Coated G250 panels in mildly corrosive environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397", "corrosion_as1397" ]
+        }
+      }
+    },
+
+    "G300": {
+      "system": "AS 1397",
+      "standard": [ "AS 1397" ],
+      "category": "Cold-formed metallic-coated structural sheet steel",
+      "applications": {
+        "roofing_sheets_cyclonic": {
+          "description": "Roofing sheets in cyclonic or high-wind regions.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397" ]
+        },
+        "wall_cladding_cyclonic": {
+          "description": "Wall cladding in higher wind load areas.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "purlins_and_girts": {
+          "description": "Cold-formed purlins and girts for industrial buildings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "portal_frame_rafters": {
+          "description": "Light portal frame rafters in sheds and warehouses.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "structural_bracing_straps": {
+          "description": "Straps and bracing members in light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "decking_for_composite_slabs": {
+          "description": "Metal decking for composite concrete slabs.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "agricultural_building_cladding": {
+          "description": "Cladding for agricultural buildings in moderate environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "garage_and_shed_cladding": {
+          "description": "Cladding for garages and small industrial sheds.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "cold_formed_beams": {
+          "description": "Cold-formed beams in light structures.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "light_bridge_parapets": {
+          "description": "Sheet components in bridge parapets and barriers.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "fencing_high_strength": {
+          "description": "Higher-strength fencing panels and posts.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "door_and_window_frames": {
+          "description": "Metal frames for doors and windows.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "light_truss_chords": {
+          "description": "Chords in light-gauge roof trusses.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "pergola_and_carport_members": {
+          "description": "Members in pergolas and carports.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "light_trailer_panels": {
+          "description": "Panels and sections in light trailers.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "ducting_structural": {
+          "description": "Ducting where some structural capacity is required.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "coated_structural_panels_g300": {
+          "description": "Coated G300 panels in moderate to severe environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397", "corrosion_as1397" ]
+        },
+        "cold_formed_studs_loadbearing": {
+          "description": "Loadbearing studs in light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "structural_lining_panels": {
+          "description": "Lining panels with structural contribution.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        }
+      }
+    },
+
+    "G350": {
+      "system": "AS 1397",
+      "standard": [ "AS 1397" ],
+      "category": "Cold-formed metallic-coated structural sheet steel (higher strength)",
+      "applications": {
+        "high_wind_roofing": {
+          "description": "Roofing in high wind and cyclonic regions with higher strength demand.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397" ]
+        },
+        "industrial_cladding_high_strength": {
+          "description": "Cladding for industrial buildings with higher span or load.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "heavy_purlins_and_girts": {
+          "description": "Heavier purlins and girts for large spans.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "portal_frame_rafters_heavy": {
+          "description": "Rafters in larger portal frames.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "structural_bracing_high_strength": {
+          "description": "High-strength bracing in light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "composite_decking_high_load": {
+          "description": "Decking for composite slabs with higher loads.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "agricultural_cladding_high_strength": {
+          "description": "Cladding for large agricultural buildings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "industrial_shed_cladding": {
+          "description": "Cladding for large industrial sheds and warehouses.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "cold_formed_beams_heavier": {
+          "description": "Heavier cold-formed beams and channels.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "bridge_noise_barriers": {
+          "description": "Panels in bridge noise barriers.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "security_fencing_panels": {
+          "description": "Panels for security and high-strength fencing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "door_frames_heavy": {
+          "description": "Door frames in industrial and commercial buildings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "truss_chords_high_strength": {
+          "description": "Chords in high-strength light-gauge trusses.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "carport_and_canopy_members": {
+          "description": "Members in carports and canopies with higher spans.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "trailer_and_vehicle_panels": {
+          "description": "Panels in trailers and light vehicles requiring higher strength.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "ducting_structural_high": {
+          "description": "Ducting with higher structural requirements.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "coated_structural_panels_g350": {
+          "description": "Coated G350 panels in severe environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397", "corrosion_as1397" ]
+        },
+        "loadbearing_studs_high_strength": {
+          "description": "Loadbearing studs in multi-storey light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "structural_lining_panels_high": {
+          "description": "Lining panels with significant structural contribution.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        }
+      }
+    },
+
+    "G450": {
+      "system": "AS 1397",
+      "standard": [ "AS 1397" ],
+      "category": "Cold-formed metallic-coated structural sheet steel (high strength)",
+      "applications": {
+        "high_strength_purlins": {
+          "description": "High-strength purlins and girts for long spans.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "portal_frames_high_strength": {
+          "description": "Portal frame members in large industrial buildings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "cyclonic_region_cladding": {
+          "description": "Cladding in severe cyclonic regions.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "bridge_parapet_panels_high": {
+          "description": "High-strength panels in bridge parapets.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "structural_bracing_very_high": {
+          "description": "Very high-strength bracing in light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "composite_decking_very_high": {
+          "description": "Decking for heavily loaded composite slabs.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "industrial_cladding_very_high": {
+          "description": "Cladding for large industrial and mining facilities.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "agricultural_structures_high": {
+          "description": "High-strength cladding and members in agricultural buildings.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "vehicle_body_panels_high": {
+          "description": "High-strength panels in vehicle bodies and trailers.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "security_doors_and_grilles": {
+          "description": "High-strength doors and security grilles.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "loadbearing_studs_very_high": {
+          "description": "Loadbearing studs in heavily loaded light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "structural_lining_panels_very_high": {
+          "description": "Lining panels with high structural demand.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "coated_structural_panels_g450": {
+          "description": "Coated G450 panels in very severe environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397", "corrosion_as1397" ]
+        },
+        "bridge_noise_barriers_high": {
+          "description": "High-strength noise barrier panels.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "heavy_truss_chords": {
+          "description": "Chords in heavy light-gauge trusses.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "industrial_doors_high_strength": {
+          "description": "High-strength industrial doors and shutters.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "equipment_enclosures_high": {
+          "description": "Enclosures for equipment in harsh environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "structural_fascia_and_soffits": {
+          "description": "Fascia and soffit elements with structural role.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "cold_formed_beams_very_high": {
+          "description": "Very high-strength cold-formed beams and channels.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        }
+      }
+    },
+
+    "G550": {
+      "system": "AS 1397",
+      "standard": [ "AS 1397" ],
+      "category": "Cold-formed metallic-coated structural sheet steel (ultra high strength)",
+      "applications": {
+        "ultra_high_strength_purlins": {
+          "description": "Ultra high-strength purlins and girts for maximum spans.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "lightweight_roofing_extreme": {
+          "description": "Lightweight roofing where maximum strength-to-weight is required.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397" ]
+        },
+        "vehicle_and_trailer_frames": {
+          "description": "Frames and members in lightweight vehicles and trailers.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "structural_bracing_ultra_high": {
+          "description": "Ultra high-strength bracing in light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "industrial_cladding_ultra_high": {
+          "description": "Cladding where very high strength and reduced thickness are required.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "composite_decking_ultra_high": {
+          "description": "Decking for highly loaded composite slabs with minimal thickness.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "security_panels_ultra_high": {
+          "description": "Panels for high-security applications.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "loadbearing_studs_ultra_high": {
+          "description": "Loadbearing studs in highly loaded light steel framing.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "chemical_as1397" ]
+        },
+        "bridge_noise_barriers_ultra": {
+          "description": "Ultra high-strength noise barrier panels.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397" ]
+        },
+        "lightweight_structural_panels": {
+          "description": "Panels where very high strength and low weight are required.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "coated_structural_panels_g550": {
+          "description": "Coated G550 panels in extremely severe environments.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "coating_thickness_as1397", "corrosion_as1397" ]
+        },
+        "truss_chords_ultra_high": {
+          "description": "Chords in ultra high-strength light-gauge trusses.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "vehicle_body_panels_ultra": {
+          "description": "Ultra high-strength body panels in vehicles.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "industrial_doors_ultra": {
+          "description": "Ultra high-strength industrial doors and shutters.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "equipment_enclosures_ultra": {
+          "description": "Enclosures for equipment where high strength and thin sections are needed.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "coating_mass_as1397", "corrosion_as1397" ]
+        },
+        "structural_fascia_ultra": {
+          "description": "Fascia elements with ultra high-strength requirements.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "cold_formed_beams_ultra": {
+          "description": "Ultra high-strength cold-formed beams and channels.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397" ]
+        },
+        "lightweight_support_frames": {
+          "description": "Support frames where minimal weight and high strength are critical.",
+          "required_tests": [ "tensile_as1397", "bend_as1397" ]
+        },
+        "special_structural_components_ultra": {
+          "description": "Special components requiring very high strength with controlled ductility.",
+          "required_tests": [ "tensile_as1397", "bend_as1397", "hardness_as1397", "chemical_as1397" ]
+        }
+      }
+    }
+  }
+}
