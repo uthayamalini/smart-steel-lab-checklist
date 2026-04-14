@@ -5,8 +5,9 @@ import { test_GradeStandards } from "../data/tests_grades";
 
 
 export default function Home() {
-    const gradeList = Object.keys(test_GradeStandards.grades);
-    const [grade, setGrade] = useState(gradeList[0]);
+    type GradeKey = keyof typeof test_GradeStandards.grades;
+    const gradeList = Object.keys(test_GradeStandards.grades) as GradeKey[];
+    const [grade, setGrade] = useState<GradeKey>(gradeList[0] as GradeKey);
     const applicationList = Object.keys(
         test_GradeStandards.grades[grade].applications
     );
@@ -74,11 +75,11 @@ export default function Home() {
                             value={grade}
                             onChange={(e) => {
                                 const newGrade = e.target.value;
-                                setGrade(newGrade);
+                                setGrade(newGrade as GradeKey);
 
                                 // Reset application when grade changes
                                 const newApps = Object.keys(
-                                    test_GradeStandards.grades[newGrade].applications
+                                    test_GradeStandards.grades[newGrade as GradeKey].applications
                                 );
                                 setApplication(newApps[0]);
                             }}
