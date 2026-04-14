@@ -16,7 +16,7 @@ export async function runAI({
     system,
     prompt
 }: {
-    model: "llama" | "claude";
+    model: string;
     system: string;
     prompt: string;
 }) {
