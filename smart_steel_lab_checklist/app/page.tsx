@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { test_GradeStandards } from "../data/tests_grades";
 import { Grades } from "../data/type";
-
+import { logUsage } from "@/lib/supabaseClient";
 
 export default function Home() {
     const gradeList = Object.keys(test_GradeStandards.grades) as (keyof Grades)[];
@@ -76,6 +76,7 @@ export default function Home() {
                             onChange={(e) => {
                                 const newGrade = e.target.value;
                                 setGrade(newGrade as keyof Grades);
+                                logUsage(`grade:${newGrade}`);
 
                                 // Reset application when grade changes
                                 const newApps = Object.keys(
