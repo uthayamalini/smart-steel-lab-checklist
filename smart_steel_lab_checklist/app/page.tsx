@@ -25,7 +25,7 @@ export default function Home() {
             setLoadingPlan(true);
             setTestPlan(null);
 
-            const res = await fetch("/api/api-test-plan", {
+            const res = await fetch("/api/apitestplan", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ grade: grade, application: application })
@@ -46,7 +46,7 @@ export default function Home() {
         setLoadingAI(true);
         setAiAnswer("");
 
-        const res = await fetch("/api/api-ai-prompt", {
+        const res = await fetch("/api/apiaiprompt", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
