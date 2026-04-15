@@ -31,7 +31,11 @@ export default function Home() {
                 body: JSON.stringify({ grade: grade, application: application })
             });
 
-            const data = await res.json();
+            //const data = await res.json();
+            const text = await res.text();
+            console.log(text); // 👈 see actual response
+
+            const data = JSON.parse(text); // only after confirming
             setTestPlan(data);
             setLoadingPlan(false);
         }
