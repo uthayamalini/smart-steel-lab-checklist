@@ -12,9 +12,10 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json(plan);
     } catch (err: any) {
-        return new NextResponse(
-            JSON.stringify({ error: err.message || "Internal error" }),
-            { status: 400 }
+        // console.error("🔥 AI ROUTE ERROR:", err);   // <‑‑ ADD THIS
+        return NextResponse.json(
+            { error: "Internal server error" },
+            { status: 500 }
         );
     }
 }

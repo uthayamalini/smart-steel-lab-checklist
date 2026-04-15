@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
     } catch (err: any) {
        // console.error("🔥 AI ROUTE ERROR:", err);   // <‑‑ ADD THIS
         return NextResponse.json(
-            { error: err.message },
+            { error: "Internal server error" },
             { status: 500 }
         );
     }
