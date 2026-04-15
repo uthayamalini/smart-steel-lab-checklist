@@ -113,17 +113,47 @@ export default function Home() {
                     {loadingPlan && <p className="text-sm text-slate-500">Loading test plan…</p>}
 
                     {!loadingPlan && testPlan && (
-                        <ul className="space-y-2 text-sm">
+                        <ul className="space-y-4 text-sm">
                             {testPlan.tests.map((t: any) => (
-                                <li key={t.id} className="border-b pb-2">
-                                    <span className="font-medium">{t.name}</span>
+                                <li key={t.id} className="border-b pb-3">
+                                    <div className="font-semibold text-base">{t.name}</div>
+
                                     <div className="text-xs text-slate-500">
-                                        Standard: {t.standard?.join(", ")}
+                                        <strong>Standard:</strong> {t.standard?.join(", ")}
                                     </div>
+
+                                    <div className="text-xs text-slate-500 mt-1">
+                                        <strong>Purpose:</strong> {t.purpose}
+                                    </div>
+
+                                    {t.specimen && (
+                                        <div className="text-xs text-slate-500 mt-1">
+                                            <strong>Specimen:</strong> {t.specimen.type}
+                                            {t.specimen.prep && (
+                                                <div className="ml-4">
+                                                    {t.specimen.prep.map((p: string, i: number) => (
+                                                        <div key={i}>• {p}</div>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
+
+                                    {t.procedure_steps && (
+                                        <div className="text-xs text-slate-500 mt-1">
+                                            <strong>Procedure:</strong>
+                                            <div className="ml-4">
+                                                {t.procedure_steps.map((step: string, i: number) => (
+                                                    <div key={i}>• {step}</div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
                                 </li>
                             ))}
                         </ul>
                     )}
+
                 </div>
 
                 {/* AI Button */}

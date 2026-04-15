@@ -69,21 +69,35 @@
       "name": "Hardness Test (ASTM)",
       "standard": [ "ASTM E10", "ASTM E18" ],
       "purpose": "Verify material consistency and support strength correlation.",
-      "specimen": {},
-      "procedure_steps": [
-          "Prepare a clean, flat, and smooth surface on the specimen by grinding or machining.",
-          "For Brinell (ASTM E10): select appropriate ball diameter and test force based on material and thickness.",
-          "Apply the test force for the specified dwell time, then remove the force.",
-          "Measure indentation diameter in at least two perpendicular directions and calculate Brinell hardness.",
-          "For Rockwell (ASTM E18): select appropriate scale, apply minor load, then major load, and read hardness directly.",
-          "Record hardness values and compare with typical or specified ranges for the grade."
+      "specimen": {
+        "type": "Flat surface of the product",
+        "prep": [
+          "Surface must be clean, smooth, and free of scale or coatings",
+          "Grinding or machining allowed to achieve a flat surface",
+          "Minimum thickness must meet ASTM E10/E18 requirements for indentation depth"
         ]
       },
+      "procedure_steps": [
+        "Prepare a clean, flat, and smooth surface on the specimen by grinding or machining.",
+        "For Brinell (ASTM E10): select appropriate ball diameter and test force based on material and thickness.",
+        "Apply the test force for the specified dwell time, then remove the force.",
+        "Measure indentation diameter in at least two perpendicular directions and calculate Brinell hardness.",
+        "For Rockwell (ASTM E18): select appropriate scale, apply minor load, then major load, and read hardness directly.",
+        "Record hardness values and compare with typical or specified ranges for the grade."
+      ]
+    },
     "chemical_astm": {
       "name": "Chemical Composition (ASTM)",
       "standard": [ "ASTM E415", "ASTM A751" ],
       "purpose": "Determine chemical composition and verify compliance with grade limits.",
-      "specimen": {},
+      "specimen": {
+        "type": "Representative sample from heat, plate, or product",
+        "prep": [
+          "Remove rust, scale, and coatings by grinding or milling",
+          "Ensure clean metallic surface for spark OES",
+          "Sample must represent the heat or lot"
+        ]
+      },
       "procedure_steps": [
         "Select a representative sample from the heat, plate, or shape.",
         "Grind or mill the surface to remove scale, rust, and contamination.",
@@ -97,7 +111,15 @@
       "name": "Weld Procedure / Welder Qualification",
       "standard": [ "AWS D1.1", "ASTM A370" ],
       "purpose": "Qualify welding procedures and welders for structural steel.",
-      "specimen": {},
+      "specimen": {
+        "type": "Weld test coupon",
+        "prep": [
+          "Prepare coupon dimensions per AWS D1.1",
+          "Include root, face, and side bend specimens",
+          "Include tensile specimens if required",
+          "Section macroetch samples from weld cross‑section"
+        ]
+      },
       "procedure_steps": [
         "Prepare weld test coupons according to the WPS and AWS D1.1 requirements.",
         "Perform welding using specified process, consumables, preheat, and interpass temperatures.",
@@ -112,7 +134,14 @@
       "name": "Ultrasonic Testing (ASTM)",
       "standard": [ "ASTM A578", "ASTM E164" ],
       "purpose": "Detect internal discontinuities such as laminations and inclusions in plates and welds.",
-      "specimen": {},
+      "specimen": {
+        "type": "Full‑size plate or weld",
+        "prep": [
+          "Surface must be free of loose scale, heavy rust, or coatings",
+          "Grinding may be required for rough surfaces",
+          "Calibration blocks must match material and thickness"
+        ]
+      },
       "procedure_steps": [
         "Select appropriate UT technique, probes, and calibration blocks according to the standard and product specification.",
         "Calibrate the UT instrument using reference blocks with known reflectors.",
@@ -126,7 +155,14 @@
       "name": "Magnetic Particle Testing (ASTM)",
       "standard": [ "ASTM E709" ],
       "purpose": "Detect surface and near-surface cracks in ferromagnetic materials.",
-      "specimen": {},
+      "specimen": {
+        "type": "Actual ferromagnetic component or weld",
+        "prep": [
+          "Surface must be clean and dry",
+          "Remove oil, grease, paint, and loose scale",
+          "No machining required unless surface is extremely rough"
+        ]
+      },
       "procedure_steps": [
         "Clean the surface to remove oil, grease, scale, and loose particles.",
         "Select magnetization technique (yoke, prod, coil, or head shot) appropriate for geometry.",
@@ -140,7 +176,14 @@
       "name": "Radiographic Testing (ASTM)",
       "standard": [ "ASTM E1030", "ASTM E1742" ],
       "purpose": "Detect internal volumetric and planar defects using X-ray or gamma radiography.",
-      "specimen": {},
+      "specimen": {
+        "type": "Actual weld or plate section",
+        "prep": [
+          "Clean surface to remove scale and debris",
+          "Ensure access for film/detector placement",
+          "No machining required"
+        ]
+      },
       "procedure_steps": [
         "Select radiation source, film or digital detector, and exposure parameters according to the procedure.",
         "Position source, object, and film/detector to achieve required coverage and sensitivity.",
@@ -154,7 +197,14 @@
       "name": "Coating Thickness Measurement (ASTM)",
       "standard": [ "ASTM D7091" ],
       "purpose": "Measure dry film thickness of coatings on steel substrates.",
-      "specimen": {},
+      "specimen": {
+        "type": "Coated steel surface",
+        "prep": [
+          "Coating must be fully cured",
+          "Surface must be clean and dry",
+          "No grinding or machining allowed"
+        ]
+      },
       "procedure_steps": [
         "Verify that the coating is fully cured according to manufacturer recommendations.",
         "Select appropriate magnetic or eddy current gauge for the substrate and coating type.",
@@ -168,7 +218,15 @@
       "name": "Microstructural Examination (ASTM)",
       "standard": [ "ASTM E3", "ASTM E407" ],
       "purpose": "Prepare and examine metallographic specimens to assess microstructure.",
-      "specimen": {},
+      "specimen": {
+        "type": "Metallographic sample",
+        "prep": [
+          "Section a representative piece from the product",
+          "Mount sample if required",
+          "Grind and polish per ASTM E3",
+          "Etch per ASTM E407"
+        ]
+      },
       "procedure_steps": [
         "Section a representative sample from the area of interest.",
         "Mount the sample if required using a suitable mounting compound.",
