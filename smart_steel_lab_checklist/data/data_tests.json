@@ -69,19 +69,21 @@
       "name": "Hardness Test (ASTM)",
       "standard": [ "ASTM E10", "ASTM E18" ],
       "purpose": "Verify material consistency and support strength correlation.",
+      "specimen": {},
       "procedure_steps": [
-        "Prepare a clean, flat, and smooth surface on the specimen by grinding or machining.",
-        "For Brinell (ASTM E10): select appropriate ball diameter and test force based on material and thickness.",
-        "Apply the test force for the specified dwell time, then remove the force.",
-        "Measure indentation diameter in at least two perpendicular directions and calculate Brinell hardness.",
-        "For Rockwell (ASTM E18): select appropriate scale, apply minor load, then major load, and read hardness directly.",
-        "Record hardness values and compare with typical or specified ranges for the grade."
-      ]
-    },
+          "Prepare a clean, flat, and smooth surface on the specimen by grinding or machining.",
+          "For Brinell (ASTM E10): select appropriate ball diameter and test force based on material and thickness.",
+          "Apply the test force for the specified dwell time, then remove the force.",
+          "Measure indentation diameter in at least two perpendicular directions and calculate Brinell hardness.",
+          "For Rockwell (ASTM E18): select appropriate scale, apply minor load, then major load, and read hardness directly.",
+          "Record hardness values and compare with typical or specified ranges for the grade."
+        ]
+      },
     "chemical_astm": {
       "name": "Chemical Composition (ASTM)",
       "standard": [ "ASTM E415", "ASTM A751" ],
       "purpose": "Determine chemical composition and verify compliance with grade limits.",
+      "specimen": {},
       "procedure_steps": [
         "Select a representative sample from the heat, plate, or shape.",
         "Grind or mill the surface to remove scale, rust, and contamination.",
@@ -95,6 +97,7 @@
       "name": "Weld Procedure / Welder Qualification",
       "standard": [ "AWS D1.1", "ASTM A370" ],
       "purpose": "Qualify welding procedures and welders for structural steel.",
+      "specimen": {},
       "procedure_steps": [
         "Prepare weld test coupons according to the WPS and AWS D1.1 requirements.",
         "Perform welding using specified process, consumables, preheat, and interpass temperatures.",
@@ -109,6 +112,7 @@
       "name": "Ultrasonic Testing (ASTM)",
       "standard": [ "ASTM A578", "ASTM E164" ],
       "purpose": "Detect internal discontinuities such as laminations and inclusions in plates and welds.",
+      "specimen": {},
       "procedure_steps": [
         "Select appropriate UT technique, probes, and calibration blocks according to the standard and product specification.",
         "Calibrate the UT instrument using reference blocks with known reflectors.",
@@ -122,6 +126,7 @@
       "name": "Magnetic Particle Testing (ASTM)",
       "standard": [ "ASTM E709" ],
       "purpose": "Detect surface and near-surface cracks in ferromagnetic materials.",
+      "specimen": {},
       "procedure_steps": [
         "Clean the surface to remove oil, grease, scale, and loose particles.",
         "Select magnetization technique (yoke, prod, coil, or head shot) appropriate for geometry.",
@@ -135,6 +140,7 @@
       "name": "Radiographic Testing (ASTM)",
       "standard": [ "ASTM E1030", "ASTM E1742" ],
       "purpose": "Detect internal volumetric and planar defects using X-ray or gamma radiography.",
+      "specimen": {},
       "procedure_steps": [
         "Select radiation source, film or digital detector, and exposure parameters according to the procedure.",
         "Position source, object, and film/detector to achieve required coverage and sensitivity.",
@@ -148,6 +154,7 @@
       "name": "Coating Thickness Measurement (ASTM)",
       "standard": [ "ASTM D7091" ],
       "purpose": "Measure dry film thickness of coatings on steel substrates.",
+      "specimen": {},
       "procedure_steps": [
         "Verify that the coating is fully cured according to manufacturer recommendations.",
         "Select appropriate magnetic or eddy current gauge for the substrate and coating type.",
@@ -161,6 +168,7 @@
       "name": "Microstructural Examination (ASTM)",
       "standard": [ "ASTM E3", "ASTM E407" ],
       "purpose": "Prepare and examine metallographic specimens to assess microstructure.",
+      "specimen": {},
       "procedure_steps": [
         "Section a representative sample from the area of interest.",
         "Mount the sample if required using a suitable mounting compound.",
@@ -170,1465 +178,1465 @@
         "Examine the microstructure under an optical microscope and document features such as grain size, phases, and defects."
       ]
     },
-    "tensile_en": {
-      "name": "Tensile Test (EN)",
-      "standard": [ "EN ISO 6892-1" ],
-      "purpose": "Determine yield strength, tensile strength, and elongation of structural steels per EN.",
-      "specimen": {
-        "type": "Round or flat",
-        "prep": [
-          "Select specimen type (round or flat) according to product form and EN ISO 6892-1.",
-          "Machine specimen to the specified dimensions and tolerances.",
-          "Remove surface defects and burrs without altering the cross-section.",
-          "Measure and record original gauge length, width, thickness, and cross-sectional area.",
-          "Mark gauge length clearly on the specimen."
+      "tensile_en": {
+        "name": "Tensile Test (EN)",
+        "standard": [ "EN ISO 6892-1" ],
+        "purpose": "Determine yield strength, tensile strength, and elongation of structural steels per EN.",
+        "specimen": {
+          "type": "Round or flat",
+          "prep": [
+            "Select specimen type (round or flat) according to product form and EN ISO 6892-1.",
+            "Machine specimen to the specified dimensions and tolerances.",
+            "Remove surface defects and burrs without altering the cross-section.",
+            "Measure and record original gauge length, width, thickness, and cross-sectional area.",
+            "Mark gauge length clearly on the specimen."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration and capacity of the tensile testing machine according to EN ISO 7500-1.",
+          "Mount the specimen in the grips ensuring correct alignment to avoid bending.",
+          "Attach an extensometer or strain measurement device if required for yield and elongation determination.",
+          "Select the appropriate test method (A, B, or C) and corresponding strain rate or stress rate as per EN ISO 6892-1.",
+          "Zero the load and extensometer before starting the test.",
+          "Apply tensile load continuously at the specified rate until fracture.",
+          "Record load and extension (or stress and strain) throughout the test.",
+          "Determine yield strength (ReH, ReL, or Rp0.2 as applicable), tensile strength (Rm), and elongation at fracture (A or A5).",
+          "Fit the broken specimen ends together and measure final gauge length to calculate elongation.",
+          "Record fracture appearance and note any unusual behavior (e.g., Lüders bands, discontinuous yielding)."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration and capacity of the tensile testing machine according to EN ISO 7500-1.",
-        "Mount the specimen in the grips ensuring correct alignment to avoid bending.",
-        "Attach an extensometer or strain measurement device if required for yield and elongation determination.",
-        "Select the appropriate test method (A, B, or C) and corresponding strain rate or stress rate as per EN ISO 6892-1.",
-        "Zero the load and extensometer before starting the test.",
-        "Apply tensile load continuously at the specified rate until fracture.",
-        "Record load and extension (or stress and strain) throughout the test.",
-        "Determine yield strength (ReH, ReL, or Rp0.2 as applicable), tensile strength (Rm), and elongation at fracture (A or A5).",
-        "Fit the broken specimen ends together and measure final gauge length to calculate elongation.",
-        "Record fracture appearance and note any unusual behavior (e.g., Lüders bands, discontinuous yielding)."
-      ]
-    },
 
-    "impact_en": {
-      "name": "Charpy V-Notch Impact Test (EN)",
-      "standard": [ "EN ISO 148-1" ],
-      "purpose": "Determine impact energy and toughness of structural steels per EN.",
-      "specimen": {
-        "type": "V-notch bar",
-        "prep": [
-          "Machine Charpy V-notch specimens to the dimensions specified in EN ISO 148-1.",
-          "Ensure notch geometry (angle, root radius, depth) complies with the standard.",
-          "Check surface finish and remove burrs or machining marks that could affect results.",
-          "Mark specimen orientation and notch position relative to rolling direction if required."
+      "impact_en": {
+        "name": "Charpy V-Notch Impact Test (EN)",
+        "standard": [ "EN ISO 148-1" ],
+        "purpose": "Determine impact energy and toughness of structural steels per EN.",
+        "specimen": {
+          "type": "V-notch bar",
+          "prep": [
+            "Machine Charpy V-notch specimens to the dimensions specified in EN ISO 148-1.",
+            "Ensure notch geometry (angle, root radius, depth) complies with the standard.",
+            "Check surface finish and remove burrs or machining marks that could affect results.",
+            "Mark specimen orientation and notch position relative to rolling direction if required."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration and energy range of the pendulum impact testing machine according to EN ISO 148-2.",
+          "Set and verify the test temperature using a suitable conditioning medium (e.g., temperature chamber, bath).",
+          "Condition specimens at the specified test temperature for sufficient time to achieve uniform temperature.",
+          "Place the specimen on the supports with the notch facing away from the striker, as required by the standard.",
+          "Release the pendulum to strike and fracture the specimen in a single blow.",
+          "Record the absorbed energy from the machine indicator or digital readout.",
+          "Repeat the test for the required number of specimens (typically three) at each temperature.",
+          "Calculate the average absorbed energy and record individual values.",
+          "Report test temperature, average impact energy, and any observed fracture appearance (e.g., percentage shear)."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration and energy range of the pendulum impact testing machine according to EN ISO 148-2.",
-        "Set and verify the test temperature using a suitable conditioning medium (e.g., temperature chamber, bath).",
-        "Condition specimens at the specified test temperature for sufficient time to achieve uniform temperature.",
-        "Place the specimen on the supports with the notch facing away from the striker, as required by the standard.",
-        "Release the pendulum to strike and fracture the specimen in a single blow.",
-        "Record the absorbed energy from the machine indicator or digital readout.",
-        "Repeat the test for the required number of specimens (typically three) at each temperature.",
-        "Calculate the average absorbed energy and record individual values.",
-        "Report test temperature, average impact energy, and any observed fracture appearance (e.g., percentage shear)."
-      ]
-    },
 
-    "bend_en": {
-      "name": "Bend Test (EN)",
-      "standard": [ "EN ISO 7438" ],
-      "purpose": "Evaluate ductility and ability of structural steels to withstand bending without cracking.",
-      "specimen": {
-        "type": "Flat strip or machined bar",
-        "prep": [
-          "Prepare rectangular bend specimens with specified width and thickness according to EN ISO 7438.",
-          "Ensure edges are smooth and free from notches, sharp corners, or surface defects.",
-          "Record specimen thickness, width, and orientation (longitudinal or transverse to rolling direction)."
+      "bend_en": {
+        "name": "Bend Test (EN)",
+        "standard": [ "EN ISO 7438" ],
+        "purpose": "Evaluate ductility and ability of structural steels to withstand bending without cracking.",
+        "specimen": {
+          "type": "Flat strip or machined bar",
+          "prep": [
+            "Prepare rectangular bend specimens with specified width and thickness according to EN ISO 7438.",
+            "Ensure edges are smooth and free from notches, sharp corners, or surface defects.",
+            "Record specimen thickness, width, and orientation (longitudinal or transverse to rolling direction)."
+          ]
+        },
+        "procedure_steps": [
+          "Select the appropriate bend test method (free bend or guided bend) as specified in EN ISO 7438 or product standard.",
+          "Choose the mandrel diameter or former radius based on specimen thickness and required bend angle.",
+          "Place the specimen on the supports with the surface to be evaluated in tension during bending.",
+          "Apply bending force smoothly until the specified bend angle (often 90° or 180°) is reached.",
+          "Release the load and remove the specimen from the fixture.",
+          "Inspect the tension surface under good lighting and, if necessary, with magnification.",
+          "Record any cracks, tears, or surface discontinuities, including their length and location.",
+          "Evaluate the specimen against acceptance criteria defined in the relevant product or welding standard."
         ]
       },
-      "procedure_steps": [
-        "Select the appropriate bend test method (free bend or guided bend) as specified in EN ISO 7438 or product standard.",
-        "Choose the mandrel diameter or former radius based on specimen thickness and required bend angle.",
-        "Place the specimen on the supports with the surface to be evaluated in tension during bending.",
-        "Apply bending force smoothly until the specified bend angle (often 90° or 180°) is reached.",
-        "Release the load and remove the specimen from the fixture.",
-        "Inspect the tension surface under good lighting and, if necessary, with magnification.",
-        "Record any cracks, tears, or surface discontinuities, including their length and location.",
-        "Evaluate the specimen against acceptance criteria defined in the relevant product or welding standard."
-      ]
-    },
 
-    "hardness_en": {
-      "name": "Hardness Test (EN)",
-      "standard": [ "EN ISO 6506-1", "EN ISO 6508-1" ],
-      "purpose": "Determine Brinell or Rockwell hardness of structural steels per EN.",
-      "specimen": {
-        "type": "Flat surface on product or sample",
-        "prep": [
-          "Prepare a clean, flat, and smooth surface by grinding or machining.",
-          "Ensure the surface is free from scale, rust, oil, and other contaminants.",
-          "Verify that the specimen thickness is sufficient for the selected hardness method and load."
+      "hardness_en": {
+        "name": "Hardness Test (EN)",
+        "standard": [ "EN ISO 6506-1", "EN ISO 6508-1" ],
+        "purpose": "Determine Brinell or Rockwell hardness of structural steels per EN.",
+        "specimen": {
+          "type": "Flat surface on product or sample",
+          "prep": [
+            "Prepare a clean, flat, and smooth surface by grinding or machining.",
+            "Ensure the surface is free from scale, rust, oil, and other contaminants.",
+            "Verify that the specimen thickness is sufficient for the selected hardness method and load."
+          ]
+        },
+        "procedure_steps": [
+          "Select the appropriate hardness method (Brinell or Rockwell) and scale according to material and thickness.",
+          "For Brinell (EN ISO 6506-1): choose ball diameter and test force as specified for the steel grade and thickness.",
+          "Apply the test force gradually, maintain it for the specified dwell time, then remove the force.",
+          "Measure the indentation diameter in at least two perpendicular directions and calculate Brinell hardness (HBW).",
+          "For Rockwell (EN ISO 6508-1): apply the minor load, then the major load, and read hardness directly from the machine.",
+          "Perform multiple measurements at different locations to assess hardness uniformity.",
+          "Record hardness values and, if required, convert to other hardness scales using standardized conversion tables.",
+          "Compare hardness results with typical or specified ranges for the grade and application."
         ]
       },
-      "procedure_steps": [
-        "Select the appropriate hardness method (Brinell or Rockwell) and scale according to material and thickness.",
-        "For Brinell (EN ISO 6506-1): choose ball diameter and test force as specified for the steel grade and thickness.",
-        "Apply the test force gradually, maintain it for the specified dwell time, then remove the force.",
-        "Measure the indentation diameter in at least two perpendicular directions and calculate Brinell hardness (HBW).",
-        "For Rockwell (EN ISO 6508-1): apply the minor load, then the major load, and read hardness directly from the machine.",
-        "Perform multiple measurements at different locations to assess hardness uniformity.",
-        "Record hardness values and, if required, convert to other hardness scales using standardized conversion tables.",
-        "Compare hardness results with typical or specified ranges for the grade and application."
-      ]
-    },
 
-    "chemical_en": {
-      "name": "Chemical Composition Analysis (EN)",
-      "standard": [ "EN ISO 9556", "EN ISO 4935", "EN 10204" ],
-      "purpose": "Determine chemical composition of structural steels and verify compliance with EN grade limits.",
-      "specimen": {
-        "type": "Representative sample from heat or product",
-        "prep": [
-          "Select a representative sample from the heat, plate, section, or coil.",
-          "Remove surface contamination, scale, and coatings by machining or grinding.",
-          "Ensure the analysis surface is clean, flat, and free from inclusions or defects."
+      "chemical_en": {
+        "name": "Chemical Composition Analysis (EN)",
+        "standard": [ "EN ISO 9556", "EN ISO 4935", "EN 10204" ],
+        "purpose": "Determine chemical composition of structural steels and verify compliance with EN grade limits.",
+        "specimen": {
+          "type": "Representative sample from heat or product",
+          "prep": [
+            "Select a representative sample from the heat, plate, section, or coil.",
+            "Remove surface contamination, scale, and coatings by machining or grinding.",
+            "Ensure the analysis surface is clean, flat, and free from inclusions or defects."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate analytical methods (e.g., optical emission spectroscopy, combustion analysis) according to EN ISO standards.",
+          "Calibrate the analytical instrument using certified reference materials with compositions close to the expected range.",
+          "Perform blank and control measurements to verify instrument stability.",
+          "Carry out the analysis for all required elements (e.g., C, Mn, Si, P, S, alloying elements) according to the chosen method.",
+          "Repeat measurements as necessary to ensure repeatability and reliability.",
+          "Calculate the average composition for each element and assess measurement uncertainty if required.",
+          "Compare the measured composition with the specified limits in the relevant EN product standard (e.g., EN 10025 series).",
+          "Prepare and issue a test report or inspection document according to EN 10204 (e.g., 3.1 certificate)."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate analytical methods (e.g., optical emission spectroscopy, combustion analysis) according to EN ISO standards.",
-        "Calibrate the analytical instrument using certified reference materials with compositions close to the expected range.",
-        "Perform blank and control measurements to verify instrument stability.",
-        "Carry out the analysis for all required elements (e.g., C, Mn, Si, P, S, alloying elements) according to the chosen method.",
-        "Repeat measurements as necessary to ensure repeatability and reliability.",
-        "Calculate the average composition for each element and assess measurement uncertainty if required.",
-        "Compare the measured composition with the specified limits in the relevant EN product standard (e.g., EN 10025 series).",
-        "Prepare and issue a test report or inspection document according to EN 10204 (e.g., 3.1 certificate)."
-      ]
-    },
 
-    "weld_en": {
-      "name": "Weld Procedure Qualification (EN)",
-      "standard": [ "EN ISO 15614-1" ],
-      "purpose": "Qualify welding procedures for structural steels according to EN requirements.",
-      "specimen": {
-        "type": "Welded test joint",
-        "prep": [
-          "Prepare test joints (butt or fillet) according to the proposed Welding Procedure Specification (WPS).",
-          "Select base materials, filler materials, joint preparation, and thickness range as per EN ISO 15614-1.",
-          "Clean joint surfaces and edges to remove rust, scale, oil, and other contaminants."
+      "weld_en": {
+        "name": "Weld Procedure Qualification (EN)",
+        "standard": [ "EN ISO 15614-1" ],
+        "purpose": "Qualify welding procedures for structural steels according to EN requirements.",
+        "specimen": {
+          "type": "Welded test joint",
+          "prep": [
+            "Prepare test joints (butt or fillet) according to the proposed Welding Procedure Specification (WPS).",
+            "Select base materials, filler materials, joint preparation, and thickness range as per EN ISO 15614-1.",
+            "Clean joint surfaces and edges to remove rust, scale, oil, and other contaminants."
+          ]
+        },
+        "procedure_steps": [
+          "Perform welding in accordance with the WPS, controlling preheat, interpass temperature, heat input, and travel speed.",
+          "Record all essential and supplementary essential variables during welding (e.g., current, voltage, process, position).",
+          "Allow the welded joint to cool under controlled conditions as specified.",
+          "Visually inspect the weld for surface defects such as cracks, undercut, porosity, and incomplete fusion.",
+          "Perform required non-destructive tests (e.g., MT, UT, RT) on the weld according to relevant EN ISO NDT standards.",
+          "Extract mechanical test specimens (tensile, bend, impact) from the weld and heat-affected zone as specified in EN ISO 15614-1.",
+          "Conduct tensile tests, bend tests, and impact tests using the appropriate EN ISO methods.",
+          "Evaluate all test results against the acceptance criteria in EN ISO 15614-1.",
+          "If all requirements are met, approve the welding procedure and issue a Welding Procedure Qualification Record (WPQR)."
         ]
       },
-      "procedure_steps": [
-        "Perform welding in accordance with the WPS, controlling preheat, interpass temperature, heat input, and travel speed.",
-        "Record all essential and supplementary essential variables during welding (e.g., current, voltage, process, position).",
-        "Allow the welded joint to cool under controlled conditions as specified.",
-        "Visually inspect the weld for surface defects such as cracks, undercut, porosity, and incomplete fusion.",
-        "Perform required non-destructive tests (e.g., MT, UT, RT) on the weld according to relevant EN ISO NDT standards.",
-        "Extract mechanical test specimens (tensile, bend, impact) from the weld and heat-affected zone as specified in EN ISO 15614-1.",
-        "Conduct tensile tests, bend tests, and impact tests using the appropriate EN ISO methods.",
-        "Evaluate all test results against the acceptance criteria in EN ISO 15614-1.",
-        "If all requirements are met, approve the welding procedure and issue a Welding Procedure Qualification Record (WPQR)."
-      ]
-    },
 
-    "ut_en": {
-      "name": "Ultrasonic Testing (EN)",
-      "standard": [ "EN ISO 17640" ],
-      "purpose": "Detect and evaluate internal discontinuities in welded joints and plates using ultrasonic testing.",
-      "specimen": {
-        "type": "Welded joint or plate",
-        "prep": [
-          "Clean the surface to remove loose scale, rust, paint, and contaminants that may interfere with probe coupling.",
-          "Ensure access to both sides of the weld or plate where required by the procedure.",
-          "Prepare reference blocks or calibration blocks with known reflectors according to EN ISO 2400 or relevant standards."
+      "ut_en": {
+        "name": "Ultrasonic Testing (EN)",
+        "standard": [ "EN ISO 17640" ],
+        "purpose": "Detect and evaluate internal discontinuities in welded joints and plates using ultrasonic testing.",
+        "specimen": {
+          "type": "Welded joint or plate",
+          "prep": [
+            "Clean the surface to remove loose scale, rust, paint, and contaminants that may interfere with probe coupling.",
+            "Ensure access to both sides of the weld or plate where required by the procedure.",
+            "Prepare reference blocks or calibration blocks with known reflectors according to EN ISO 2400 or relevant standards."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate ultrasonic technique (straight beam or angle beam) and probe frequency based on material thickness and defect types.",
+          "Calibrate the ultrasonic instrument using reference blocks to set time base, sensitivity, and distance calibration.",
+          "Apply suitable couplant to the test surface to ensure good acoustic coupling.",
+          "Scan the weld or plate systematically according to the scanning plan defined in EN ISO 17640 or the inspection procedure.",
+          "Adjust sensitivity and time-corrected gain (if used) to detect relevant reflectors.",
+          "Record the position, depth, and amplitude of all relevant indications.",
+          "Classify indications according to their characteristics (e.g., planar, volumetric, root, toe).",
+          "Evaluate indications against acceptance criteria specified in the applicable product or weld standard (e.g., EN 1090, EN 10160, EN ISO 5817).",
+          "Document test results, including calibration details, scanning coverage, indications, and acceptance status."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate ultrasonic technique (straight beam or angle beam) and probe frequency based on material thickness and defect types.",
-        "Calibrate the ultrasonic instrument using reference blocks to set time base, sensitivity, and distance calibration.",
-        "Apply suitable couplant to the test surface to ensure good acoustic coupling.",
-        "Scan the weld or plate systematically according to the scanning plan defined in EN ISO 17640 or the inspection procedure.",
-        "Adjust sensitivity and time-corrected gain (if used) to detect relevant reflectors.",
-        "Record the position, depth, and amplitude of all relevant indications.",
-        "Classify indications according to their characteristics (e.g., planar, volumetric, root, toe).",
-        "Evaluate indications against acceptance criteria specified in the applicable product or weld standard (e.g., EN 1090, EN 10160, EN ISO 5817).",
-        "Document test results, including calibration details, scanning coverage, indications, and acceptance status."
-      ]
-    },
 
-    "mt_en": {
-      "name": "Magnetic Particle Testing (EN)",
-      "standard": [ "EN ISO 17638" ],
-      "purpose": "Detect surface and near-surface discontinuities in ferromagnetic structural steels using magnetic particle testing.",
-      "specimen": {
-        "type": "Welded joint or surface of structural component",
-        "prep": [
-          "Clean the surface to remove oil, grease, dirt, loose scale, and paint that could mask indications.",
-          "Ensure the surface is dry and accessible for magnetization and particle application.",
-          "Identify areas of interest such as weld toes, roots, and stress concentration zones."
+      "mt_en": {
+        "name": "Magnetic Particle Testing (EN)",
+        "standard": [ "EN ISO 17638" ],
+        "purpose": "Detect surface and near-surface discontinuities in ferromagnetic structural steels using magnetic particle testing.",
+        "specimen": {
+          "type": "Welded joint or surface of structural component",
+          "prep": [
+            "Clean the surface to remove oil, grease, dirt, loose scale, and paint that could mask indications.",
+            "Ensure the surface is dry and accessible for magnetization and particle application.",
+            "Identify areas of interest such as weld toes, roots, and stress concentration zones."
+          ]
+        },
+        "procedure_steps": [
+          "Select magnetization technique (yoke, prod, coil, or current flow) appropriate for the geometry and area to be examined.",
+          "Verify the adequacy of the magnetic field using field indicators or reference devices as required by EN ISO 17638.",
+          "Apply magnetic particles (dry or wet, visible or fluorescent) during or immediately after magnetization.",
+          "Ensure that the direction of magnetization is appropriate to detect discontinuities oriented perpendicular to the field.",
+          "Inspect the surface under suitable lighting conditions (white light or UV light for fluorescent particles).",
+          "Identify and interpret particle accumulations that indicate possible discontinuities.",
+          "Mark and record the location, size, and nature of relevant indications.",
+          "Demagnetize the component if required and clean off residual particles.",
+          "Evaluate indications against acceptance criteria in the applicable product or weld standard (e.g., EN ISO 5817)."
         ]
       },
-      "procedure_steps": [
-        "Select magnetization technique (yoke, prod, coil, or current flow) appropriate for the geometry and area to be examined.",
-        "Verify the adequacy of the magnetic field using field indicators or reference devices as required by EN ISO 17638.",
-        "Apply magnetic particles (dry or wet, visible or fluorescent) during or immediately after magnetization.",
-        "Ensure that the direction of magnetization is appropriate to detect discontinuities oriented perpendicular to the field.",
-        "Inspect the surface under suitable lighting conditions (white light or UV light for fluorescent particles).",
-        "Identify and interpret particle accumulations that indicate possible discontinuities.",
-        "Mark and record the location, size, and nature of relevant indications.",
-        "Demagnetize the component if required and clean off residual particles.",
-        "Evaluate indications against acceptance criteria in the applicable product or weld standard (e.g., EN ISO 5817)."
-      ]
-    },
 
-    "rt_en": {
-      "name": "Radiographic Testing (EN)",
-      "standard": [ "EN ISO 17636-1" ],
-      "purpose": "Detect internal volumetric and planar defects in welded joints using radiographic testing.",
-      "specimen": {
-        "type": "Welded joint",
-        "prep": [
-          "Clean the weld surface to remove contaminants that may affect image quality.",
-          "Ensure access for correct positioning of the radiation source and film/detector.",
-          "Prepare image quality indicators (IQIs) according to EN ISO 17636-1."
+      "rt_en": {
+        "name": "Radiographic Testing (EN)",
+        "standard": [ "EN ISO 17636-1" ],
+        "purpose": "Detect internal volumetric and planar defects in welded joints using radiographic testing.",
+        "specimen": {
+          "type": "Welded joint",
+          "prep": [
+            "Clean the weld surface to remove contaminants that may affect image quality.",
+            "Ensure access for correct positioning of the radiation source and film/detector.",
+            "Prepare image quality indicators (IQIs) according to EN ISO 17636-1."
+          ]
+        },
+        "procedure_steps": [
+          "Select radiation source (X-ray or gamma), film or digital detector, and exposure parameters based on material thickness and required sensitivity.",
+          "Position the source, weld, and film/detector according to the geometric requirements of EN ISO 17636-1 (technique A or B).",
+          "Place IQIs on the source side or film side as specified to verify image quality.",
+          "Shield surrounding areas and ensure radiation safety measures are in place.",
+          "Expose the film/detector for the calculated time to achieve the required film density or detector response.",
+          "Process the film or acquire digital images according to manufacturer instructions and EN ISO requirements.",
+          "Evaluate radiographs for image quality, including IQI visibility, density, and contrast.",
+          "Interpret indications (e.g., porosity, slag inclusions, lack of fusion, cracks) and determine their size and location.",
+          "Compare indications with acceptance criteria in the applicable product or weld standard and document results."
         ]
       },
-      "procedure_steps": [
-        "Select radiation source (X-ray or gamma), film or digital detector, and exposure parameters based on material thickness and required sensitivity.",
-        "Position the source, weld, and film/detector according to the geometric requirements of EN ISO 17636-1 (technique A or B).",
-        "Place IQIs on the source side or film side as specified to verify image quality.",
-        "Shield surrounding areas and ensure radiation safety measures are in place.",
-        "Expose the film/detector for the calculated time to achieve the required film density or detector response.",
-        "Process the film or acquire digital images according to manufacturer instructions and EN ISO requirements.",
-        "Evaluate radiographs for image quality, including IQI visibility, density, and contrast.",
-        "Interpret indications (e.g., porosity, slag inclusions, lack of fusion, cracks) and determine their size and location.",
-        "Compare indications with acceptance criteria in the applicable product or weld standard and document results."
-      ]
-    },
 
-    "coating_thickness_en": {
-      "name": "Coating Thickness Measurement (EN context)",
-      "standard": [ "EN ISO 2808" ],
-      "purpose": "Measure dry film thickness of coatings on structural steel components.",
-      "specimen": {
-        "type": "Coated steel surface",
-        "prep": [
-          "Ensure the coating is fully cured according to the coating manufacturer's recommendations.",
-          "Clean the surface to remove loose dust and contaminants that may affect gauge readings.",
-          "Verify that the substrate and coating system are suitable for the selected measurement method."
+      "coating_thickness_en": {
+        "name": "Coating Thickness Measurement (EN context)",
+        "standard": [ "EN ISO 2808" ],
+        "purpose": "Measure dry film thickness of coatings on structural steel components.",
+        "specimen": {
+          "type": "Coated steel surface",
+          "prep": [
+            "Ensure the coating is fully cured according to the coating manufacturer's recommendations.",
+            "Clean the surface to remove loose dust and contaminants that may affect gauge readings.",
+            "Verify that the substrate and coating system are suitable for the selected measurement method."
+          ]
+        },
+        "procedure_steps": [
+          "Select an appropriate coating thickness gauge (magnetic, eddy current, or other) according to EN ISO 2808.",
+          "Calibrate the gauge using certified calibration foils or reference standards on a similar substrate.",
+          "Take multiple measurements at each specified location or area according to the inspection plan.",
+          "Discard outliers if justified and calculate the mean thickness for each area.",
+          "Compare measured thickness values with the specified minimum and maximum limits for the coating system.",
+          "Record all readings, calibration details, and any areas of non-compliance.",
+          "If required, repeat measurements after corrective actions (e.g., additional coating)."
         ]
       },
-      "procedure_steps": [
-        "Select an appropriate coating thickness gauge (magnetic, eddy current, or other) according to EN ISO 2808.",
-        "Calibrate the gauge using certified calibration foils or reference standards on a similar substrate.",
-        "Take multiple measurements at each specified location or area according to the inspection plan.",
-        "Discard outliers if justified and calculate the mean thickness for each area.",
-        "Compare measured thickness values with the specified minimum and maximum limits for the coating system.",
-        "Record all readings, calibration details, and any areas of non-compliance.",
-        "If required, repeat measurements after corrective actions (e.g., additional coating)."
-      ]
-    },
 
-    "microstructure_en": {
-      "name": "Microstructural Examination (EN context)",
-      "standard": [ "EN ISO 17639 (for welds)", "EN ISO 643 (grain size, reference)" ],
-      "purpose": "Prepare and examine metallographic specimens to assess microstructure, grain size, and weld quality.",
-      "specimen": {
-        "type": "Section from plate, section, or weld",
-        "prep": [
-          "Cut a representative sample from the area of interest (e.g., base metal, HAZ, weld metal).",
-          "Avoid overheating or altering the microstructure during cutting.",
-          "Mount the sample in a suitable mounting medium if required.",
-          "Grind the surface using progressively finer abrasives to remove cutting damage.",
-          "Polish the surface to a mirror finish using appropriate polishing media."
+      "microstructure_en": {
+        "name": "Microstructural Examination (EN context)",
+        "standard": [ "EN ISO 17639 (for welds)", "EN ISO 643 (grain size, reference)" ],
+        "purpose": "Prepare and examine metallographic specimens to assess microstructure, grain size, and weld quality.",
+        "specimen": {
+          "type": "Section from plate, section, or weld",
+          "prep": [
+            "Cut a representative sample from the area of interest (e.g., base metal, HAZ, weld metal).",
+            "Avoid overheating or altering the microstructure during cutting.",
+            "Mount the sample in a suitable mounting medium if required.",
+            "Grind the surface using progressively finer abrasives to remove cutting damage.",
+            "Polish the surface to a mirror finish using appropriate polishing media."
+          ]
+        },
+        "procedure_steps": [
+          "Select an appropriate etchant for the steel grade (e.g., Nital) and prepare it safely.",
+          "Etch the polished surface for a controlled time to reveal the microstructure.",
+          "Rinse and dry the specimen carefully after etching.",
+          "Examine the microstructure under an optical microscope at suitable magnifications.",
+          "Identify phases, grain size, inclusions, and any microstructural anomalies (e.g., banding, coarse grains).",
+          "For welds, assess weld metal structure, HAZ width, fusion line, and presence of defects according to EN ISO 17639.",
+          "If required, compare grain size with reference charts (e.g., EN ISO 643).",
+          "Document micrographs and observations in a metallographic report."
         ]
       },
-      "procedure_steps": [
-        "Select an appropriate etchant for the steel grade (e.g., Nital) and prepare it safely.",
-        "Etch the polished surface for a controlled time to reveal the microstructure.",
-        "Rinse and dry the specimen carefully after etching.",
-        "Examine the microstructure under an optical microscope at suitable magnifications.",
-        "Identify phases, grain size, inclusions, and any microstructural anomalies (e.g., banding, coarse grains).",
-        "For welds, assess weld metal structure, HAZ width, fusion line, and presence of defects according to EN ISO 17639.",
-        "If required, compare grain size with reference charts (e.g., EN ISO 643).",
-        "Document micrographs and observations in a metallographic report."
-      ]
-    },
-    "tensile_jis": {
-      "name": "Tensile Test (JIS)",
-      "standard": [ "JIS Z 2241" ],
-      "purpose": "Determine yield strength, tensile strength, and elongation of structural steels per JIS at room temperature.",
-      "specimen": {
-        "type": "Round or flat",
-        "prep": [
-          "Select specimen type (round, proportional, or non-proportional flat) according to product form and JIS Z 2241.",
-          "Machine specimen to the specified dimensions, tolerances, and surface finish in JIS Z 2241.",
-          "Avoid overheating or work hardening during machining.",
-          "Remove burrs and surface defects without altering the cross-section.",
-          "Measure and record original gauge length, width, thickness, and cross-sectional area.",
-          "Mark the original gauge length on the specimen as specified in JIS Z 2241."
+      "tensile_jis": {
+        "name": "Tensile Test (JIS)",
+        "standard": [ "JIS Z 2241" ],
+        "purpose": "Determine yield strength, tensile strength, and elongation of structural steels per JIS at room temperature.",
+        "specimen": {
+          "type": "Round or flat",
+          "prep": [
+            "Select specimen type (round, proportional, or non-proportional flat) according to product form and JIS Z 2241.",
+            "Machine specimen to the specified dimensions, tolerances, and surface finish in JIS Z 2241.",
+            "Avoid overheating or work hardening during machining.",
+            "Remove burrs and surface defects without altering the cross-section.",
+            "Measure and record original gauge length, width, thickness, and cross-sectional area.",
+            "Mark the original gauge length on the specimen as specified in JIS Z 2241."
+          ]
+        },
+        "procedure_steps": [
+          "Verify tensile testing machine and extensometer calibration according to JIS Z 2241 accuracy requirements.",
+          "Mount the specimen in the grips ensuring correct alignment to minimize bending.",
+          "Attach an extensometer or strain measurement device if required for yield and elongation determination.",
+          "Select the appropriate test speed (stress rate or strain rate) according to JIS Z 2241 for the chosen method.",
+          "Zero the load and extensometer before starting the test.",
+          "Apply tensile load continuously at the specified rate until fracture.",
+          "Record load and extension (or stress and strain) throughout the test as required.",
+          "Determine yield point or proof stress (e.g., upper/lower yield, 0.2% proof stress), tensile strength, and elongation at fracture.",
+          "Fit the broken specimen ends together and measure final gauge length to calculate elongation.",
+          "Record fracture appearance and any discontinuous yielding or Lüders phenomena as required by JIS Z 2241."
         ]
       },
-      "procedure_steps": [
-        "Verify tensile testing machine and extensometer calibration according to JIS Z 2241 accuracy requirements.",
-        "Mount the specimen in the grips ensuring correct alignment to minimize bending.",
-        "Attach an extensometer or strain measurement device if required for yield and elongation determination.",
-        "Select the appropriate test speed (stress rate or strain rate) according to JIS Z 2241 for the chosen method.",
-        "Zero the load and extensometer before starting the test.",
-        "Apply tensile load continuously at the specified rate until fracture.",
-        "Record load and extension (or stress and strain) throughout the test as required.",
-        "Determine yield point or proof stress (e.g., upper/lower yield, 0.2% proof stress), tensile strength, and elongation at fracture.",
-        "Fit the broken specimen ends together and measure final gauge length to calculate elongation.",
-        "Record fracture appearance and any discontinuous yielding or Lüders phenomena as required by JIS Z 2241."
-      ]
-    },
 
-    "impact_jis": {
-      "name": "Charpy V-Notch Impact Test (JIS)",
-      "standard": [ "JIS Z 2242", "JIS Z 2248" ],
-      "purpose": "Determine impact energy and toughness of structural steels per JIS using Charpy V-notch specimens.",
-      "specimen": {
-        "type": "V-notch bar",
-        "prep": [
-          "Machine Charpy V-notch specimens to the dimensions specified in JIS Z 2242/JIS Z 2248.",
-          "Ensure notch geometry (angle, depth, root radius) complies with the standard.",
-          "Check surface finish and remove burrs or machining marks that could affect results.",
-          "Mark specimen orientation and notch position relative to rolling direction if required by the product standard."
+      "impact_jis": {
+        "name": "Charpy V-Notch Impact Test (JIS)",
+        "standard": [ "JIS Z 2242", "JIS Z 2248" ],
+        "purpose": "Determine impact energy and toughness of structural steels per JIS using Charpy V-notch specimens.",
+        "specimen": {
+          "type": "V-notch bar",
+          "prep": [
+            "Machine Charpy V-notch specimens to the dimensions specified in JIS Z 2242/JIS Z 2248.",
+            "Ensure notch geometry (angle, depth, root radius) complies with the standard.",
+            "Check surface finish and remove burrs or machining marks that could affect results.",
+            "Mark specimen orientation and notch position relative to rolling direction if required by the product standard."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration and energy range of the pendulum impact testing machine according to JIS Z 2242/JIS Z 2248.",
+          "Set and verify the test temperature using a suitable conditioning medium (e.g., temperature chamber, bath).",
+          "Condition specimens at the specified test temperature for sufficient time to achieve uniform temperature.",
+          "Place the specimen on the supports with the notch facing away from the striker, as required by JIS.",
+          "Release the pendulum to strike and fracture the specimen in a single blow.",
+          "Record the absorbed energy from the machine indicator or digital readout.",
+          "Repeat the test for the required number of specimens (typically three) at each temperature.",
+          "Calculate the average absorbed energy and record individual values.",
+          "Report test temperature, average impact energy, and fracture appearance (e.g., percentage shear, brittle/ductile)."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration and energy range of the pendulum impact testing machine according to JIS Z 2242/JIS Z 2248.",
-        "Set and verify the test temperature using a suitable conditioning medium (e.g., temperature chamber, bath).",
-        "Condition specimens at the specified test temperature for sufficient time to achieve uniform temperature.",
-        "Place the specimen on the supports with the notch facing away from the striker, as required by JIS.",
-        "Release the pendulum to strike and fracture the specimen in a single blow.",
-        "Record the absorbed energy from the machine indicator or digital readout.",
-        "Repeat the test for the required number of specimens (typically three) at each temperature.",
-        "Calculate the average absorbed energy and record individual values.",
-        "Report test temperature, average impact energy, and fracture appearance (e.g., percentage shear, brittle/ductile)."
-      ]
-    },
 
-    "bend_jis": {
-      "name": "Bend Test (JIS)",
-      "standard": [ "JIS Z 2248" ],
-      "purpose": "Evaluate ductility and ability of structural steels to withstand bending without cracking per JIS.",
-      "specimen": {
-        "type": "Flat strip or machined bar",
-        "prep": [
-          "Prepare rectangular bend specimens with specified width and thickness according to JIS Z 2248 or product standard.",
-          "Ensure edges are smooth and free from notches, sharp corners, or surface defects.",
-          "Record specimen thickness, width, and orientation (longitudinal or transverse to rolling direction)."
+      "bend_jis": {
+        "name": "Bend Test (JIS)",
+        "standard": [ "JIS Z 2248" ],
+        "purpose": "Evaluate ductility and ability of structural steels to withstand bending without cracking per JIS.",
+        "specimen": {
+          "type": "Flat strip or machined bar",
+          "prep": [
+            "Prepare rectangular bend specimens with specified width and thickness according to JIS Z 2248 or product standard.",
+            "Ensure edges are smooth and free from notches, sharp corners, or surface defects.",
+            "Record specimen thickness, width, and orientation (longitudinal or transverse to rolling direction)."
+          ]
+        },
+        "procedure_steps": [
+          "Select the bend test type (face bend, root bend, side bend, free bend) as specified in the relevant JIS product or welding standard.",
+          "Choose the mandrel diameter or former radius based on specimen thickness and required bend angle per JIS.",
+          "Place the specimen on the supports with the surface to be evaluated in tension during bending.",
+          "Apply bending force smoothly until the specified bend angle (often 90° or 180°) is reached.",
+          "Release the load and remove the specimen from the fixture.",
+          "Inspect the tension surface under good lighting and, if necessary, with magnification.",
+          "Record any cracks, tears, or surface discontinuities, including their length and location.",
+          "Evaluate the specimen against acceptance criteria defined in the relevant JIS product or welding standard."
         ]
       },
-      "procedure_steps": [
-        "Select the bend test type (face bend, root bend, side bend, free bend) as specified in the relevant JIS product or welding standard.",
-        "Choose the mandrel diameter or former radius based on specimen thickness and required bend angle per JIS.",
-        "Place the specimen on the supports with the surface to be evaluated in tension during bending.",
-        "Apply bending force smoothly until the specified bend angle (often 90° or 180°) is reached.",
-        "Release the load and remove the specimen from the fixture.",
-        "Inspect the tension surface under good lighting and, if necessary, with magnification.",
-        "Record any cracks, tears, or surface discontinuities, including their length and location.",
-        "Evaluate the specimen against acceptance criteria defined in the relevant JIS product or welding standard."
-      ]
-    },
 
-    "hardness_jis": {
-      "name": "Hardness Test (JIS)",
-      "standard": [ "JIS Z 2244 (Vickers)", "JIS Z 2245 (Rockwell)", "JIS Z 2243 (Brinell)" ],
-      "purpose": "Determine hardness of structural steels per JIS using Brinell, Vickers, or Rockwell methods.",
-      "specimen": {
-        "type": "Flat surface on product or sample",
-        "prep": [
-          "Prepare a clean, flat, and smooth surface by grinding or machining according to the chosen hardness method.",
-          "Ensure the surface is free from scale, rust, oil, and other contaminants.",
-          "Verify that the specimen thickness is sufficient for the selected hardness method and load as per JIS."
+      "hardness_jis": {
+        "name": "Hardness Test (JIS)",
+        "standard": [ "JIS Z 2244 (Vickers)", "JIS Z 2245 (Rockwell)", "JIS Z 2243 (Brinell)" ],
+        "purpose": "Determine hardness of structural steels per JIS using Brinell, Vickers, or Rockwell methods.",
+        "specimen": {
+          "type": "Flat surface on product or sample",
+          "prep": [
+            "Prepare a clean, flat, and smooth surface by grinding or machining according to the chosen hardness method.",
+            "Ensure the surface is free from scale, rust, oil, and other contaminants.",
+            "Verify that the specimen thickness is sufficient for the selected hardness method and load as per JIS."
+          ]
+        },
+        "procedure_steps": [
+          "Select the appropriate hardness method (Brinell, Vickers, or Rockwell) and scale according to material and thickness.",
+          "For Brinell (JIS Z 2243): choose ball diameter and test force as specified for the steel grade and thickness.",
+          "Apply the test force gradually, maintain it for the specified dwell time, then remove the force.",
+          "Measure the indentation diameter (Brinell) or diagonals (Vickers) and calculate hardness according to the relevant JIS standard.",
+          "For Rockwell (JIS Z 2245): apply the minor load, then the major load, and read hardness directly from the machine.",
+          "Perform multiple measurements at different locations to assess hardness uniformity.",
+          "Record hardness values and, if required, convert to other hardness scales using standardized conversion tables.",
+          "Compare hardness results with typical or specified ranges for the grade and application."
         ]
       },
-      "procedure_steps": [
-        "Select the appropriate hardness method (Brinell, Vickers, or Rockwell) and scale according to material and thickness.",
-        "For Brinell (JIS Z 2243): choose ball diameter and test force as specified for the steel grade and thickness.",
-        "Apply the test force gradually, maintain it for the specified dwell time, then remove the force.",
-        "Measure the indentation diameter (Brinell) or diagonals (Vickers) and calculate hardness according to the relevant JIS standard.",
-        "For Rockwell (JIS Z 2245): apply the minor load, then the major load, and read hardness directly from the machine.",
-        "Perform multiple measurements at different locations to assess hardness uniformity.",
-        "Record hardness values and, if required, convert to other hardness scales using standardized conversion tables.",
-        "Compare hardness results with typical or specified ranges for the grade and application."
-      ]
-    },
 
-    "chemical_jis": {
-      "name": "Chemical Composition Analysis (JIS context)",
-      "standard": [ "JIS G 3101", "JIS G 3106", "JIS G 1256 (analysis methods, as applicable)" ],
-      "purpose": "Determine chemical composition of structural steels and verify compliance with JIS grade limits.",
-      "specimen": {
-        "type": "Representative sample from heat or product",
-        "prep": [
-          "Select a representative sample from the heat, plate, section, or coil according to the product standard.",
-          "Remove surface contamination, scale, and coatings by machining or grinding.",
-          "Ensure the analysis surface is clean, flat, and free from inclusions or defects."
+      "chemical_jis": {
+        "name": "Chemical Composition Analysis (JIS context)",
+        "standard": [ "JIS G 3101", "JIS G 3106", "JIS G 1256 (analysis methods, as applicable)" ],
+        "purpose": "Determine chemical composition of structural steels and verify compliance with JIS grade limits.",
+        "specimen": {
+          "type": "Representative sample from heat or product",
+          "prep": [
+            "Select a representative sample from the heat, plate, section, or coil according to the product standard.",
+            "Remove surface contamination, scale, and coatings by machining or grinding.",
+            "Ensure the analysis surface is clean, flat, and free from inclusions or defects."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate analytical methods (e.g., optical emission spectroscopy, combustion analysis) according to JIS analytical standards.",
+          "Calibrate the analytical instrument using certified reference materials with compositions close to the expected range.",
+          "Perform blank and control measurements to verify instrument stability.",
+          "Carry out the analysis for all required elements (e.g., C, Mn, Si, P, S, alloying elements) according to the chosen method.",
+          "Repeat measurements as necessary to ensure repeatability and reliability.",
+          "Calculate the average composition for each element and assess measurement uncertainty if required.",
+          "Compare the measured composition with the specified limits in JIS G 3101 (SS400) or JIS G 3106 (SM490, SM570).",
+          "Prepare and issue a test report or inspection document according to contractual and JIS requirements."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate analytical methods (e.g., optical emission spectroscopy, combustion analysis) according to JIS analytical standards.",
-        "Calibrate the analytical instrument using certified reference materials with compositions close to the expected range.",
-        "Perform blank and control measurements to verify instrument stability.",
-        "Carry out the analysis for all required elements (e.g., C, Mn, Si, P, S, alloying elements) according to the chosen method.",
-        "Repeat measurements as necessary to ensure repeatability and reliability.",
-        "Calculate the average composition for each element and assess measurement uncertainty if required.",
-        "Compare the measured composition with the specified limits in JIS G 3101 (SS400) or JIS G 3106 (SM490, SM570).",
-        "Prepare and issue a test report or inspection document according to contractual and JIS requirements."
-      ]
-    },
 
-    "weld_jis": {
-      "name": "Weld Procedure Qualification (JIS context)",
-      "standard": [ "JIS Z 3841 (welding procedure qualification)", "Relevant JIS welding standards" ],
-      "purpose": "Qualify welding procedures for structural steels according to JIS requirements.",
-      "specimen": {
-        "type": "Welded test joint",
-        "prep": [
-          "Prepare test joints (butt or fillet) according to the proposed Welding Procedure Specification (WPS).",
-          "Select base materials, filler materials, joint preparation, and thickness range as per applicable JIS welding standards.",
-          "Clean joint surfaces and edges to remove rust, scale, oil, and other contaminants."
+      "weld_jis": {
+        "name": "Weld Procedure Qualification (JIS context)",
+        "standard": [ "JIS Z 3841 (welding procedure qualification)", "Relevant JIS welding standards" ],
+        "purpose": "Qualify welding procedures for structural steels according to JIS requirements.",
+        "specimen": {
+          "type": "Welded test joint",
+          "prep": [
+            "Prepare test joints (butt or fillet) according to the proposed Welding Procedure Specification (WPS).",
+            "Select base materials, filler materials, joint preparation, and thickness range as per applicable JIS welding standards.",
+            "Clean joint surfaces and edges to remove rust, scale, oil, and other contaminants."
+          ]
+        },
+        "procedure_steps": [
+          "Perform welding in accordance with the WPS, controlling preheat, interpass temperature, heat input, and travel speed.",
+          "Record all essential variables during welding (e.g., current, voltage, process, position, consumable classification).",
+          "Allow the welded joint to cool under controlled conditions as specified.",
+          "Visually inspect the weld for surface defects such as cracks, undercut, porosity, and incomplete fusion.",
+          "Perform required non-destructive tests (e.g., MT, UT, RT) on the weld according to relevant JIS NDT standards.",
+          "Extract mechanical test specimens (tensile, bend, impact) from the weld and heat-affected zone as specified.",
+          "Conduct tensile tests, bend tests, and impact tests using the appropriate JIS methods.",
+          "Evaluate all test results against the acceptance criteria in the applicable JIS welding procedure qualification standard.",
+          "If all requirements are met, approve the welding procedure and issue a Welding Procedure Qualification Record (WPQR)."
         ]
       },
-      "procedure_steps": [
-        "Perform welding in accordance with the WPS, controlling preheat, interpass temperature, heat input, and travel speed.",
-        "Record all essential variables during welding (e.g., current, voltage, process, position, consumable classification).",
-        "Allow the welded joint to cool under controlled conditions as specified.",
-        "Visually inspect the weld for surface defects such as cracks, undercut, porosity, and incomplete fusion.",
-        "Perform required non-destructive tests (e.g., MT, UT, RT) on the weld according to relevant JIS NDT standards.",
-        "Extract mechanical test specimens (tensile, bend, impact) from the weld and heat-affected zone as specified.",
-        "Conduct tensile tests, bend tests, and impact tests using the appropriate JIS methods.",
-        "Evaluate all test results against the acceptance criteria in the applicable JIS welding procedure qualification standard.",
-        "If all requirements are met, approve the welding procedure and issue a Welding Procedure Qualification Record (WPQR)."
-      ]
-    },
 
-    "ut_jis": {
-      "name": "Ultrasonic Testing (JIS context)",
-      "standard": [ "JIS Z 3060 (UT of welds)", "Relevant JIS UT standards" ],
-      "purpose": "Detect and evaluate internal discontinuities in welded joints and plates using ultrasonic testing per JIS.",
-      "specimen": {
-        "type": "Welded joint or plate",
-        "prep": [
-          "Clean the surface to remove loose scale, rust, paint, and contaminants that may interfere with probe coupling.",
-          "Ensure access to the required surfaces of the weld or plate according to the inspection plan.",
-          "Prepare reference blocks or calibration blocks with known reflectors according to applicable JIS UT standards."
+      "ut_jis": {
+        "name": "Ultrasonic Testing (JIS context)",
+        "standard": [ "JIS Z 3060 (UT of welds)", "Relevant JIS UT standards" ],
+        "purpose": "Detect and evaluate internal discontinuities in welded joints and plates using ultrasonic testing per JIS.",
+        "specimen": {
+          "type": "Welded joint or plate",
+          "prep": [
+            "Clean the surface to remove loose scale, rust, paint, and contaminants that may interfere with probe coupling.",
+            "Ensure access to the required surfaces of the weld or plate according to the inspection plan.",
+            "Prepare reference blocks or calibration blocks with known reflectors according to applicable JIS UT standards."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate ultrasonic technique (straight beam or angle beam) and probe frequency based on material thickness and defect types.",
+          "Calibrate the ultrasonic instrument using reference blocks to set time base, sensitivity, and distance calibration.",
+          "Apply suitable couplant to the test surface to ensure good acoustic coupling.",
+          "Scan the weld or plate systematically according to the scanning plan defined in the JIS UT procedure.",
+          "Adjust sensitivity and time-corrected gain (if used) to detect relevant reflectors.",
+          "Record the position, depth, and amplitude of all relevant indications.",
+          "Classify indications according to their characteristics (e.g., planar, volumetric, root, toe).",
+          "Evaluate indications against acceptance criteria specified in the applicable JIS product or weld standard.",
+          "Document test results, including calibration details, scanning coverage, indications, and acceptance status."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate ultrasonic technique (straight beam or angle beam) and probe frequency based on material thickness and defect types.",
-        "Calibrate the ultrasonic instrument using reference blocks to set time base, sensitivity, and distance calibration.",
-        "Apply suitable couplant to the test surface to ensure good acoustic coupling.",
-        "Scan the weld or plate systematically according to the scanning plan defined in the JIS UT procedure.",
-        "Adjust sensitivity and time-corrected gain (if used) to detect relevant reflectors.",
-        "Record the position, depth, and amplitude of all relevant indications.",
-        "Classify indications according to their characteristics (e.g., planar, volumetric, root, toe).",
-        "Evaluate indications against acceptance criteria specified in the applicable JIS product or weld standard.",
-        "Document test results, including calibration details, scanning coverage, indications, and acceptance status."
-      ]
-    },
 
-    "mt_jis": {
-      "name": "Magnetic Particle Testing (JIS context)",
-      "standard": [ "JIS G 0565", "JIS Z 2320 (as applicable)" ],
-      "purpose": "Detect surface and near-surface discontinuities in ferromagnetic structural steels using magnetic particle testing per JIS.",
-      "specimen": {
-        "type": "Welded joint or surface of structural component",
-        "prep": [
-          "Clean the surface to remove oil, grease, dirt, loose scale, and paint that could mask indications.",
-          "Ensure the surface is dry and accessible for magnetization and particle application.",
-          "Identify areas of interest such as weld toes, roots, and stress concentration zones."
+      "mt_jis": {
+        "name": "Magnetic Particle Testing (JIS context)",
+        "standard": [ "JIS G 0565", "JIS Z 2320 (as applicable)" ],
+        "purpose": "Detect surface and near-surface discontinuities in ferromagnetic structural steels using magnetic particle testing per JIS.",
+        "specimen": {
+          "type": "Welded joint or surface of structural component",
+          "prep": [
+            "Clean the surface to remove oil, grease, dirt, loose scale, and paint that could mask indications.",
+            "Ensure the surface is dry and accessible for magnetization and particle application.",
+            "Identify areas of interest such as weld toes, roots, and stress concentration zones."
+          ]
+        },
+        "procedure_steps": [
+          "Select magnetization technique (yoke, prod, coil, or current flow) appropriate for the geometry and area to be examined.",
+          "Verify the adequacy of the magnetic field using field indicators or reference devices as required by JIS.",
+          "Apply magnetic particles (dry or wet, visible or fluorescent) during or immediately after magnetization.",
+          "Ensure that the direction of magnetization is appropriate to detect discontinuities oriented perpendicular to the field.",
+          "Inspect the surface under suitable lighting conditions (white light or UV light for fluorescent particles).",
+          "Identify and interpret particle accumulations that indicate possible discontinuities.",
+          "Mark and record the location, size, and nature of relevant indications.",
+          "Demagnetize the component if required and clean off residual particles.",
+          "Evaluate indications against acceptance criteria in the applicable JIS product or weld standard."
         ]
       },
-      "procedure_steps": [
-        "Select magnetization technique (yoke, prod, coil, or current flow) appropriate for the geometry and area to be examined.",
-        "Verify the adequacy of the magnetic field using field indicators or reference devices as required by JIS.",
-        "Apply magnetic particles (dry or wet, visible or fluorescent) during or immediately after magnetization.",
-        "Ensure that the direction of magnetization is appropriate to detect discontinuities oriented perpendicular to the field.",
-        "Inspect the surface under suitable lighting conditions (white light or UV light for fluorescent particles).",
-        "Identify and interpret particle accumulations that indicate possible discontinuities.",
-        "Mark and record the location, size, and nature of relevant indications.",
-        "Demagnetize the component if required and clean off residual particles.",
-        "Evaluate indications against acceptance criteria in the applicable JIS product or weld standard."
-      ]
-    },
 
-    "rt_jis": {
-      "name": "Radiographic Testing (JIS context)",
-      "standard": [ "JIS Z 3104", "JIS Z 3105" ],
-      "purpose": "Detect internal volumetric and planar defects in welded joints using radiographic testing per JIS.",
-      "specimen": {
-        "type": "Welded joint",
-        "prep": [
-          "Clean the weld surface to remove contaminants that may affect image quality.",
-          "Ensure access for correct positioning of the radiation source and film/detector.",
-          "Prepare image quality indicators (IQIs) according to the relevant JIS radiographic standard."
+      "rt_jis": {
+        "name": "Radiographic Testing (JIS context)",
+        "standard": [ "JIS Z 3104", "JIS Z 3105" ],
+        "purpose": "Detect internal volumetric and planar defects in welded joints using radiographic testing per JIS.",
+        "specimen": {
+          "type": "Welded joint",
+          "prep": [
+            "Clean the weld surface to remove contaminants that may affect image quality.",
+            "Ensure access for correct positioning of the radiation source and film/detector.",
+            "Prepare image quality indicators (IQIs) according to the relevant JIS radiographic standard."
+          ]
+        },
+        "procedure_steps": [
+          "Select radiation source (X-ray or gamma), film or digital detector, and exposure parameters based on material thickness and required sensitivity.",
+          "Position the source, weld, and film/detector according to the geometric requirements of the applicable JIS radiographic standard.",
+          "Place IQIs on the source side or film side as specified to verify image quality.",
+          "Shield surrounding areas and ensure radiation safety measures are in place.",
+          "Expose the film/detector for the calculated time to achieve the required film density or detector response.",
+          "Process the film or acquire digital images according to manufacturer instructions and JIS requirements.",
+          "Evaluate radiographs for image quality, including IQI visibility, density, and contrast.",
+          "Interpret indications (e.g., porosity, slag inclusions, lack of fusion, cracks) and determine their size and location.",
+          "Compare indications with acceptance criteria in the applicable JIS product or weld standard and document results."
         ]
       },
-      "procedure_steps": [
-        "Select radiation source (X-ray or gamma), film or digital detector, and exposure parameters based on material thickness and required sensitivity.",
-        "Position the source, weld, and film/detector according to the geometric requirements of the applicable JIS radiographic standard.",
-        "Place IQIs on the source side or film side as specified to verify image quality.",
-        "Shield surrounding areas and ensure radiation safety measures are in place.",
-        "Expose the film/detector for the calculated time to achieve the required film density or detector response.",
-        "Process the film or acquire digital images according to manufacturer instructions and JIS requirements.",
-        "Evaluate radiographs for image quality, including IQI visibility, density, and contrast.",
-        "Interpret indications (e.g., porosity, slag inclusions, lack of fusion, cracks) and determine their size and location.",
-        "Compare indications with acceptance criteria in the applicable JIS product or weld standard and document results."
-      ]
-    },
 
-    "microstructure_jis": {
-      "name": "Microstructural Examination (JIS context)",
-      "standard": [ "JIS G 0551 (macro/micro examination, as applicable)" ],
-      "purpose": "Prepare and examine metallographic specimens to assess microstructure, grain size, and weld quality.",
-      "specimen": {
-        "type": "Section from plate, section, or weld",
-        "prep": [
-          "Cut a representative sample from the area of interest (e.g., base metal, HAZ, weld metal).",
-          "Avoid overheating or altering the microstructure during cutting.",
-          "Mount the sample in a suitable mounting medium if required.",
-          "Grind the surface using progressively finer abrasives to remove cutting damage.",
-          "Polish the surface to a mirror finish using appropriate polishing media."
+      "microstructure_jis": {
+        "name": "Microstructural Examination (JIS context)",
+        "standard": [ "JIS G 0551 (macro/micro examination, as applicable)" ],
+        "purpose": "Prepare and examine metallographic specimens to assess microstructure, grain size, and weld quality.",
+        "specimen": {
+          "type": "Section from plate, section, or weld",
+          "prep": [
+            "Cut a representative sample from the area of interest (e.g., base metal, HAZ, weld metal).",
+            "Avoid overheating or altering the microstructure during cutting.",
+            "Mount the sample in a suitable mounting medium if required.",
+            "Grind the surface using progressively finer abrasives to remove cutting damage.",
+            "Polish the surface to a mirror finish using appropriate polishing media."
+          ]
+        },
+        "procedure_steps": [
+          "Select an appropriate etchant for the steel grade (e.g., Nital) and prepare it safely.",
+          "Etch the polished surface for a controlled time to reveal the microstructure.",
+          "Rinse and dry the specimen carefully after etching.",
+          "Examine the microstructure under an optical microscope at suitable magnifications.",
+          "Identify phases, grain size, inclusions, and any microstructural anomalies (e.g., banding, coarse grains).",
+          "For welds, assess weld metal structure, HAZ width, fusion line, and presence of defects according to the applicable JIS guidance.",
+          "If required, compare grain size with reference charts or specified limits.",
+          "Document micrographs and observations in a metallographic report."
         ]
       },
-      "procedure_steps": [
-        "Select an appropriate etchant for the steel grade (e.g., Nital) and prepare it safely.",
-        "Etch the polished surface for a controlled time to reveal the microstructure.",
-        "Rinse and dry the specimen carefully after etching.",
-        "Examine the microstructure under an optical microscope at suitable magnifications.",
-        "Identify phases, grain size, inclusions, and any microstructural anomalies (e.g., banding, coarse grains).",
-        "For welds, assess weld metal structure, HAZ width, fusion line, and presence of defects according to the applicable JIS guidance.",
-        "If required, compare grain size with reference charts or specified limits.",
-        "Document micrographs and observations in a metallographic report."
-      ]
-    },
 
-    "coating_thickness_jis": {
-      "name": "Coating Thickness Measurement (JIS context)",
-      "standard": [ "JIS K 5600-1-7", "JIS K 5600-1-8" ],
-      "purpose": "Measure dry film thickness of coatings on structural steel components according to JIS.",
-      "specimen": {
-        "type": "Coated steel surface",
-        "prep": [
-          "Ensure the coating is fully cured according to the coating manufacturer's recommendations.",
-          "Clean the surface to remove loose dust and contaminants that may affect gauge readings.",
-          "Verify that the substrate and coating system are suitable for the selected measurement method."
+      "coating_thickness_jis": {
+        "name": "Coating Thickness Measurement (JIS context)",
+        "standard": [ "JIS K 5600-1-7", "JIS K 5600-1-8" ],
+        "purpose": "Measure dry film thickness of coatings on structural steel components according to JIS.",
+        "specimen": {
+          "type": "Coated steel surface",
+          "prep": [
+            "Ensure the coating is fully cured according to the coating manufacturer's recommendations.",
+            "Clean the surface to remove loose dust and contaminants that may affect gauge readings.",
+            "Verify that the substrate and coating system are suitable for the selected measurement method."
+          ]
+        },
+        "procedure_steps": [
+          "Select an appropriate coating thickness gauge (magnetic, eddy current, or other) according to JIS K 5600.",
+          "Calibrate the gauge using certified calibration foils or reference standards on a similar substrate.",
+          "Take multiple measurements at each specified location or area according to the inspection plan.",
+          "Discard outliers if justified and calculate the mean thickness for each area.",
+          "Compare measured thickness values with the specified minimum and maximum limits for the coating system.",
+          "Record all readings, calibration details, and any areas of non-compliance.",
+          "If required, repeat measurements after corrective actions (e.g., additional coating)."
         ]
       },
-      "procedure_steps": [
-        "Select an appropriate coating thickness gauge (magnetic, eddy current, or other) according to JIS K 5600.",
-        "Calibrate the gauge using certified calibration foils or reference standards on a similar substrate.",
-        "Take multiple measurements at each specified location or area according to the inspection plan.",
-        "Discard outliers if justified and calculate the mean thickness for each area.",
-        "Compare measured thickness values with the specified minimum and maximum limits for the coating system.",
-        "Record all readings, calibration details, and any areas of non-compliance.",
-        "If required, repeat measurements after corrective actions (e.g., additional coating)."
-      ]
-    },
-    "tensile_gb": {
-      "name": "Tensile Test (GB)",
-      "standard": [ "GB/T 228.1" ],
-      "purpose": "Determine yield strength, tensile strength, and elongation of metallic materials at room temperature per GB/T 228.1.",
-      "specimen": {
-        "type": "Round or flat",
-        "prep": [
-          "Select specimen type (round or flat) according to product form and GB/T 228.1.",
-          "Machine specimen to specified dimensions, tolerances, and surface finish in GB/T 228.1.",
-          "Avoid overheating or work hardening during machining.",
-          "Remove burrs and surface defects without altering cross-section.",
-          "Measure and record original gauge length, width, thickness, and cross-sectional area.",
-          "Mark gauge length as specified in GB/T 228.1."
+      "tensile_gb": {
+        "name": "Tensile Test (GB)",
+        "standard": [ "GB/T 228.1" ],
+        "purpose": "Determine yield strength, tensile strength, and elongation of metallic materials at room temperature per GB/T 228.1.",
+        "specimen": {
+          "type": "Round or flat",
+          "prep": [
+            "Select specimen type (round or flat) according to product form and GB/T 228.1.",
+            "Machine specimen to specified dimensions, tolerances, and surface finish in GB/T 228.1.",
+            "Avoid overheating or work hardening during machining.",
+            "Remove burrs and surface defects without altering cross-section.",
+            "Measure and record original gauge length, width, thickness, and cross-sectional area.",
+            "Mark gauge length as specified in GB/T 228.1."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration of tensile testing machine and extensometer according to GB/T 228.1.",
+          "Mount specimen in grips ensuring correct alignment to minimize bending.",
+          "Attach extensometer if required for yield and elongation determination.",
+          "Select loading rate (stress rate or strain rate) according to GB/T 228.1 method.",
+          "Zero load and extensometer before test.",
+          "Apply tensile load continuously at specified rate until fracture.",
+          "Record load and extension (or stress and strain) as required.",
+          "Determine yield strength or proof strength, tensile strength, and elongation at fracture.",
+          "Fit broken specimen ends together and measure final gauge length to calculate elongation.",
+          "Record fracture appearance and any discontinuous yielding phenomena."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration of tensile testing machine and extensometer according to GB/T 228.1.",
-        "Mount specimen in grips ensuring correct alignment to minimize bending.",
-        "Attach extensometer if required for yield and elongation determination.",
-        "Select loading rate (stress rate or strain rate) according to GB/T 228.1 method.",
-        "Zero load and extensometer before test.",
-        "Apply tensile load continuously at specified rate until fracture.",
-        "Record load and extension (or stress and strain) as required.",
-        "Determine yield strength or proof strength, tensile strength, and elongation at fracture.",
-        "Fit broken specimen ends together and measure final gauge length to calculate elongation.",
-        "Record fracture appearance and any discontinuous yielding phenomena."
-      ]
-    },
-    "impact_gb": {
-      "name": "Charpy V-Notch Impact Test (GB)",
-      "standard": [ "GB/T 229" ],
-      "purpose": "Determine Charpy V-notch impact energy and toughness of metallic materials per GB/T 229.",
-      "specimen": {
-        "type": "V-notch bar",
-        "prep": [
-          "Machine Charpy V-notch specimens to dimensions specified in GB/T 229.",
-          "Ensure notch angle, depth, and root radius comply with GB/T 229.",
-          "Remove burrs and machining marks that may affect results.",
-          "Mark specimen orientation and notch position relative to rolling direction if required by product standard."
+      "impact_gb": {
+        "name": "Charpy V-Notch Impact Test (GB)",
+        "standard": [ "GB/T 229" ],
+        "purpose": "Determine Charpy V-notch impact energy and toughness of metallic materials per GB/T 229.",
+        "specimen": {
+          "type": "V-notch bar",
+          "prep": [
+            "Machine Charpy V-notch specimens to dimensions specified in GB/T 229.",
+            "Ensure notch angle, depth, and root radius comply with GB/T 229.",
+            "Remove burrs and machining marks that may affect results.",
+            "Mark specimen orientation and notch position relative to rolling direction if required by product standard."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration and energy range of pendulum impact machine according to GB/T 229.",
+          "Set and verify test temperature using appropriate conditioning medium.",
+          "Condition specimens at specified temperature for sufficient time to achieve uniform temperature.",
+          "Place specimen on supports with notch facing away from striker as required.",
+          "Release pendulum to fracture specimen in a single blow.",
+          "Record absorbed energy from machine indicator or digital readout.",
+          "Test required number of specimens (typically three) at each temperature.",
+          "Calculate average absorbed energy and record individual values.",
+          "Report test temperature, average impact energy, and fracture appearance (e.g., percentage shear)."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration and energy range of pendulum impact machine according to GB/T 229.",
-        "Set and verify test temperature using appropriate conditioning medium.",
-        "Condition specimens at specified temperature for sufficient time to achieve uniform temperature.",
-        "Place specimen on supports with notch facing away from striker as required.",
-        "Release pendulum to fracture specimen in a single blow.",
-        "Record absorbed energy from machine indicator or digital readout.",
-        "Test required number of specimens (typically three) at each temperature.",
-        "Calculate average absorbed energy and record individual values.",
-        "Report test temperature, average impact energy, and fracture appearance (e.g., percentage shear)."
-      ]
-    },
-    "bend_gb": {
-      "name": "Bend Test (GB)",
-      "standard": [ "GB/T 232" ],
-      "purpose": "Evaluate ductility and bending performance of metallic materials per GB/T 232.",
-      "specimen": {
-        "type": "Flat strip or machined bar",
-        "prep": [
-          "Prepare rectangular bend specimens with specified width and thickness according to GB/T 232 or product standard.",
-          "Ensure edges are smooth and free from notches and sharp corners.",
-          "Record specimen thickness, width, and orientation (longitudinal or transverse)."
+      "bend_gb": {
+        "name": "Bend Test (GB)",
+        "standard": [ "GB/T 232" ],
+        "purpose": "Evaluate ductility and bending performance of metallic materials per GB/T 232.",
+        "specimen": {
+          "type": "Flat strip or machined bar",
+          "prep": [
+            "Prepare rectangular bend specimens with specified width and thickness according to GB/T 232 or product standard.",
+            "Ensure edges are smooth and free from notches and sharp corners.",
+            "Record specimen thickness, width, and orientation (longitudinal or transverse)."
+          ]
+        },
+        "procedure_steps": [
+          "Select bend method and mandrel diameter or former radius according to GB/T 232 or product standard.",
+          "Place specimen on supports with surface to be evaluated in tension during bending.",
+          "Apply bending force smoothly until specified bend angle (often 90° or 180°) is reached.",
+          "Release load and remove specimen.",
+          "Inspect tension surface under good lighting and, if necessary, magnification.",
+          "Record any cracks, tears, or surface discontinuities and their size and location.",
+          "Evaluate against acceptance criteria in relevant GB product or welding standard."
         ]
       },
-      "procedure_steps": [
-        "Select bend method and mandrel diameter or former radius according to GB/T 232 or product standard.",
-        "Place specimen on supports with surface to be evaluated in tension during bending.",
-        "Apply bending force smoothly until specified bend angle (often 90° or 180°) is reached.",
-        "Release load and remove specimen.",
-        "Inspect tension surface under good lighting and, if necessary, magnification.",
-        "Record any cracks, tears, or surface discontinuities and their size and location.",
-        "Evaluate against acceptance criteria in relevant GB product or welding standard."
-      ]
-    },
-    "hardness_gb": {
-      "name": "Hardness Test (GB)",
-      "standard": [ "GB/T 231.1 (Brinell)", "GB/T 230.1 (Rockwell)", "GB/T 4340.1 (Vickers)" ],
-      "purpose": "Determine hardness of metallic materials per GB standards using Brinell, Rockwell, or Vickers methods.",
-      "specimen": {
-        "type": "Flat surface on product or sample",
-        "prep": [
-          "Prepare clean, flat, smooth surface by grinding or machining.",
-          "Ensure surface is free from scale, rust, oil, and contaminants.",
-          "Verify specimen thickness is sufficient for selected hardness method and load."
+      "hardness_gb": {
+        "name": "Hardness Test (GB)",
+        "standard": [ "GB/T 231.1 (Brinell)", "GB/T 230.1 (Rockwell)", "GB/T 4340.1 (Vickers)" ],
+        "purpose": "Determine hardness of metallic materials per GB standards using Brinell, Rockwell, or Vickers methods.",
+        "specimen": {
+          "type": "Flat surface on product or sample",
+          "prep": [
+            "Prepare clean, flat, smooth surface by grinding or machining.",
+            "Ensure surface is free from scale, rust, oil, and contaminants.",
+            "Verify specimen thickness is sufficient for selected hardness method and load."
+          ]
+        },
+        "procedure_steps": [
+          "Select hardness method and scale according to material and thickness.",
+          "For Brinell: choose ball diameter and test force per GB/T 231.1.",
+          "Apply test force, maintain for specified dwell time, then remove.",
+          "Measure indentation diameter (Brinell) or diagonals (Vickers) and calculate hardness.",
+          "For Rockwell: apply minor load, then major load, and read hardness directly.",
+          "Perform multiple measurements at different locations.",
+          "Record hardness values and convert to other scales if required using standardized tables.",
+          "Compare with specified or typical hardness ranges for grade and application."
         ]
       },
-      "procedure_steps": [
-        "Select hardness method and scale according to material and thickness.",
-        "For Brinell: choose ball diameter and test force per GB/T 231.1.",
-        "Apply test force, maintain for specified dwell time, then remove.",
-        "Measure indentation diameter (Brinell) or diagonals (Vickers) and calculate hardness.",
-        "For Rockwell: apply minor load, then major load, and read hardness directly.",
-        "Perform multiple measurements at different locations.",
-        "Record hardness values and convert to other scales if required using standardized tables.",
-        "Compare with specified or typical hardness ranges for grade and application."
-      ]
-    },
-    "chemical_gb": {
-      "name": "Chemical Composition Analysis (GB)",
-      "standard": [ "GB/T 4336", "GB/T 20123", "GB/T 20125", "GB/T 222" ],
-      "purpose": "Determine chemical composition of steels and verify compliance with GB grade limits.",
-      "specimen": {
-        "type": "Representative sample from heat or product",
-        "prep": [
-          "Select representative sample from heat, plate, section, or coil according to product standard.",
-          "Remove surface contamination, scale, and coatings by machining or grinding.",
-          "Ensure analysis surface is clean, flat, and free from inclusions or defects."
+      "chemical_gb": {
+        "name": "Chemical Composition Analysis (GB)",
+        "standard": [ "GB/T 4336", "GB/T 20123", "GB/T 20125", "GB/T 222" ],
+        "purpose": "Determine chemical composition of steels and verify compliance with GB grade limits.",
+        "specimen": {
+          "type": "Representative sample from heat or product",
+          "prep": [
+            "Select representative sample from heat, plate, section, or coil according to product standard.",
+            "Remove surface contamination, scale, and coatings by machining or grinding.",
+            "Ensure analysis surface is clean, flat, and free from inclusions or defects."
+          ]
+        },
+        "procedure_steps": [
+          "Select analytical method (e.g., optical emission spectroscopy, combustion analysis) according to GB/T 4336, GB/T 20123, or GB/T 20125.",
+          "Calibrate instrument using certified reference materials.",
+          "Perform blank and control measurements to verify stability.",
+          "Analyze all required elements (C, Mn, Si, P, S, alloying elements) per method standard.",
+          "Repeat measurements as needed to ensure repeatability.",
+          "Calculate average composition and assess uncertainty if required.",
+          "Compare measured composition with specified limits in GB/T 700 (Q235B), GB/T 1591 (Q345B, Q460).",
+          "Issue test report or inspection document according to GB/T 222 and contractual requirements."
         ]
       },
-      "procedure_steps": [
-        "Select analytical method (e.g., optical emission spectroscopy, combustion analysis) according to GB/T 4336, GB/T 20123, or GB/T 20125.",
-        "Calibrate instrument using certified reference materials.",
-        "Perform blank and control measurements to verify stability.",
-        "Analyze all required elements (C, Mn, Si, P, S, alloying elements) per method standard.",
-        "Repeat measurements as needed to ensure repeatability.",
-        "Calculate average composition and assess uncertainty if required.",
-        "Compare measured composition with specified limits in GB/T 700 (Q235B), GB/T 1591 (Q345B, Q460).",
-        "Issue test report or inspection document according to GB/T 222 and contractual requirements."
-      ]
-    },
-    "ut_gb": {
-      "name": "Ultrasonic Testing (GB)",
-      "standard": [ "GB/T 11345", "GB/T 29712 (as applicable)" ],
-      "purpose": "Detect internal discontinuities in welded joints and plates using ultrasonic testing per GB.",
-      "specimen": {
-        "type": "Welded joint or plate",
-        "prep": [
-          "Clean surface to remove scale, rust, paint, and contaminants.",
-          "Ensure access to required surfaces according to inspection plan.",
-          "Prepare reference blocks with known reflectors according to GB UT standards."
+      "ut_gb": {
+        "name": "Ultrasonic Testing (GB)",
+        "standard": [ "GB/T 11345", "GB/T 29712 (as applicable)" ],
+        "purpose": "Detect internal discontinuities in welded joints and plates using ultrasonic testing per GB.",
+        "specimen": {
+          "type": "Welded joint or plate",
+          "prep": [
+            "Clean surface to remove scale, rust, paint, and contaminants.",
+            "Ensure access to required surfaces according to inspection plan.",
+            "Prepare reference blocks with known reflectors according to GB UT standards."
+          ]
+        },
+        "procedure_steps": [
+          "Select UT technique (straight beam or angle beam) and probe frequency based on thickness and defect type.",
+          "Calibrate instrument using reference blocks to set time base, sensitivity, and distance calibration.",
+          "Apply couplant to test surface.",
+          "Scan weld or plate systematically according to GB/T 11345 procedure.",
+          "Adjust sensitivity and time-corrected gain if used.",
+          "Record position, depth, and amplitude of relevant indications.",
+          "Classify indications (planar, volumetric, root, toe, etc.).",
+          "Evaluate indications against acceptance criteria in applicable GB product or weld standard.",
+          "Document calibration details, coverage, indications, and acceptance status."
         ]
       },
-      "procedure_steps": [
-        "Select UT technique (straight beam or angle beam) and probe frequency based on thickness and defect type.",
-        "Calibrate instrument using reference blocks to set time base, sensitivity, and distance calibration.",
-        "Apply couplant to test surface.",
-        "Scan weld or plate systematically according to GB/T 11345 procedure.",
-        "Adjust sensitivity and time-corrected gain if used.",
-        "Record position, depth, and amplitude of relevant indications.",
-        "Classify indications (planar, volumetric, root, toe, etc.).",
-        "Evaluate indications against acceptance criteria in applicable GB product or weld standard.",
-        "Document calibration details, coverage, indications, and acceptance status."
-      ]
-    },
-    "mt_gb": {
-      "name": "Magnetic Particle Testing (GB)",
-      "standard": [ "GB/T 15822.1", "GB/T 9444 (as applicable)" ],
-      "purpose": "Detect surface and near-surface discontinuities in ferromagnetic steels using MT per GB.",
-      "specimen": {
-        "type": "Welded joint or surface of structural component",
-        "prep": [
-          "Clean surface to remove oil, grease, dirt, loose scale, and paint.",
-          "Ensure surface is dry and accessible for magnetization and particle application.",
-          "Identify areas of interest such as weld toes, roots, and stress concentration zones."
+      "mt_gb": {
+        "name": "Magnetic Particle Testing (GB)",
+        "standard": [ "GB/T 15822.1", "GB/T 9444 (as applicable)" ],
+        "purpose": "Detect surface and near-surface discontinuities in ferromagnetic steels using MT per GB.",
+        "specimen": {
+          "type": "Welded joint or surface of structural component",
+          "prep": [
+            "Clean surface to remove oil, grease, dirt, loose scale, and paint.",
+            "Ensure surface is dry and accessible for magnetization and particle application.",
+            "Identify areas of interest such as weld toes, roots, and stress concentration zones."
+          ]
+        },
+        "procedure_steps": [
+          "Select magnetization technique (yoke, prod, coil, current flow) appropriate for geometry.",
+          "Verify adequacy of magnetic field using field indicators per GB/T 15822.1.",
+          "Apply magnetic particles (dry or wet, visible or fluorescent) during or immediately after magnetization.",
+          "Ensure magnetization direction is suitable to detect discontinuities perpendicular to field.",
+          "Inspect surface under appropriate lighting (white or UV).",
+          "Identify and interpret particle accumulations indicating possible discontinuities.",
+          "Mark and record location, size, and nature of relevant indications.",
+          "Demagnetize component if required and clean residual particles.",
+          "Evaluate indications against acceptance criteria in applicable GB product or weld standard."
         ]
       },
-      "procedure_steps": [
-        "Select magnetization technique (yoke, prod, coil, current flow) appropriate for geometry.",
-        "Verify adequacy of magnetic field using field indicators per GB/T 15822.1.",
-        "Apply magnetic particles (dry or wet, visible or fluorescent) during or immediately after magnetization.",
-        "Ensure magnetization direction is suitable to detect discontinuities perpendicular to field.",
-        "Inspect surface under appropriate lighting (white or UV).",
-        "Identify and interpret particle accumulations indicating possible discontinuities.",
-        "Mark and record location, size, and nature of relevant indications.",
-        "Demagnetize component if required and clean residual particles.",
-        "Evaluate indications against acceptance criteria in applicable GB product or weld standard."
-      ]
-    },
-    "rt_gb": {
-      "name": "Radiographic Testing (GB)",
-      "standard": [ "GB/T 3323.1" ],
-      "purpose": "Detect internal volumetric and planar defects in welded joints using RT per GB.",
-      "specimen": {
-        "type": "Welded joint",
-        "prep": [
-          "Clean weld surface to remove contaminants affecting image quality.",
-          "Ensure access for correct positioning of radiation source and film/detector.",
-          "Prepare image quality indicators (IQIs) according to GB/T 3323.1."
+      "rt_gb": {
+        "name": "Radiographic Testing (GB)",
+        "standard": [ "GB/T 3323.1" ],
+        "purpose": "Detect internal volumetric and planar defects in welded joints using RT per GB.",
+        "specimen": {
+          "type": "Welded joint",
+          "prep": [
+            "Clean weld surface to remove contaminants affecting image quality.",
+            "Ensure access for correct positioning of radiation source and film/detector.",
+            "Prepare image quality indicators (IQIs) according to GB/T 3323.1."
+          ]
+        },
+        "procedure_steps": [
+          "Select radiation source, film/detector, and exposure parameters based on thickness and sensitivity.",
+          "Position source, weld, and film/detector according to geometric requirements of GB/T 3323.1.",
+          "Place IQIs as specified to verify image quality.",
+          "Implement radiation safety and shielding.",
+          "Expose film/detector for calculated time.",
+          "Process film or acquire digital images per manufacturer and GB requirements.",
+          "Evaluate radiographs for IQI visibility, density, and contrast.",
+          "Interpret indications (porosity, slag, lack of fusion, cracks) and determine size and location.",
+          "Compare with acceptance criteria in applicable GB product or weld standard and document results."
         ]
       },
-      "procedure_steps": [
-        "Select radiation source, film/detector, and exposure parameters based on thickness and sensitivity.",
-        "Position source, weld, and film/detector according to geometric requirements of GB/T 3323.1.",
-        "Place IQIs as specified to verify image quality.",
-        "Implement radiation safety and shielding.",
-        "Expose film/detector for calculated time.",
-        "Process film or acquire digital images per manufacturer and GB requirements.",
-        "Evaluate radiographs for IQI visibility, density, and contrast.",
-        "Interpret indications (porosity, slag, lack of fusion, cracks) and determine size and location.",
-        "Compare with acceptance criteria in applicable GB product or weld standard and document results."
-      ]
-    },
-    "weld_gb": {
-      "name": "Weld Procedure Qualification (GB)",
-      "standard": [ "GB/T 12467", "GB/T 19804 (as applicable)" ],
-      "purpose": "Qualify welding procedures for structural steels according to GB requirements.",
-      "specimen": {
-        "type": "Welded test joint",
-        "prep": [
-          "Prepare butt or fillet test joints according to proposed WPS and GB/T 12467.",
-          "Select base materials, filler materials, joint preparation, and thickness range per GB welding standards.",
-          "Clean joint surfaces and edges to remove rust, scale, oil, and contaminants."
+      "weld_gb": {
+        "name": "Weld Procedure Qualification (GB)",
+        "standard": [ "GB/T 12467", "GB/T 19804 (as applicable)" ],
+        "purpose": "Qualify welding procedures for structural steels according to GB requirements.",
+        "specimen": {
+          "type": "Welded test joint",
+          "prep": [
+            "Prepare butt or fillet test joints according to proposed WPS and GB/T 12467.",
+            "Select base materials, filler materials, joint preparation, and thickness range per GB welding standards.",
+            "Clean joint surfaces and edges to remove rust, scale, oil, and contaminants."
+          ]
+        },
+        "procedure_steps": [
+          "Perform welding in accordance with WPS, controlling preheat, interpass temperature, heat input, and travel speed.",
+          "Record essential variables (process, current, voltage, position, consumable classification).",
+          "Allow welded joint to cool under controlled conditions.",
+          "Visually inspect weld for surface defects.",
+          "Perform required NDT (MT, UT, RT) according to GB standards.",
+          "Extract tensile, bend, and impact specimens from weld and HAZ as specified.",
+          "Conduct mechanical tests using appropriate GB methods.",
+          "Evaluate results against acceptance criteria in GB/T 12467 or applicable standard.",
+          "If compliant, approve procedure and issue WPQR."
         ]
       },
-      "procedure_steps": [
-        "Perform welding in accordance with WPS, controlling preheat, interpass temperature, heat input, and travel speed.",
-        "Record essential variables (process, current, voltage, position, consumable classification).",
-        "Allow welded joint to cool under controlled conditions.",
-        "Visually inspect weld for surface defects.",
-        "Perform required NDT (MT, UT, RT) according to GB standards.",
-        "Extract tensile, bend, and impact specimens from weld and HAZ as specified.",
-        "Conduct mechanical tests using appropriate GB methods.",
-        "Evaluate results against acceptance criteria in GB/T 12467 or applicable standard.",
-        "If compliant, approve procedure and issue WPQR."
-      ]
-    },
-    "microstructure_gb": {
-      "name": "Microstructural Examination (GB)",
-      "standard": [ "GB/T 13298" ],
-      "purpose": "Prepare and examine metallographic specimens to assess microstructure and grain size per GB.",
-      "specimen": {
-        "type": "Section from plate, section, or weld",
-        "prep": [
-          "Cut representative sample from base metal, HAZ, or weld metal.",
-          "Avoid overheating or altering microstructure during cutting.",
-          "Mount sample if required.",
-          "Grind with progressively finer abrasives.",
-          "Polish to mirror finish."
+      "microstructure_gb": {
+        "name": "Microstructural Examination (GB)",
+        "standard": [ "GB/T 13298" ],
+        "purpose": "Prepare and examine metallographic specimens to assess microstructure and grain size per GB.",
+        "specimen": {
+          "type": "Section from plate, section, or weld",
+          "prep": [
+            "Cut representative sample from base metal, HAZ, or weld metal.",
+            "Avoid overheating or altering microstructure during cutting.",
+            "Mount sample if required.",
+            "Grind with progressively finer abrasives.",
+            "Polish to mirror finish."
+          ]
+        },
+        "procedure_steps": [
+          "Select suitable etchant (e.g., Nital) and prepare safely.",
+          "Etch polished surface for controlled time to reveal microstructure.",
+          "Rinse and dry specimen after etching.",
+          "Examine under optical microscope at appropriate magnifications.",
+          "Identify phases, grain size, inclusions, and anomalies (banding, coarse grains).",
+          "For welds, assess weld metal, HAZ width, fusion line, and defects.",
+          "Compare grain size with GB/T 6394 or specified limits if required.",
+          "Document micrographs and observations in report."
         ]
       },
-      "procedure_steps": [
-        "Select suitable etchant (e.g., Nital) and prepare safely.",
-        "Etch polished surface for controlled time to reveal microstructure.",
-        "Rinse and dry specimen after etching.",
-        "Examine under optical microscope at appropriate magnifications.",
-        "Identify phases, grain size, inclusions, and anomalies (banding, coarse grains).",
-        "For welds, assess weld metal, HAZ width, fusion line, and defects.",
-        "Compare grain size with GB/T 6394 or specified limits if required.",
-        "Document micrographs and observations in report."
-      ]
-    },
-    "coating_thickness_gb": {
-      "name": "Coating Thickness Measurement (GB)",
-      "standard": [ "GB/T 4956", "GB/T 13452.2" ],
-      "purpose": "Measure dry film thickness of coatings on steel substrates per GB.",
-      "specimen": {
-        "type": "Coated steel surface",
-        "prep": [
-          "Ensure coating is fully cured per manufacturer.",
-          "Clean surface to remove loose dust and contaminants.",
-          "Verify substrate and coating are suitable for selected method."
+      "coating_thickness_gb": {
+        "name": "Coating Thickness Measurement (GB)",
+        "standard": [ "GB/T 4956", "GB/T 13452.2" ],
+        "purpose": "Measure dry film thickness of coatings on steel substrates per GB.",
+        "specimen": {
+          "type": "Coated steel surface",
+          "prep": [
+            "Ensure coating is fully cured per manufacturer.",
+            "Clean surface to remove loose dust and contaminants.",
+            "Verify substrate and coating are suitable for selected method."
+          ]
+        },
+        "procedure_steps": [
+          "Select magnetic or eddy current gauge according to GB/T 4956 or GB/T 13452.2.",
+          "Calibrate gauge using certified foils or reference standards on similar substrate.",
+          "Take multiple measurements at each specified location.",
+          "Discard outliers if justified and calculate mean thickness.",
+          "Compare measured values with specified coating thickness limits.",
+          "Record readings, calibration details, and non-compliant areas.",
+          "Repeat measurements after corrective coating if required."
         ]
       },
-      "procedure_steps": [
-        "Select magnetic or eddy current gauge according to GB/T 4956 or GB/T 13452.2.",
-        "Calibrate gauge using certified foils or reference standards on similar substrate.",
-        "Take multiple measurements at each specified location.",
-        "Discard outliers if justified and calculate mean thickness.",
-        "Compare measured values with specified coating thickness limits.",
-        "Record readings, calibration details, and non-compliant areas.",
-        "Repeat measurements after corrective coating if required."
-      ]
-    },
 
-    "tensile_gost": {
-      "name": "Tensile Test (GOST)",
-      "standard": [ "GOST 1497" ],
-      "purpose": "Determine tensile properties of metals per GOST 1497.",
-      "specimen": {
-        "type": "Round or flat",
-        "prep": [
-          "Prepare specimens according to dimensions and tolerances in GOST 1497.",
-          "Avoid overheating and work hardening during machining.",
-          "Remove burrs and defects without changing cross-section.",
-          "Measure and record original dimensions and gauge length.",
-          "Mark gauge length as specified."
+      "tensile_gost": {
+        "name": "Tensile Test (GOST)",
+        "standard": [ "GOST 1497" ],
+        "purpose": "Determine tensile properties of metals per GOST 1497.",
+        "specimen": {
+          "type": "Round or flat",
+          "prep": [
+            "Prepare specimens according to dimensions and tolerances in GOST 1497.",
+            "Avoid overheating and work hardening during machining.",
+            "Remove burrs and defects without changing cross-section.",
+            "Measure and record original dimensions and gauge length.",
+            "Mark gauge length as specified."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration of tensile machine per GOST requirements.",
+          "Mount specimen ensuring alignment to minimize bending.",
+          "Attach extensometer if required.",
+          "Apply load at specified rate according to GOST 1497.",
+          "Record load and extension until fracture.",
+          "Determine yield strength or proof stress, tensile strength, and elongation.",
+          "Measure final gauge length and calculate elongation.",
+          "Record fracture appearance."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration of tensile machine per GOST requirements.",
-        "Mount specimen ensuring alignment to minimize bending.",
-        "Attach extensometer if required.",
-        "Apply load at specified rate according to GOST 1497.",
-        "Record load and extension until fracture.",
-        "Determine yield strength or proof stress, tensile strength, and elongation.",
-        "Measure final gauge length and calculate elongation.",
-        "Record fracture appearance."
-      ]
-    },
-    "impact_gost": {
-      "name": "Charpy Impact Test (GOST)",
-      "standard": [ "GOST 9454" ],
-      "purpose": "Determine impact toughness of metals using Charpy specimens per GOST 9454.",
-      "specimen": {
-        "type": "V-notch or U-notch bar",
-        "prep": [
-          "Machine specimens to dimensions and notch geometry specified in GOST 9454.",
-          "Remove burrs and machining marks.",
-          "Mark orientation and notch position if required."
+      "impact_gost": {
+        "name": "Charpy Impact Test (GOST)",
+        "standard": [ "GOST 9454" ],
+        "purpose": "Determine impact toughness of metals using Charpy specimens per GOST 9454.",
+        "specimen": {
+          "type": "V-notch or U-notch bar",
+          "prep": [
+            "Machine specimens to dimensions and notch geometry specified in GOST 9454.",
+            "Remove burrs and machining marks.",
+            "Mark orientation and notch position if required."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration and energy range of impact machine.",
+          "Set and control test temperature as specified.",
+          "Condition specimens at test temperature for required time.",
+          "Place specimen with notch orientation per GOST 9454.",
+          "Fracture specimen with single blow of pendulum.",
+          "Record absorbed energy.",
+          "Test required number of specimens and calculate average.",
+          "Report temperature, average energy, and fracture appearance."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration and energy range of impact machine.",
-        "Set and control test temperature as specified.",
-        "Condition specimens at test temperature for required time.",
-        "Place specimen with notch orientation per GOST 9454.",
-        "Fracture specimen with single blow of pendulum.",
-        "Record absorbed energy.",
-        "Test required number of specimens and calculate average.",
-        "Report temperature, average energy, and fracture appearance."
-      ]
-    },
-    "bend_gost": {
-      "name": "Bend Test (GOST)",
-      "standard": [ "GOST 14019" ],
-      "purpose": "Evaluate bending properties of metals per GOST 14019.",
-      "specimen": {
-        "type": "Flat strip or bar",
-        "prep": [
-          "Prepare specimens to dimensions specified in GOST 14019 or product standard.",
-          "Ensure edges are smooth and free from notches.",
-          "Record thickness, width, and orientation."
+      "bend_gost": {
+        "name": "Bend Test (GOST)",
+        "standard": [ "GOST 14019" ],
+        "purpose": "Evaluate bending properties of metals per GOST 14019.",
+        "specimen": {
+          "type": "Flat strip or bar",
+          "prep": [
+            "Prepare specimens to dimensions specified in GOST 14019 or product standard.",
+            "Ensure edges are smooth and free from notches.",
+            "Record thickness, width, and orientation."
+          ]
+        },
+        "procedure_steps": [
+          "Select mandrel diameter and bend angle according to GOST 14019 or product standard.",
+          "Place specimen with required surface in tension.",
+          "Bend smoothly to specified angle.",
+          "Inspect tension surface for cracks and defects.",
+          "Evaluate against acceptance criteria in relevant GOST standard."
         ]
       },
-      "procedure_steps": [
-        "Select mandrel diameter and bend angle according to GOST 14019 or product standard.",
-        "Place specimen with required surface in tension.",
-        "Bend smoothly to specified angle.",
-        "Inspect tension surface for cracks and defects.",
-        "Evaluate against acceptance criteria in relevant GOST standard."
-      ]
-    },
-    "hardness_gost": {
-      "name": "Hardness Test (GOST)",
-      "standard": [ "GOST 9012 (Brinell)", "GOST 9013 (Rockwell)", "GOST 2999 (Vickers)" ],
-      "purpose": "Determine hardness of metals per GOST methods.",
-      "specimen": {
-        "type": "Flat surface",
-        "prep": [
-          "Prepare clean, flat, smooth surface.",
-          "Ensure sufficient thickness for selected method and load.",
-          "Remove scale, rust, and contaminants."
+      "hardness_gost": {
+        "name": "Hardness Test (GOST)",
+        "standard": [ "GOST 9012 (Brinell)", "GOST 9013 (Rockwell)", "GOST 2999 (Vickers)" ],
+        "purpose": "Determine hardness of metals per GOST methods.",
+        "specimen": {
+          "type": "Flat surface",
+          "prep": [
+            "Prepare clean, flat, smooth surface.",
+            "Ensure sufficient thickness for selected method and load.",
+            "Remove scale, rust, and contaminants."
+          ]
+        },
+        "procedure_steps": [
+          "Select hardness method and scale according to material and thickness.",
+          "Apply load and dwell time per relevant GOST standard.",
+          "Measure indentation and calculate hardness.",
+          "Perform multiple measurements at different locations.",
+          "Record values and convert if required using standard tables.",
+          "Compare with specified or typical hardness ranges."
         ]
       },
-      "procedure_steps": [
-        "Select hardness method and scale according to material and thickness.",
-        "Apply load and dwell time per relevant GOST standard.",
-        "Measure indentation and calculate hardness.",
-        "Perform multiple measurements at different locations.",
-        "Record values and convert if required using standard tables.",
-        "Compare with specified or typical hardness ranges."
-      ]
-    },
-    "chemical_gost": {
-      "name": "Chemical Composition Analysis (GOST)",
-      "standard": [ "GOST 22536.0–22536.5" ],
-      "purpose": "Determine chemical composition of steels per GOST analytical methods.",
-      "specimen": {
-        "type": "Representative sample",
-        "prep": [
-          "Select representative sample from heat or product.",
-          "Remove surface contamination and scale.",
-          "Prepare clean analysis surface."
+      "chemical_gost": {
+        "name": "Chemical Composition Analysis (GOST)",
+        "standard": [ "GOST 22536.0–22536.5" ],
+        "purpose": "Determine chemical composition of steels per GOST analytical methods.",
+        "specimen": {
+          "type": "Representative sample",
+          "prep": [
+            "Select representative sample from heat or product.",
+            "Remove surface contamination and scale.",
+            "Prepare clean analysis surface."
+          ]
+        },
+        "procedure_steps": [
+          "Select analytical method according to relevant part of GOST 22536.",
+          "Calibrate instrument with certified reference materials.",
+          "Perform blank and control measurements.",
+          "Analyze required elements according to method.",
+          "Repeat as needed for repeatability.",
+          "Calculate average composition.",
+          "Compare with limits in GOST 380 (St3sp) and GOST 19281 (09G2S).",
+          "Issue composition report per contractual requirements."
         ]
       },
-      "procedure_steps": [
-        "Select analytical method according to relevant part of GOST 22536.",
-        "Calibrate instrument with certified reference materials.",
-        "Perform blank and control measurements.",
-        "Analyze required elements according to method.",
-        "Repeat as needed for repeatability.",
-        "Calculate average composition.",
-        "Compare with limits in GOST 380 (St3sp) and GOST 19281 (09G2S).",
-        "Issue composition report per contractual requirements."
-      ]
-    },
-    "ut_gost": {
-      "name": "Ultrasonic Testing (GOST)",
-      "standard": [ "GOST 14782" ],
-      "purpose": "Detect internal defects in welds and products using UT per GOST 14782.",
-      "specimen": {
-        "type": "Welded joint or plate",
-        "prep": [
-          "Clean surface for good coupling.",
-          "Ensure access to required surfaces.",
-          "Prepare reference blocks per GOST 14782."
+      "ut_gost": {
+        "name": "Ultrasonic Testing (GOST)",
+        "standard": [ "GOST 14782" ],
+        "purpose": "Detect internal defects in welds and products using UT per GOST 14782.",
+        "specimen": {
+          "type": "Welded joint or plate",
+          "prep": [
+            "Clean surface for good coupling.",
+            "Ensure access to required surfaces.",
+            "Prepare reference blocks per GOST 14782."
+          ]
+        },
+        "procedure_steps": [
+          "Select UT technique and probe frequency.",
+          "Calibrate instrument using reference blocks.",
+          "Apply couplant and scan according to procedure.",
+          "Record indications with position, depth, and amplitude.",
+          "Classify indications and evaluate against acceptance criteria in applicable GOST standard.",
+          "Document calibration, coverage, and results."
         ]
       },
-      "procedure_steps": [
-        "Select UT technique and probe frequency.",
-        "Calibrate instrument using reference blocks.",
-        "Apply couplant and scan according to procedure.",
-        "Record indications with position, depth, and amplitude.",
-        "Classify indications and evaluate against acceptance criteria in applicable GOST standard.",
-        "Document calibration, coverage, and results."
-      ]
-    },
-    "mt_gost": {
-      "name": "Magnetic Particle Testing (GOST)",
-      "standard": [ "GOST 21105" ],
-      "purpose": "Detect surface and near-surface defects in ferromagnetic materials using MT per GOST 21105.",
-      "specimen": {
-        "type": "Welded joint or surface",
-        "prep": [
-          "Clean surface from contaminants.",
-          "Ensure accessibility for magnetization and particle application."
+      "mt_gost": {
+        "name": "Magnetic Particle Testing (GOST)",
+        "standard": [ "GOST 21105" ],
+        "purpose": "Detect surface and near-surface defects in ferromagnetic materials using MT per GOST 21105.",
+        "specimen": {
+          "type": "Welded joint or surface",
+          "prep": [
+            "Clean surface from contaminants.",
+            "Ensure accessibility for magnetization and particle application."
+          ]
+        },
+        "procedure_steps": [
+          "Select magnetization method suitable for geometry.",
+          "Verify magnetic field adequacy per GOST 21105.",
+          "Apply magnetic particles during or immediately after magnetization.",
+          "Inspect under appropriate lighting.",
+          "Mark and record relevant indications.",
+          "Demagnetize and clean if required.",
+          "Evaluate indications against acceptance criteria in applicable GOST standard."
         ]
       },
-      "procedure_steps": [
-        "Select magnetization method suitable for geometry.",
-        "Verify magnetic field adequacy per GOST 21105.",
-        "Apply magnetic particles during or immediately after magnetization.",
-        "Inspect under appropriate lighting.",
-        "Mark and record relevant indications.",
-        "Demagnetize and clean if required.",
-        "Evaluate indications against acceptance criteria in applicable GOST standard."
-      ]
-    },
-    "rt_gost": {
-      "name": "Radiographic Testing (GOST)",
-      "standard": [ "GOST 7512" ],
-      "purpose": "Detect internal defects in welds using RT per GOST 7512.",
-      "specimen": {
-        "type": "Welded joint",
-        "prep": [
-          "Clean weld surface.",
-          "Ensure access for source and film/detector.",
-          "Prepare IQIs per GOST 7512."
+      "rt_gost": {
+        "name": "Radiographic Testing (GOST)",
+        "standard": [ "GOST 7512" ],
+        "purpose": "Detect internal defects in welds using RT per GOST 7512.",
+        "specimen": {
+          "type": "Welded joint",
+          "prep": [
+            "Clean weld surface.",
+            "Ensure access for source and film/detector.",
+            "Prepare IQIs per GOST 7512."
+          ]
+        },
+        "procedure_steps": [
+          "Select radiation source and exposure parameters.",
+          "Position source, weld, and film/detector per GOST 7512.",
+          "Place IQIs as specified.",
+          "Expose and process film or acquire digital images.",
+          "Evaluate image quality and interpret indications.",
+          "Compare with acceptance criteria in applicable GOST standard.",
+          "Document results."
         ]
       },
-      "procedure_steps": [
-        "Select radiation source and exposure parameters.",
-        "Position source, weld, and film/detector per GOST 7512.",
-        "Place IQIs as specified.",
-        "Expose and process film or acquire digital images.",
-        "Evaluate image quality and interpret indications.",
-        "Compare with acceptance criteria in applicable GOST standard.",
-        "Document results."
-      ]
-    },
-    "weld_gost": {
-      "name": "Weld Procedure Qualification (GOST context)",
-      "standard": [ "GOST 5264", "GOST 8713", "GOST 14771 (as applicable)" ],
-      "purpose": "Qualify welding procedures for structural steels according to GOST requirements.",
-      "specimen": {
-        "type": "Welded test joint",
-        "prep": [
-          "Prepare test joints according to proposed WPS and relevant GOST welding standards.",
-          "Select base and filler materials and joint preparation per standard.",
-          "Clean joint surfaces."
+      "weld_gost": {
+        "name": "Weld Procedure Qualification (GOST context)",
+        "standard": [ "GOST 5264", "GOST 8713", "GOST 14771 (as applicable)" ],
+        "purpose": "Qualify welding procedures for structural steels according to GOST requirements.",
+        "specimen": {
+          "type": "Welded test joint",
+          "prep": [
+            "Prepare test joints according to proposed WPS and relevant GOST welding standards.",
+            "Select base and filler materials and joint preparation per standard.",
+            "Clean joint surfaces."
+          ]
+        },
+        "procedure_steps": [
+          "Perform welding per WPS, controlling essential variables.",
+          "Record welding parameters.",
+          "Visually inspect weld.",
+          "Perform required NDT (MT, UT, RT) per GOST standards.",
+          "Extract mechanical test specimens from weld and HAZ.",
+          "Conduct tensile, bend, and impact tests per GOST methods.",
+          "Evaluate results against acceptance criteria in applicable GOST welding qualification standard.",
+          "Approve procedure and issue qualification record if compliant."
         ]
       },
-      "procedure_steps": [
-        "Perform welding per WPS, controlling essential variables.",
-        "Record welding parameters.",
-        "Visually inspect weld.",
-        "Perform required NDT (MT, UT, RT) per GOST standards.",
-        "Extract mechanical test specimens from weld and HAZ.",
-        "Conduct tensile, bend, and impact tests per GOST methods.",
-        "Evaluate results against acceptance criteria in applicable GOST welding qualification standard.",
-        "Approve procedure and issue qualification record if compliant."
-      ]
-    },
-    "microstructure_gost": {
-      "name": "Microstructural Examination (GOST)",
-      "standard": [ "GOST 5639" ],
-      "purpose": "Determine grain size and assess microstructure per GOST 5639.",
-      "specimen": {
-        "type": "Section from plate, section, or weld",
-        "prep": [
-          "Cut representative sample.",
-          "Mount if required.",
-          "Grind and polish to mirror finish."
+      "microstructure_gost": {
+        "name": "Microstructural Examination (GOST)",
+        "standard": [ "GOST 5639" ],
+        "purpose": "Determine grain size and assess microstructure per GOST 5639.",
+        "specimen": {
+          "type": "Section from plate, section, or weld",
+          "prep": [
+            "Cut representative sample.",
+            "Mount if required.",
+            "Grind and polish to mirror finish."
+          ]
+        },
+        "procedure_steps": [
+          "Etch with suitable reagent.",
+          "Examine under microscope.",
+          "Determine grain size according to GOST 5639.",
+          "Assess phases and anomalies.",
+          "Document micrographs and results."
         ]
       },
-      "procedure_steps": [
-        "Etch with suitable reagent.",
-        "Examine under microscope.",
-        "Determine grain size according to GOST 5639.",
-        "Assess phases and anomalies.",
-        "Document micrographs and results."
-      ]
-    },
-    "coating_thickness_gost": {
-      "name": "Coating Thickness Measurement (GOST)",
-      "standard": [ "GOST 9.302" ],
-      "purpose": "Measure coating thickness on metal substrates per GOST 9.302.",
-      "specimen": {
-        "type": "Coated steel surface",
-        "prep": [
-          "Ensure coating is cured.",
-          "Clean surface from loose contaminants."
+      "coating_thickness_gost": {
+        "name": "Coating Thickness Measurement (GOST)",
+        "standard": [ "GOST 9.302" ],
+        "purpose": "Measure coating thickness on metal substrates per GOST 9.302.",
+        "specimen": {
+          "type": "Coated steel surface",
+          "prep": [
+            "Ensure coating is cured.",
+            "Clean surface from loose contaminants."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate thickness gauge.",
+          "Calibrate using reference standards.",
+          "Measure at specified locations.",
+          "Calculate mean thickness and compare with specified limits.",
+          "Record results and non-compliant areas."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate thickness gauge.",
-        "Calibrate using reference standards.",
-        "Measure at specified locations.",
-        "Calculate mean thickness and compare with specified limits.",
-        "Record results and non-compliant areas."
-      ]
-    },
-    "tensile_asnz": {
-      "name": "Tensile Test (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 1391" ],
-      "purpose": "Determine yield strength, tensile strength and elongation of hot-rolled structural steels at room temperature.",
-      "specimen": {
-        "type": "Round or flat specimen",
-        "prep": [
-          "Select specimen orientation (longitudinal or transverse) as specified in AS/NZS 3678 or AS/NZS 3679.1.",
-          "Machine the specimen to the dimensions, tolerances and surface finish specified in AS 1391 for the chosen specimen type.",
-          "Avoid overheating or work hardening during machining by using appropriate cutting speeds, feeds and coolant.",
-          "Remove burrs and sharp edges without altering the cross-sectional area in the gauge length.",
-          "Measure and record the original gauge length, width, thickness and cross-sectional area using calibrated instruments.",
-          "Mark the gauge length clearly on the specimen using a fine scribe or punch marks as required by AS 1391."
+      "tensile_asnz": {
+        "name": "Tensile Test (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 1391" ],
+        "purpose": "Determine yield strength, tensile strength and elongation of hot-rolled structural steels at room temperature.",
+        "specimen": {
+          "type": "Round or flat specimen",
+          "prep": [
+            "Select specimen orientation (longitudinal or transverse) as specified in AS/NZS 3678 or AS/NZS 3679.1.",
+            "Machine the specimen to the dimensions, tolerances and surface finish specified in AS 1391 for the chosen specimen type.",
+            "Avoid overheating or work hardening during machining by using appropriate cutting speeds, feeds and coolant.",
+            "Remove burrs and sharp edges without altering the cross-sectional area in the gauge length.",
+            "Measure and record the original gauge length, width, thickness and cross-sectional area using calibrated instruments.",
+            "Mark the gauge length clearly on the specimen using a fine scribe or punch marks as required by AS 1391."
+          ]
+        },
+        "procedure_steps": [
+          "Verify that the tensile testing machine and extensometer (if used) are calibrated in accordance with AS 1391.",
+          "Select the appropriate load range and ensure the grips are suitable for the specimen geometry.",
+          "Mount the specimen in the grips, aligning it carefully to minimise bending stresses during loading.",
+          "Attach the extensometer to the gauge length if required for determination of yield or proof stress and modulus.",
+          "Zero the load and extensometer readings before commencing the test.",
+          "Apply tensile load continuously and without shock at the strain or stress rate specified in AS 1391 for the product form.",
+          "Record load and extension (or stress and strain) throughout the test, particularly in the elastic and yielding regions.",
+          "Continue loading until the specimen fractures, ensuring that the fracture occurs within the gauge length where possible.",
+          "Remove the broken specimen, fit the fracture surfaces together and measure the final gauge length to determine percentage elongation.",
+          "Calculate yield strength or proof stress, tensile strength and elongation in accordance with AS 1391 and report the results with specimen orientation and test conditions."
         ]
       },
-      "procedure_steps": [
-        "Verify that the tensile testing machine and extensometer (if used) are calibrated in accordance with AS 1391.",
-        "Select the appropriate load range and ensure the grips are suitable for the specimen geometry.",
-        "Mount the specimen in the grips, aligning it carefully to minimise bending stresses during loading.",
-        "Attach the extensometer to the gauge length if required for determination of yield or proof stress and modulus.",
-        "Zero the load and extensometer readings before commencing the test.",
-        "Apply tensile load continuously and without shock at the strain or stress rate specified in AS 1391 for the product form.",
-        "Record load and extension (or stress and strain) throughout the test, particularly in the elastic and yielding regions.",
-        "Continue loading until the specimen fractures, ensuring that the fracture occurs within the gauge length where possible.",
-        "Remove the broken specimen, fit the fracture surfaces together and measure the final gauge length to determine percentage elongation.",
-        "Calculate yield strength or proof stress, tensile strength and elongation in accordance with AS 1391 and report the results with specimen orientation and test conditions."
-      ]
-    },
-    "impact_asnz": {
-      "name": "Charpy V-Notch Impact Test (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 1544.2" ],
-      "purpose": "Determine the Charpy V-notch impact energy and toughness of structural steels at specified test temperatures.",
-      "specimen": {
-        "type": "Charpy V-notch bar",
-        "prep": [
-          "Machine Charpy V-notch specimens to the dimensions specified in AS 1544.2, including length, width and thickness.",
-          "Machine the V-notch with the specified angle, depth and root radius, ensuring compliance with AS 1544.2 tolerances.",
-          "Remove machining marks and burrs from the notch and specimen surfaces that could influence fracture behaviour.",
-          "Mark the rolling direction and notch orientation on the specimen if required by the product standard or test specification."
+      "impact_asnz": {
+        "name": "Charpy V-Notch Impact Test (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 1544.2" ],
+        "purpose": "Determine the Charpy V-notch impact energy and toughness of structural steels at specified test temperatures.",
+        "specimen": {
+          "type": "Charpy V-notch bar",
+          "prep": [
+            "Machine Charpy V-notch specimens to the dimensions specified in AS 1544.2, including length, width and thickness.",
+            "Machine the V-notch with the specified angle, depth and root radius, ensuring compliance with AS 1544.2 tolerances.",
+            "Remove machining marks and burrs from the notch and specimen surfaces that could influence fracture behaviour.",
+            "Mark the rolling direction and notch orientation on the specimen if required by the product standard or test specification."
+          ]
+        },
+        "procedure_steps": [
+          "Confirm that the pendulum impact testing machine is calibrated and that the energy range is appropriate for the expected absorbed energy.",
+          "Set the test temperature using a suitable conditioning medium and verify the temperature with a calibrated thermometer.",
+          "Condition the specimens at the specified test temperature for sufficient time to ensure uniform temperature throughout the specimen.",
+          "Place the specimen on the supports of the impact machine with the notch facing away from the striker, as required by AS 1544.2.",
+          "Raise the pendulum to the initial height and release it to strike and fracture the specimen in a single blow.",
+          "Record the absorbed energy from the machine indicator or digital readout for each specimen.",
+          "Test the required number of specimens (typically three) at each temperature and calculate the average absorbed energy.",
+          "Observe and, if required, record the fracture appearance (e.g. percentage shear, fibrous or brittle fracture).",
+          "Report the test temperature, individual and average impact energies, specimen orientation and any observations on fracture appearance."
         ]
       },
-      "procedure_steps": [
-        "Confirm that the pendulum impact testing machine is calibrated and that the energy range is appropriate for the expected absorbed energy.",
-        "Set the test temperature using a suitable conditioning medium and verify the temperature with a calibrated thermometer.",
-        "Condition the specimens at the specified test temperature for sufficient time to ensure uniform temperature throughout the specimen.",
-        "Place the specimen on the supports of the impact machine with the notch facing away from the striker, as required by AS 1544.2.",
-        "Raise the pendulum to the initial height and release it to strike and fracture the specimen in a single blow.",
-        "Record the absorbed energy from the machine indicator or digital readout for each specimen.",
-        "Test the required number of specimens (typically three) at each temperature and calculate the average absorbed energy.",
-        "Observe and, if required, record the fracture appearance (e.g. percentage shear, fibrous or brittle fracture).",
-        "Report the test temperature, individual and average impact energies, specimen orientation and any observations on fracture appearance."
-      ]
-    },
-    "bend_asnz": {
-      "name": "Bend Test (AS/NZS Hot-Rolled)",
-      "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
-      "purpose": "Evaluate the ductility and ability of hot-rolled structural steels to withstand bending without cracking.",
-      "specimen": {
-        "type": "Flat strip or machined bar",
-        "prep": [
-          "Prepare rectangular bend specimens with the width and thickness specified in the relevant product or welding standard.",
-          "Ensure that the edges are smooth and free from notches, sharp corners and surface defects that could act as stress raisers.",
-          "Record the specimen thickness, width and orientation (longitudinal or transverse to the rolling direction)."
+      "bend_asnz": {
+        "name": "Bend Test (AS/NZS Hot-Rolled)",
+        "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
+        "purpose": "Evaluate the ductility and ability of hot-rolled structural steels to withstand bending without cracking.",
+        "specimen": {
+          "type": "Flat strip or machined bar",
+          "prep": [
+            "Prepare rectangular bend specimens with the width and thickness specified in the relevant product or welding standard.",
+            "Ensure that the edges are smooth and free from notches, sharp corners and surface defects that could act as stress raisers.",
+            "Record the specimen thickness, width and orientation (longitudinal or transverse to the rolling direction)."
+          ]
+        },
+        "procedure_steps": [
+          "Select the bend test type (e.g. face bend, root bend, side bend) and the mandrel diameter or former radius specified for the grade and thickness.",
+          "Place the specimen on the supports of the bending fixture with the surface to be evaluated in tension during bending.",
+          "Apply bending force smoothly and continuously until the specified bend angle (often 90° or 180°) is reached.",
+          "Release the load and remove the specimen from the fixture without causing additional damage.",
+          "Inspect the tension surface under good lighting and, if necessary, with low-power magnification.",
+          "Record any cracks, tears or surface discontinuities, including their length, location and orientation.",
+          "Evaluate the specimen against the acceptance criteria defined in the relevant AS/NZS product or welding standard."
         ]
       },
-      "procedure_steps": [
-        "Select the bend test type (e.g. face bend, root bend, side bend) and the mandrel diameter or former radius specified for the grade and thickness.",
-        "Place the specimen on the supports of the bending fixture with the surface to be evaluated in tension during bending.",
-        "Apply bending force smoothly and continuously until the specified bend angle (often 90° or 180°) is reached.",
-        "Release the load and remove the specimen from the fixture without causing additional damage.",
-        "Inspect the tension surface under good lighting and, if necessary, with low-power magnification.",
-        "Record any cracks, tears or surface discontinuities, including their length, location and orientation.",
-        "Evaluate the specimen against the acceptance criteria defined in the relevant AS/NZS product or welding standard."
-      ]
-    },
-    "hardness_asnz": {
-      "name": "Hardness Test (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 1816", "AS 2205.6" ],
-      "purpose": "Determine the hardness of hot-rolled structural steels using Brinell, Vickers or Rockwell methods for quality control and correlation with strength.",
-      "specimen": {
-        "type": "Flat surface on product or sample",
-        "prep": [
-          "Prepare a clean, flat and smooth surface by grinding or machining to remove scale, decarburised layers and surface irregularities.",
-          "Ensure that the specimen thickness is sufficient for the selected hardness method and test load to avoid influence from the underlying support."
+      "hardness_asnz": {
+        "name": "Hardness Test (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 1816", "AS 2205.6" ],
+        "purpose": "Determine the hardness of hot-rolled structural steels using Brinell, Vickers or Rockwell methods for quality control and correlation with strength.",
+        "specimen": {
+          "type": "Flat surface on product or sample",
+          "prep": [
+            "Prepare a clean, flat and smooth surface by grinding or machining to remove scale, decarburised layers and surface irregularities.",
+            "Ensure that the specimen thickness is sufficient for the selected hardness method and test load to avoid influence from the underlying support."
+          ]
+        },
+        "procedure_steps": [
+          "Select the appropriate hardness method and scale (Brinell, Vickers or Rockwell) based on material thickness and expected hardness range.",
+          "Calibrate or verify the hardness testing machine using certified reference blocks in accordance with the relevant standard.",
+          "Place the specimen on a firm, stable support to prevent movement during testing.",
+          "Apply the test force gradually, maintain it for the specified dwell time, then remove the force as required by the chosen method.",
+          "Measure the indentation and calculate the hardness value according to the relevant standard.",
+          "Perform multiple measurements at different locations to assess hardness uniformity across the product.",
+          "Record all hardness values, test method, scale, load and location, and convert to other hardness scales only using standardized conversion tables when necessary."
         ]
       },
-      "procedure_steps": [
-        "Select the appropriate hardness method and scale (Brinell, Vickers or Rockwell) based on material thickness and expected hardness range.",
-        "Calibrate or verify the hardness testing machine using certified reference blocks in accordance with the relevant standard.",
-        "Place the specimen on a firm, stable support to prevent movement during testing.",
-        "Apply the test force gradually, maintain it for the specified dwell time, then remove the force as required by the chosen method.",
-        "Measure the indentation and calculate the hardness value according to the relevant standard.",
-        "Perform multiple measurements at different locations to assess hardness uniformity across the product.",
-        "Record all hardness values, test method, scale, load and location, and convert to other hardness scales only using standardized conversion tables when necessary."
-      ]
-    },
-    "chemical_asnz": {
-      "name": "Chemical Composition Analysis (AS/NZS Hot-Rolled)",
-      "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
-      "purpose": "Determine the chemical composition of structural steels and verify compliance with AS/NZS grade limits.",
-      "specimen": {
-        "type": "Representative sample from heat or product",
-        "prep": [
-          "Select a representative sample from the heat, plate or section according to the sampling requirements of the product standard.",
-          "Remove surface contamination, scale and coatings by machining or grinding to expose clean metal.",
-          "Ensure the analysis surface is flat, clean and free from inclusions, porosity or other defects that could affect the result."
+      "chemical_asnz": {
+        "name": "Chemical Composition Analysis (AS/NZS Hot-Rolled)",
+        "standard": [ "AS/NZS 3678", "AS/NZS 3679.1" ],
+        "purpose": "Determine the chemical composition of structural steels and verify compliance with AS/NZS grade limits.",
+        "specimen": {
+          "type": "Representative sample from heat or product",
+          "prep": [
+            "Select a representative sample from the heat, plate or section according to the sampling requirements of the product standard.",
+            "Remove surface contamination, scale and coatings by machining or grinding to expose clean metal.",
+            "Ensure the analysis surface is flat, clean and free from inclusions, porosity or other defects that could affect the result."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate analytical methods (e.g. optical emission spectroscopy, combustion analysis) in accordance with referenced analytical standards.",
+          "Calibrate the analytical instrument using certified reference materials with compositions close to the expected range.",
+          "Perform blank and control measurements to verify instrument stability and accuracy.",
+          "Carry out the analysis for all required elements (C, Mn, Si, P, S and alloying elements) according to the chosen method.",
+          "Repeat measurements as necessary to ensure repeatability and reliability of the results.",
+          "Calculate the average composition for each element and assess measurement uncertainty if required.",
+          "Compare the measured composition with the specified limits in AS/NZS 3678 or AS/NZS 3679.1 for the relevant grade.",
+          "Document and report the results, including method, calibration details and any deviations from standard procedures."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate analytical methods (e.g. optical emission spectroscopy, combustion analysis) in accordance with referenced analytical standards.",
-        "Calibrate the analytical instrument using certified reference materials with compositions close to the expected range.",
-        "Perform blank and control measurements to verify instrument stability and accuracy.",
-        "Carry out the analysis for all required elements (C, Mn, Si, P, S and alloying elements) according to the chosen method.",
-        "Repeat measurements as necessary to ensure repeatability and reliability of the results.",
-        "Calculate the average composition for each element and assess measurement uncertainty if required.",
-        "Compare the measured composition with the specified limits in AS/NZS 3678 or AS/NZS 3679.1 for the relevant grade.",
-        "Document and report the results, including method, calibration details and any deviations from standard procedures."
-      ]
-    },
-    "ut_asnz": {
-      "name": "Ultrasonic Testing (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 1710", "AS 2207" ],
-      "purpose": "Detect and evaluate internal discontinuities in plates and structural sections using ultrasonic methods.",
-      "specimen": {
-        "type": "Plate or structural section",
-        "prep": [
-          "Clean the test surface to remove scale, rust, paint and contaminants that could interfere with probe coupling.",
-          "Ensure access to all required scanning surfaces as specified in the test procedure or project specification."
+      "ut_asnz": {
+        "name": "Ultrasonic Testing (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 1710", "AS 2207" ],
+        "purpose": "Detect and evaluate internal discontinuities in plates and structural sections using ultrasonic methods.",
+        "specimen": {
+          "type": "Plate or structural section",
+          "prep": [
+            "Clean the test surface to remove scale, rust, paint and contaminants that could interfere with probe coupling.",
+            "Ensure access to all required scanning surfaces as specified in the test procedure or project specification."
+          ]
+        },
+        "procedure_steps": [
+          "Select appropriate probes (straight-beam or angle-beam) and test frequencies according to AS 2207 and product thickness.",
+          "Calibrate the ultrasonic instrument using reference blocks with known reflectors in accordance with AS 2207.",
+          "Apply suitable couplant to the test surface to ensure good acoustic coupling between the probe and the material.",
+          "Scan the test area systematically using the specified scanning pattern, overlap and probe movement speed.",
+          "Identify and record all relevant indications, noting their position, depth and echo amplitude.",
+          "Evaluate indications against the acceptance criteria defined in the applicable standard or project specification.",
+          "Document test parameters, calibration details, indications and acceptance decisions in a test report."
         ]
       },
-      "procedure_steps": [
-        "Select appropriate probes (straight-beam or angle-beam) and test frequencies according to AS 2207 and product thickness.",
-        "Calibrate the ultrasonic instrument using reference blocks with known reflectors in accordance with AS 2207.",
-        "Apply suitable couplant to the test surface to ensure good acoustic coupling between the probe and the material.",
-        "Scan the test area systematically using the specified scanning pattern, overlap and probe movement speed.",
-        "Identify and record all relevant indications, noting their position, depth and echo amplitude.",
-        "Evaluate indications against the acceptance criteria defined in the applicable standard or project specification.",
-        "Document test parameters, calibration details, indications and acceptance decisions in a test report."
-      ]
-    },
-    "mt_asnz": {
-      "name": "Magnetic Particle Testing (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 1171" ],
-      "purpose": "Detect surface and near-surface discontinuities in ferromagnetic steels using magnetic particle methods.",
-      "specimen": {
-        "type": "Ferromagnetic surface on product or weld",
-        "prep": [
-          "Clean the surface to remove loose scale, rust, oil, grease and other contaminants.",
-          "Ensure that the surface is dry and accessible for magnetisation and particle application."
+      "mt_asnz": {
+        "name": "Magnetic Particle Testing (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 1171" ],
+        "purpose": "Detect surface and near-surface discontinuities in ferromagnetic steels using magnetic particle methods.",
+        "specimen": {
+          "type": "Ferromagnetic surface on product or weld",
+          "prep": [
+            "Clean the surface to remove loose scale, rust, oil, grease and other contaminants.",
+            "Ensure that the surface is dry and accessible for magnetisation and particle application."
+          ]
+        },
+        "procedure_steps": [
+          "Select an appropriate magnetisation technique (e.g. yoke, prod, coil or central conductor) based on geometry and defect orientation.",
+          "Verify the adequacy of magnetisation using a field indicator or reference device as required by AS 1171.",
+          "Apply magnetic particles (dry or wet, visible or fluorescent) to the test area during or immediately after magnetisation.",
+          "Observe the surface under suitable lighting (white light for visible particles, UV-A for fluorescent particles) for particle accumulations indicating discontinuities.",
+          "Mark and record all relevant indications, noting their size, location and orientation.",
+          "Demagnetise the component if required by the specification and clean off residual particles.",
+          "Evaluate indications against the acceptance criteria specified in the applicable standard or project specification and document the results."
         ]
       },
-      "procedure_steps": [
-        "Select an appropriate magnetisation technique (e.g. yoke, prod, coil or central conductor) based on geometry and defect orientation.",
-        "Verify the adequacy of magnetisation using a field indicator or reference device as required by AS 1171.",
-        "Apply magnetic particles (dry or wet, visible or fluorescent) to the test area during or immediately after magnetisation.",
-        "Observe the surface under suitable lighting (white light for visible particles, UV-A for fluorescent particles) for particle accumulations indicating discontinuities.",
-        "Mark and record all relevant indications, noting their size, location and orientation.",
-        "Demagnetise the component if required by the specification and clean off residual particles.",
-        "Evaluate indications against the acceptance criteria specified in the applicable standard or project specification and document the results."
-      ]
-    },
-    "rt_asnz": {
-      "name": "Radiographic Testing (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 2177" ],
-      "purpose": "Detect and evaluate internal discontinuities in welds and steel components using X-ray or gamma radiography.",
-      "specimen": {
-        "type": "Welded joint or steel component",
-        "prep": [
-          "Clean the surface of the weld or component to remove dirt, grease and loose scale.",
-          "Position the component to allow correct source-to-film geometry as specified in AS 2177."
+      "rt_asnz": {
+        "name": "Radiographic Testing (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 2177" ],
+        "purpose": "Detect and evaluate internal discontinuities in welds and steel components using X-ray or gamma radiography.",
+        "specimen": {
+          "type": "Welded joint or steel component",
+          "prep": [
+            "Clean the surface of the weld or component to remove dirt, grease and loose scale.",
+            "Position the component to allow correct source-to-film geometry as specified in AS 2177."
+          ]
+        },
+        "procedure_steps": [
+          "Select the appropriate radiation source (X-ray or gamma) and energy level based on material thickness and sensitivity requirements.",
+          "Place image quality indicators (IQIs) on the source side or film side as required by AS 2177 to verify radiographic sensitivity.",
+          "Position the film or digital detector to achieve the specified coverage and geometric unsharpness.",
+          "Set exposure parameters (time, distance, kV or source strength) to obtain the required film density or detector response.",
+          "Carry out the exposure while ensuring radiation safety procedures are followed.",
+          "Process the film or retrieve digital images and assess image quality, including density, contrast and IQI visibility.",
+          "Interpret the radiographs for internal discontinuities such as porosity, slag inclusions, lack of fusion and cracks.",
+          "Evaluate indications against the acceptance criteria specified in the applicable standard or project specification and document the results."
         ]
       },
-      "procedure_steps": [
-        "Select the appropriate radiation source (X-ray or gamma) and energy level based on material thickness and sensitivity requirements.",
-        "Place image quality indicators (IQIs) on the source side or film side as required by AS 2177 to verify radiographic sensitivity.",
-        "Position the film or digital detector to achieve the specified coverage and geometric unsharpness.",
-        "Set exposure parameters (time, distance, kV or source strength) to obtain the required film density or detector response.",
-        "Carry out the exposure while ensuring radiation safety procedures are followed.",
-        "Process the film or retrieve digital images and assess image quality, including density, contrast and IQI visibility.",
-        "Interpret the radiographs for internal discontinuities such as porosity, slag inclusions, lack of fusion and cracks.",
-        "Evaluate indications against the acceptance criteria specified in the applicable standard or project specification and document the results."
-      ]
-    },
-    "weld_asnz": {
-      "name": "Weld Procedure Qualification (AS/NZS Hot-Rolled)",
-      "standard": [ "AS/NZS 1554.1" ],
-      "purpose": "Qualify welding procedures for structural steel by testing welded procedure qualification records (PQRs).",
-      "specimen": {
-        "type": "Welded test coupon",
-        "prep": [
-          "Prepare a test coupon with joint configuration, material grade and thickness representative of production welding.",
-          "Weld the coupon in accordance with the proposed welding procedure specification (WPS), recording all essential variables."
+      "weld_asnz": {
+        "name": "Weld Procedure Qualification (AS/NZS Hot-Rolled)",
+        "standard": [ "AS/NZS 1554.1" ],
+        "purpose": "Qualify welding procedures for structural steel by testing welded procedure qualification records (PQRs).",
+        "specimen": {
+          "type": "Welded test coupon",
+          "prep": [
+            "Prepare a test coupon with joint configuration, material grade and thickness representative of production welding.",
+            "Weld the coupon in accordance with the proposed welding procedure specification (WPS), recording all essential variables."
+          ]
+        },
+        "procedure_steps": [
+          "Perform visual inspection of the completed weld to identify surface defects and verify compliance with AS/NZS 1554.1.",
+          "Carry out non-destructive testing (e.g. MT and UT or RT) as required by the standard or project specification.",
+          "Extract mechanical test specimens (tensile, bend, impact) from the welded coupon in the locations specified by AS/NZS 1554.1.",
+          "Conduct tensile tests to determine weld metal and joint strength and compare with base metal requirements.",
+          "Perform bend tests (face, root or side) to assess weld ductility and soundness.",
+          "Carry out Charpy impact tests where required to verify toughness at specified temperatures.",
+          "Evaluate all test results against the acceptance criteria in AS/NZS 1554.1.",
+          "If all requirements are met, approve the WPS for production use and document the qualification range and limitations."
         ]
       },
-      "procedure_steps": [
-        "Perform visual inspection of the completed weld to identify surface defects and verify compliance with AS/NZS 1554.1.",
-        "Carry out non-destructive testing (e.g. MT and UT or RT) as required by the standard or project specification.",
-        "Extract mechanical test specimens (tensile, bend, impact) from the welded coupon in the locations specified by AS/NZS 1554.1.",
-        "Conduct tensile tests to determine weld metal and joint strength and compare with base metal requirements.",
-        "Perform bend tests (face, root or side) to assess weld ductility and soundness.",
-        "Carry out Charpy impact tests where required to verify toughness at specified temperatures.",
-        "Evaluate all test results against the acceptance criteria in AS/NZS 1554.1.",
-        "If all requirements are met, approve the WPS for production use and document the qualification range and limitations."
-      ]
-    },
-    "microstructure_asnz": {
-      "name": "Microstructure Examination (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 2706" ],
-      "purpose": "Examine the microstructure of structural steels to assess grain size, phases, inclusions and heat-affected zones.",
-      "specimen": {
-        "type": "Section from product or weld",
-        "prep": [
-          "Cut a representative sample from the product or weld, avoiding overheating during cutting.",
-          "Mount the sample in a suitable mounting medium if required.",
-          "Grind and polish the sample through progressively finer abrasives to obtain a scratch-free surface.",
-          "Etch the polished surface with an appropriate reagent (e.g. Nital) to reveal the microstructure."
+      "microstructure_asnz": {
+        "name": "Microstructure Examination (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 2706" ],
+        "purpose": "Examine the microstructure of structural steels to assess grain size, phases, inclusions and heat-affected zones.",
+        "specimen": {
+          "type": "Section from product or weld",
+          "prep": [
+            "Cut a representative sample from the product or weld, avoiding overheating during cutting.",
+            "Mount the sample in a suitable mounting medium if required.",
+            "Grind and polish the sample through progressively finer abrasives to obtain a scratch-free surface.",
+            "Etch the polished surface with an appropriate reagent (e.g. Nital) to reveal the microstructure."
+          ]
+        },
+        "procedure_steps": [
+          "Examine the etched surface under an optical microscope at suitable magnifications.",
+          "Identify and document the phases present and their distribution.",
+          "Assess grain size using comparison charts or quantitative methods in accordance with AS 2706 or referenced standards.",
+          "Evaluate the presence, type and distribution of non-metallic inclusions if required.",
+          "For welds, examine the fusion zone and heat-affected zone for grain coarsening, phase transformations and potential defects.",
+          "Capture micrographs of representative areas and annotate them as necessary.",
+          "Summarise the microstructural findings and compare them with expected structures for the grade and processing route."
         ]
       },
-      "procedure_steps": [
-        "Examine the etched surface under an optical microscope at suitable magnifications.",
-        "Identify and document the phases present and their distribution.",
-        "Assess grain size using comparison charts or quantitative methods in accordance with AS 2706 or referenced standards.",
-        "Evaluate the presence, type and distribution of non-metallic inclusions if required.",
-        "For welds, examine the fusion zone and heat-affected zone for grain coarsening, phase transformations and potential defects.",
-        "Capture micrographs of representative areas and annotate them as necessary.",
-        "Summarise the microstructural findings and compare them with expected structures for the grade and processing route."
-      ]
-    },
-    "coating_thickness_asnz": {
-      "name": "Coating Thickness Measurement (AS/NZS Hot-Rolled)",
-      "standard": [ "AS 2331.1.4" ],
-      "purpose": "Measure the dry film thickness of metallic or organic coatings on steel substrates.",
-      "specimen": {
-        "type": "Coated steel surface",
-        "prep": [
-          "Ensure the coating is fully cured and the surface is clean and free from loose contaminants.",
-          "Identify measurement locations in accordance with the relevant coating specification or AS 2331.1.4."
+      "coating_thickness_asnz": {
+        "name": "Coating Thickness Measurement (AS/NZS Hot-Rolled)",
+        "standard": [ "AS 2331.1.4" ],
+        "purpose": "Measure the dry film thickness of metallic or organic coatings on steel substrates.",
+        "specimen": {
+          "type": "Coated steel surface",
+          "prep": [
+            "Ensure the coating is fully cured and the surface is clean and free from loose contaminants.",
+            "Identify measurement locations in accordance with the relevant coating specification or AS 2331.1.4."
+          ]
+        },
+        "procedure_steps": [
+          "Select a suitable magnetic or eddy-current coating thickness gauge appropriate for the coating and substrate.",
+          "Calibrate the gauge using certified calibration foils or shims on an uncoated substrate of the same type.",
+          "Place the probe perpendicular to the coated surface and take individual thickness readings at the specified locations.",
+          "Repeat measurements to obtain a representative set of readings for each area.",
+          "Calculate the mean dry film thickness and compare it with the specified nominal and minimum values.",
+          "Record all readings, calibration details and any deviations from the standard procedure in a test report."
         ]
       },
-      "procedure_steps": [
-        "Select a suitable magnetic or eddy-current coating thickness gauge appropriate for the coating and substrate.",
-        "Calibrate the gauge using certified calibration foils or shims on an uncoated substrate of the same type.",
-        "Place the probe perpendicular to the coated surface and take individual thickness readings at the specified locations.",
-        "Repeat measurements to obtain a representative set of readings for each area.",
-        "Calculate the mean dry film thickness and compare it with the specified nominal and minimum values.",
-        "Record all readings, calibration details and any deviations from the standard procedure in a test report."
-      ]
-    },
-    "tensile_as1397": {
-      "name": "Tensile Test (AS 1397 Cold-Formed Sheet and Strip)",
-      "standard": [ "AS 1391", "AS 1397" ],
-      "purpose": "Determine tensile properties of metallic-coated cold-formed sheet and strip steels in accordance with AS 1397.",
-      "specimen": {
-        "type": "Flat sheet specimen",
-        "prep": [
-          "Cut tensile specimens from the sheet or strip in the specified orientation (usually longitudinal).",
-          "Avoid introducing local heating or deformation during cutting.",
-          "Measure and record thickness, width and gauge length using calibrated instruments.",
-          "Mark the gauge length clearly on the specimen as per AS 1391."
+      "tensile_as1397": {
+        "name": "Tensile Test (AS 1397 Cold-Formed Sheet and Strip)",
+        "standard": [ "AS 1391", "AS 1397" ],
+        "purpose": "Determine tensile properties of metallic-coated cold-formed sheet and strip steels in accordance with AS 1397.",
+        "specimen": {
+          "type": "Flat sheet specimen",
+          "prep": [
+            "Cut tensile specimens from the sheet or strip in the specified orientation (usually longitudinal).",
+            "Avoid introducing local heating or deformation during cutting.",
+            "Measure and record thickness, width and gauge length using calibrated instruments.",
+            "Mark the gauge length clearly on the specimen as per AS 1391."
+          ]
+        },
+        "procedure_steps": [
+          "Verify calibration of the tensile testing machine and extensometer in accordance with AS 1391.",
+          "Mount the specimen in the grips, ensuring correct alignment to minimise bending.",
+          "Attach the extensometer if required for yield or proof stress determination.",
+          "Apply tensile load at the strain rate specified in AS 1391 for sheet products.",
+          "Record yield strength, tensile strength and elongation at fracture.",
+          "Report results in accordance with AS 1397, including specimen orientation and test conditions."
         ]
       },
-      "procedure_steps": [
-        "Verify calibration of the tensile testing machine and extensometer in accordance with AS 1391.",
-        "Mount the specimen in the grips, ensuring correct alignment to minimise bending.",
-        "Attach the extensometer if required for yield or proof stress determination.",
-        "Apply tensile load at the strain rate specified in AS 1391 for sheet products.",
-        "Record yield strength, tensile strength and elongation at fracture.",
-        "Report results in accordance with AS 1397, including specimen orientation and test conditions."
-      ]
-    },
-    "bend_as1397": {
-      "name": "Bend Test (AS 1397)",
-      "standard": [ "AS 1397" ],
-      "purpose": "Assess the ability of metallic-coated sheet and strip to withstand bending without cracking or coating failure.",
-      "specimen": {
-        "type": "Sheet strip",
-        "prep": [
-          "Cut bend specimens to the width and length specified in AS 1397 or the product specification.",
-          "Ensure edges are smooth and free from notches or burrs."
+      "bend_as1397": {
+        "name": "Bend Test (AS 1397)",
+        "standard": [ "AS 1397" ],
+        "purpose": "Assess the ability of metallic-coated sheet and strip to withstand bending without cracking or coating failure.",
+        "specimen": {
+          "type": "Sheet strip",
+          "prep": [
+            "Cut bend specimens to the width and length specified in AS 1397 or the product specification.",
+            "Ensure edges are smooth and free from notches or burrs."
+          ]
+        },
+        "procedure_steps": [
+          "Select the bend radius or mandrel diameter specified for the grade and coating class in AS 1397.",
+          "Place the specimen in the bending fixture with the coated surface in tension if required.",
+          "Bend the specimen smoothly to the specified angle (often 180°) without impact loading.",
+          "Inspect the tension surface for cracks, coating flaking or delamination.",
+          "Evaluate the result against the bend performance requirements in AS 1397 for the relevant grade and coating."
         ]
       },
-      "procedure_steps": [
-        "Select the bend radius or mandrel diameter specified for the grade and coating class in AS 1397.",
-        "Place the specimen in the bending fixture with the coated surface in tension if required.",
-        "Bend the specimen smoothly to the specified angle (often 180°) without impact loading.",
-        "Inspect the tension surface for cracks, coating flaking or delamination.",
-        "Evaluate the result against the bend performance requirements in AS 1397 for the relevant grade and coating."
-      ]
-    },
-    "hardness_as1397": {
-      "name": "Hardness Test (AS 1397 Cold-Formed)",
-      "standard": [ "AS 1816", "AS 2205.6" ],
-      "purpose": "Measure hardness of cold-formed metallic-coated sheet steels for quality control and correlation with strength.",
-      "specimen": {
-        "type": "Flat sheet surface",
-        "prep": [
-          "Prepare a smooth, clean surface by light grinding or polishing if necessary, avoiding removal of significant coating thickness.",
-          "Ensure sheet thickness is adequate for the selected hardness method and load."
+      "hardness_as1397": {
+        "name": "Hardness Test (AS 1397 Cold-Formed)",
+        "standard": [ "AS 1816", "AS 2205.6" ],
+        "purpose": "Measure hardness of cold-formed metallic-coated sheet steels for quality control and correlation with strength.",
+        "specimen": {
+          "type": "Flat sheet surface",
+          "prep": [
+            "Prepare a smooth, clean surface by light grinding or polishing if necessary, avoiding removal of significant coating thickness.",
+            "Ensure sheet thickness is adequate for the selected hardness method and load."
+          ]
+        },
+        "procedure_steps": [
+          "Select an appropriate hardness method (typically Vickers or Rockwell) suitable for thin sheet.",
+          "Calibrate or verify the hardness tester using reference blocks.",
+          "Place the sheet on a rigid support to prevent flexing during indentation.",
+          "Apply the test force, maintain for the specified dwell time and remove.",
+          "Measure the indentation and calculate hardness according to the chosen method.",
+          "Record hardness values, test method, load and location."
         ]
       },
-      "procedure_steps": [
-        "Select an appropriate hardness method (typically Vickers or Rockwell) suitable for thin sheet.",
-        "Calibrate or verify the hardness tester using reference blocks.",
-        "Place the sheet on a rigid support to prevent flexing during indentation.",
-        "Apply the test force, maintain for the specified dwell time and remove.",
-        "Measure the indentation and calculate hardness according to the chosen method.",
-        "Record hardness values, test method, load and location."
-      ]
-    },
-    "chemical_as1397": {
-      "name": "Chemical Composition Analysis (AS 1397 Sheet Steels)",
-      "standard": [ "AS 1397", "AS 1031" ],
-      "purpose": "Determine the chemical composition of cold-formed sheet steels and verify compliance with AS 1397 grade limits.",
-      "specimen": {
-        "type": "Sheet sample",
-        "prep": [
-          "Select a representative sample from the coil or sheet.",
-          "Remove metallic coating locally if necessary to analyse base steel composition.",
-          "Prepare a clean, flat analysis surface."
+      "chemical_as1397": {
+        "name": "Chemical Composition Analysis (AS 1397 Sheet Steels)",
+        "standard": [ "AS 1397", "AS 1031" ],
+        "purpose": "Determine the chemical composition of cold-formed sheet steels and verify compliance with AS 1397 grade limits.",
+        "specimen": {
+          "type": "Sheet sample",
+          "prep": [
+            "Select a representative sample from the coil or sheet.",
+            "Remove metallic coating locally if necessary to analyse base steel composition.",
+            "Prepare a clean, flat analysis surface."
+          ]
+        },
+        "procedure_steps": [
+          "Use appropriate analytical methods (e.g. OES, combustion) in accordance with AS 1031 or referenced standards.",
+          "Calibrate the instrument with certified reference materials.",
+          "Analyse required elements (C, Mn, Si, P, S and others as specified in AS 1397).",
+          "Repeat measurements as needed to confirm repeatability.",
+          "Compare results with the chemical limits specified for the grade in AS 1397.",
+          "Document methods, calibration and results in a test report."
         ]
       },
-      "procedure_steps": [
-        "Use appropriate analytical methods (e.g. OES, combustion) in accordance with AS 1031 or referenced standards.",
-        "Calibrate the instrument with certified reference materials.",
-        "Analyse required elements (C, Mn, Si, P, S and others as specified in AS 1397).",
-        "Repeat measurements as needed to confirm repeatability.",
-        "Compare results with the chemical limits specified for the grade in AS 1397.",
-        "Document methods, calibration and results in a test report."
-      ]
-    },
-    "coating_mass_as1397": {
-      "name": "Coating Mass Test (AS 1397)",
-      "standard": [ "AS 1397" ],
-      "purpose": "Determine the metallic coating mass (e.g. Z, AZ, AM) on sheet and strip in g/m².",
-      "specimen": {
-        "type": "Coated sheet sample",
-        "prep": [
-          "Cut representative samples from the product, avoiding edges unless specified.",
-          "Clean the surface to remove oil and loose contaminants."
+      "coating_mass_as1397": {
+        "name": "Coating Mass Test (AS 1397)",
+        "standard": [ "AS 1397" ],
+        "purpose": "Determine the metallic coating mass (e.g. Z, AZ, AM) on sheet and strip in g/m².",
+        "specimen": {
+          "type": "Coated sheet sample",
+          "prep": [
+            "Cut representative samples from the product, avoiding edges unless specified.",
+            "Clean the surface to remove oil and loose contaminants."
+          ]
+        },
+        "procedure_steps": [
+          "Use the single-spot or triple-spot gravimetric method described in AS 1397.",
+          "Weigh the sample before stripping the coating.",
+          "Strip the metallic coating using the specified chemical reagent without attacking the base steel.",
+          "Rinse, dry and reweigh the sample.",
+          "Calculate the coating mass per unit area for each side and total, in g/m².",
+          "Compare results with the coating class requirements in AS 1397."
         ]
       },
-      "procedure_steps": [
-        "Use the single-spot or triple-spot gravimetric method described in AS 1397.",
-        "Weigh the sample before stripping the coating.",
-        "Strip the metallic coating using the specified chemical reagent without attacking the base steel.",
-        "Rinse, dry and reweigh the sample.",
-        "Calculate the coating mass per unit area for each side and total, in g/m².",
-        "Compare results with the coating class requirements in AS 1397."
-      ]
-    },
-    "coating_thickness_as1397": {
-      "name": "Coating Thickness Measurement (AS 1397)",
-      "standard": [ "AS 2331.1.4" ],
-      "purpose": "Measure the thickness of metallic coatings on sheet and strip using non-destructive methods.",
-      "specimen": {
-        "type": "Coated sheet surface",
-        "prep": [
-          "Ensure the coating is fully cured and the surface is clean and dry.",
-          "Identify measurement locations according to AS 2331.1.4 or product specification."
+      "coating_thickness_as1397": {
+        "name": "Coating Thickness Measurement (AS 1397)",
+        "standard": [ "AS 2331.1.4" ],
+        "purpose": "Measure the thickness of metallic coatings on sheet and strip using non-destructive methods.",
+        "specimen": {
+          "type": "Coated sheet surface",
+          "prep": [
+            "Ensure the coating is fully cured and the surface is clean and dry.",
+            "Identify measurement locations according to AS 2331.1.4 or product specification."
+          ]
+        },
+        "procedure_steps": [
+          "Select a suitable magnetic or eddy-current coating thickness gauge.",
+          "Calibrate the gauge using certified foils on an uncoated substrate of the same type.",
+          "Take multiple readings at each specified location.",
+          "Calculate the mean coating thickness and compare with specified values.",
+          "Record all readings, calibration details and any deviations from the standard procedure."
         ]
       },
-      "procedure_steps": [
-        "Select a suitable magnetic or eddy-current coating thickness gauge.",
-        "Calibrate the gauge using certified foils on an uncoated substrate of the same type.",
-        "Take multiple readings at each specified location.",
-        "Calculate the mean coating thickness and compare with specified values.",
-        "Record all readings, calibration details and any deviations from the standard procedure."
-      ]
-    },
-    "adhesion_as1397": {
-      "name": "Coating Adhesion Test (AS 1397 Systems)",
-      "standard": [ "AS 1580.408.1" ],
-      "purpose": "Assess adhesion of metallic or organic coatings applied to sheet steels.",
-      "specimen": {
-        "type": "Coated sheet sample",
-        "prep": [
-          "Cut samples to the required size, avoiding damaged or edge areas unless specified.",
-          "Clean the surface to remove loose contamination."
+      "adhesion_as1397": {
+        "name": "Coating Adhesion Test (AS 1397 Systems)",
+        "standard": [ "AS 1580.408.1" ],
+        "purpose": "Assess adhesion of metallic or organic coatings applied to sheet steels.",
+        "specimen": {
+          "type": "Coated sheet sample",
+          "prep": [
+            "Cut samples to the required size, avoiding damaged or edge areas unless specified.",
+            "Clean the surface to remove loose contamination."
+          ]
+        },
+        "procedure_steps": [
+          "Perform the specified adhesion method (e.g. cross-hatch or pull-off) in accordance with AS 1580.408.1.",
+          "Apply the cutting or scoring pattern if cross-hatch is used.",
+          "Apply adhesive tape or loading fixture as required by the method.",
+          "Remove the tape or apply tensile load and observe coating removal or failure mode.",
+          "Classify adhesion performance according to the rating system in AS 1580.408.1.",
+          "Record test conditions, method and results."
         ]
       },
-      "procedure_steps": [
-        "Perform the specified adhesion method (e.g. cross-hatch or pull-off) in accordance with AS 1580.408.1.",
-        "Apply the cutting or scoring pattern if cross-hatch is used.",
-        "Apply adhesive tape or loading fixture as required by the method.",
-        "Remove the tape or apply tensile load and observe coating removal or failure mode.",
-        "Classify adhesion performance according to the rating system in AS 1580.408.1.",
-        "Record test conditions, method and results."
-      ]
-    },
-    "corrosion_as1397": {
-      "name": "Salt Spray Corrosion Test (AS 1397 Coatings)",
-      "standard": [ "AS 2331.3.1" ],
-      "purpose": "Evaluate the corrosion resistance of metallic coatings on sheet steels using neutral salt spray exposure.",
-      "specimen": {
-        "type": "Coated sheet sample",
-        "prep": [
-          "Prepare samples with edges masked or sealed if required.",
-          "Clean surfaces without removing or damaging the coating."
+      "corrosion_as1397": {
+        "name": "Salt Spray Corrosion Test (AS 1397 Coatings)",
+        "standard": [ "AS 2331.3.1" ],
+        "purpose": "Evaluate the corrosion resistance of metallic coatings on sheet steels using neutral salt spray exposure.",
+        "specimen": {
+          "type": "Coated sheet sample",
+          "prep": [
+            "Prepare samples with edges masked or sealed if required.",
+            "Clean surfaces without removing or damaging the coating."
+          ]
+        },
+        "procedure_steps": [
+          "Place specimens in a neutral salt spray chamber configured in accordance with AS 2331.3.1.",
+          "Expose specimens for the specified duration or until defined corrosion criteria are reached.",
+          "Inspect specimens periodically or at the end of exposure for red rust, blistering or coating breakdown.",
+          "Record the extent and type of corrosion and compare with performance requirements.",
+          "Document exposure conditions, duration and results in a test report."
         ]
-      },
-      "procedure_steps": [
-        "Place specimens in a neutral salt spray chamber configured in accordance with AS 2331.3.1.",
-        "Expose specimens for the specified duration or until defined corrosion criteria are reached.",
-        "Inspect specimens periodically or at the end of exposure for red rust, blistering or coating breakdown.",
-        "Record the extent and type of corrosion and compare with performance requirements.",
-        "Document exposure conditions, duration and results in a test report."
-      ]
+      }
     }
-  }
 }

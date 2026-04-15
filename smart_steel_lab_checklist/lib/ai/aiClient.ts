@@ -40,7 +40,7 @@ export async function runAI({
             messages: [{ role: "user", content: prompt }]
         });
 
-        return response.content[0].text;
+        return response.content[0];
     }
 
     throw new Error("Unknown model");

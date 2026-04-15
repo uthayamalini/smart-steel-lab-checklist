@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { test_GradeStandards } from "../data/tests_grades";
+import { Grades } from "../data/type";
 
 
 export default function Home() {
-    type GradeKey = keyof typeof test_GradeStandards.grades;
-    const gradeList = Object.keys(test_GradeStandards.grades) as GradeKey[];
-    const [grade, setGrade] = useState<GradeKey>(gradeList[0] as GradeKey);
+    const gradeList = Object.keys(test_GradeStandards.grades) as (keyof Grades)[];
+    const [grade, setGrade] = useState<keyof Grades>(gradeList[0]);
     const applicationList = Object.keys(
-        test_GradeStandards.grades[grade].applications
+        test_GradeStandards.grades[grade as keyof typeof test_GradeStandards.grades].applications
     );
     const [application, setApplication] = useState(applicationList[0]);
 
@@ -75,11 +75,11 @@ export default function Home() {
                             value={grade}
                             onChange={(e) => {
                                 const newGrade = e.target.value;
-                                setGrade(newGrade as GradeKey);
+                                setGrade(newGrade as keyof Grades);
 
                                 // Reset application when grade changes
                                 const newApps = Object.keys(
-                                    test_GradeStandards.grades[newGrade as GradeKey].applications
+                                    test_GradeStandards.grades[newGrade as keyof typeof test_GradeStandards.grades].applications
                                 );
                                 setApplication(newApps[0]);
                             }}
