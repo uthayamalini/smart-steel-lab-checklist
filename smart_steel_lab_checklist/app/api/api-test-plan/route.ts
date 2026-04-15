@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 // app/api/generate-test-plan/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { generateTestPlan } from "@/lib/rule_engine";
