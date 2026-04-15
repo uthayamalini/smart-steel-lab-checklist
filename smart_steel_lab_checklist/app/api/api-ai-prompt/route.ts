@@ -1,5 +1,3 @@
-export const runtime = "nodejs";
-
 // \\app\api\api - ai - prompt\route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { runAI } from "@/lib/ai/aiClient";
